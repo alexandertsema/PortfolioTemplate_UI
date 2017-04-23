@@ -1,0 +1,16 @@
+<div *ngFor="let certificate of certificates">
+  <div class="certificate">
+    <div class="name">
+      {{certificate.name}}
+    </div>
+    <div class="authority">
+      {{certificate.authority}}
+    </div>
+    <div class="date">
+      {{certificate.recieveDate | date}}
+    </div>
+    <div class="image">
+      <img [src]="certificate.image?.name" [alt]="certificate.image?.name">
+    </div>
+  </div>
+</div>
