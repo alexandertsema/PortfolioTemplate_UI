@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { HttpService } from "app/services/http.service";
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CertificatesComponent
+    CertificatesComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

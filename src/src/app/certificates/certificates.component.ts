@@ -24,5 +24,4 @@ export class CertificatesComponent implements OnInit {
               console.error(error)
         );
   }
-
 }
