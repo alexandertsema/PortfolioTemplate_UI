@@ -1,2 +1,29 @@
-<app-skills></app-skills>
-<app-certificates></app-certificates>
+<div>
+    <ul>
+        <li routerLinkActive="active">
+            <a routerLink='/summary'>summary</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink='/skills'>skills</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink='/projects'>projects</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink='/education'>education</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink='/references'>references</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink='/certificates'>certificates</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink='/contacts'>contacts</a>
+        </li>
+    </ul>
+</div>
+
+<main>
+    <router-outlet></router-outlet>
+</main>

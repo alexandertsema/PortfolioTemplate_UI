@@ -1,0 +1,27 @@
+<div *ngFor="let reference of references">
+  <div class="reference">
+    <div *ngIf="reference.pdf" class="gpa">
+      <a [href]="reference?.pdf">PDF</a>
+    </div>
+    <div class="description">
+      {{reference.description}}
+    </div>
+    <div class="reference-author">
+      <div class="name">
+        {{reference.referenceAuthor?.name}}
+      </div>
+       <div class="image-author">
+        <img [src]="reference.referenceAuthor?.image" [alt]="reference.referenceAuthor?.name">
+      </div>
+      <div class="company-name">
+        {{reference.referenceAuthor?.companyName}}
+      </div>
+      <div class="company-link">
+        {{reference.referenceAuthor?.companyLink}}
+      </div>
+      <div class="position">
+        {{reference.referenceAuthor?.position}}
+      </div>
+    </div>
+  </div>
+</div>

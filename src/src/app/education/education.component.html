@@ -1,0 +1,27 @@
+<div *ngFor="let school of schools">
+  <div class="school">
+    <div class="image">
+      <img [src]="school.image?.name" [alt]="school.image?.name">
+    </div>
+    <div class="name">
+      {{school.name}}
+    </div>
+    <div class="degree">
+      {{school.degree}}
+    </div>
+    <div *ngIf="school.gpa" class="gpa">
+      {{school.gpa}}
+    </div>
+    <div class="description">
+      {{description.authority}}
+    </div>
+    <div class="dates">
+      {{school.startDate | date}} - {{school.endDate | date}}
+    </div>
+    <div class="courses" *ngFor="let course of school.courses">
+        <ul class="course">
+            <li>{{ course.name}}</li>
+        </ul>
+    </div>
+  </div>
+</div>
