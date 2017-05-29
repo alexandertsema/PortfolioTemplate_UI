@@ -1,9 +1,9 @@
 div.container {
     width: 100%;
-    /*border: 1px solid gray;*/
 }
 
 nav {
+    z-index: 999;
     float: none;
     position: fixed;
     left: 0;
@@ -22,6 +22,26 @@ nav ul li{
     padding: 5%;
 }
 
+nav ul a {
+    clear: both;
+    padding-left: 5%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #95989A;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -webkit-transition: opacity .15s ease-in-out;
+}
+
+nav:hover ul a{
+    opacity: 0.2;
+}
+
+nav ul a:hover {
+    opacity: 1;
+}
+
 .dot{
     display: block;
     float: left;
@@ -34,25 +54,13 @@ nav ul li{
     background-repeat: no-repeat;
 }
 
-nav ul a {
-    clear: both;
-    padding-left: 5%;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-
-nav ul a:hover {
-    color: #95989A;
-}
-
-.active a:hover{
-    color: #263238 !important;
+nav:hover .active a{
+    opacity: 1;
 }
 
 .active .dot{
-    border: 1px solid #263238;
-    background-color: #263238 !important;
+    border: 1px solid #95989A;
+    background-color: #95989A !important;
 }
 
 main {
@@ -73,3 +81,5 @@ main {
     float: none;
     clear: none;
 }
+
+
