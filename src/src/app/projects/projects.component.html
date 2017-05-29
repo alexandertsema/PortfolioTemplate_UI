@@ -1,16 +1,16 @@
-<div ngFor="let project of projects">
+<div *ngFor="let project of projects">
   <div class="project">
     <div class="image">
-      <img [src]="project.image?.name" [alt]="project.image?.name">
+      <img src="{{project?.image?.name}}" alt="{{project?.image?.name}}">
     </div>
     <div class="name">
-      <a [href]="project.link">{{project.name}}</a>
+      <a href="{{project?.link}}">{{project.name}}</a>
     </div>
     <div class="description">
-      {{project.description}}
+      {{project?.description}}
     </div>
     <div class="description">
-      {{project.description}}
+      {{project?.description}}
     </div>
   </div>
 </div>

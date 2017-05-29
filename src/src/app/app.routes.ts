@@ -11,11 +11,11 @@ import { ContactsComponent } from "app/contacts/contacts.component";
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/summary',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
-    path: 'summary',
+    path: 'home',
     component: SummaryComponent
   },
   {

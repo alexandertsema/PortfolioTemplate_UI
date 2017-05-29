@@ -1,8 +1,20 @@
-<div class="summary">
-  <div>
-      {{ summary.description }}
-  </div>
-  <div class="image">
-      <img [src]="summary.image" [alt]="summary.image?.name">
-    </div>
+<div class="title">
+    {{ summary?.title }}
+</div>
+<div class="subtitle">
+    {{ summary?.subtitle }}
+</div>
+<div class="description">
+    {{ summary?.description }}
+</div>
+<div class="image">
+    <img src="{{summary?.image?.data}}" alt="{{summary?.image?.name}}">
+</div>
+<div class="resume">
+    <a href="{{summary?.resume?.data}}">RESUME</a>
+</div>
+<div class="down-arrow">
+    <a href="/skills">
+        <img src="../assets/images/arrow_down.png" alt="">
+    </a>
 </div>

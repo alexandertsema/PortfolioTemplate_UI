@@ -1,0 +1,40 @@
+.image{
+    position: absolute;
+    bottom: -1%;
+    right: -13.5%;
+    z-index: -1;
+}
+.image img{
+    width: 100%;
+}
+.subtitle{
+    padding-top: 1%;
+    color: #95989A;
+    font-size: 40px;
+    font-family: Roboto Light;
+}
+.description{
+    padding-top: 6%;
+    font-family: Roboto Thin;
+    font-size: 31px;
+    width: 75%;
+    overflow: visible;
+}
+.resume{
+    position: relative;
+    margin-left: -15%;
+    padding-top: 10%;
+    text-align: center;
+    font-family: Roboto Medium;
+    font-size: 21px;
+}
+.resume a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #263238;
+}
+.down-arrow{
+    position: relative;
+    margin-left: 40.8%;
+    padding-top: 11%;
+}

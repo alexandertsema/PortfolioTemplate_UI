@@ -1,29 +1,32 @@
-<div>
-    <ul>
-        <li routerLinkActive="active">
-            <a routerLink='/summary'>summary</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink='/skills'>skills</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink='/projects'>projects</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink='/education'>education</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink='/references'>references</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink='/certificates'>certificates</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink='/contacts'>contacts</a>
-        </li>
-    </ul>
+<div class="container">
+    <nav>
+        <ul>
+            <li routerLinkActive="active">
+                <a routerLink='/home'><span class="dot"></span>home</a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink='/skills'><span class="dot"></span>skills</a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink='/projects'><span class="dot"></span>projects</a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink='/education'><span class="dot"></span>education</a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink='/references'><span class="dot"></span>references</a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink='/certificates'><span class="dot"></span>certificates</a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink='/contacts'><span class="dot"></span>contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </main>  
 </div>
-
-<main>
-    <router-outlet></router-outlet>
-</main>

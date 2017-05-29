@@ -1,0 +1,75 @@
+div.container {
+    width: 100%;
+    /*border: 1px solid gray;*/
+}
+
+nav {
+    float: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 10%;
+    height: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10%;
+    margin-top: 167%;
+}
+
+nav ul li{
+    padding: 5%;
+}
+
+.dot{
+    display: block;
+    float: left;
+    margin-top: 2.5%;
+    border-radius: 50%;
+    width: 10px;
+	height: 10px; 
+    border: 1px solid #95989A;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+nav ul a {
+    clear: both;
+    padding-left: 5%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav ul a:hover {
+    color: #95989A;
+}
+
+.active a:hover{
+    color: #263238 !important;
+}
+
+.active .dot{
+    border: 1px solid #263238;
+    background-color: #263238 !important;
+}
+
+main {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    margin-left: 9.6%;
+}
+
+.content{
+    position: static;
+    display: block;
+    overflow: visible;
+    width: auto;
+    height: 100%;
+    margin-right: auto;
+    float: none;
+    clear: none;
+}
