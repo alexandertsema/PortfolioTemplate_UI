@@ -13,6 +13,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ReferencesComponent } from './references/references.component';
 import { Routing } from "app/app.routes";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -29,9 +31,11 @@ import { Routing } from "app/app.routes";
     BrowserModule,
     FormsModule,
     HttpModule,
-    Routing
+    Routing,
+    BrowserAnimationsModule,
+    MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule
   ],
   providers: [ HttpService ],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

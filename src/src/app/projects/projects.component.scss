@@ -1,0 +1,134 @@
+.description{
+    padding-top: 3%;
+    font-family: Roboto Thin;
+    font-size: 31px;
+    width: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+.projects-container{
+  height: 1600px;
+  width: 650px;
+  padding: 250px 0 0 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform-origin: right top;
+  transform:rotate(-90deg) translateY(-650px);
+}
+
+.project {
+  margin: 5px;
+  float: right;
+  width: 250px;
+  height: 250px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+  background-image: url('~/assets/images/proj.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer{
+  color: white;
+  background-color:  rgba(66, 66, 66, .5);
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  
+  p{
+    padding: 0 0 0 5%;
+  }
+  p:nth-child(1){
+    font-size: 16px;
+  }
+  p:nth-child(2){
+    font-size: 12px;
+  }
+  button{
+    position: fixed;
+    margin: -21% 0 0 60%;
+    float: right;
+  }
+}
+.project:hover .footer{
+  
+}
+
+$animation-speed: .5s;
+$animation-delay: .5s;
+$animation-timing: ease-in;
+$animation-fill: both;
+$animation-direction: alternate;
+$animation-slide-distance: 30px;
+
+// Keyframes
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+		@content;
+	}
+	
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+@include keyframes(slideUp) {
+  0% {
+    transform: translateY($animation-slide-distance);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// Animation Mixin
+@mixin animation($name, $properties: null, $name2: null) {
+	@if $properties {
+	  animation: $name $properties;
+	} 
+	
+	@else if $name2 {
+	  animation-name: $name, $name2;
+	}
+	
+	@else {
+	  animation-name: $name $name2;
+	}
+}
+
+
+// Animation Properties Mixin
+@mixin animationBase($speed, $timing, $fill, $direction, $iterate: null) {
+  .animate {
+    animation-duration: $speed;
+    animation-timing-function: $timing;
+    animation-fill-mode: $fill;
+    animation-direction: $direction;
+    
+    @if $iterate {
+      animation-iteration-count: $iterate;
+    }
+  }
+}
+
+@include animationBase($animation-speed, $animation-timing, $animation-fill, $animation-direction);
+
+@mixin animate() {
+  .animate-with-delay {
+    animation-delay: $animation-delay;
+  }
+  .animate-slide-up {
+    @include animation(slideUp);
+  }
+}
+
+@include animate();
