@@ -28,10 +28,14 @@
     font-family: Roboto Medium;
     font-size: 21px;
 }
-.resume a{
+.resume{
     text-decoration: none;
     text-transform: uppercase;
     color: #263238;
+
+    .mat-button{
+        font-size: 20px;
+    }
 }
 .down-arrow{
     position: relative;

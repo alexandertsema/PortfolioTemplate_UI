@@ -1,0 +1,8 @@
+<md-button-toggle-group #group="mdButtonToggleGroup" (change)="onFilterEnter(group.value)">
+    <md-button-toggle value="0" checked="True">
+      All
+    </md-button-toggle>
+    <md-button-toggle *ngFor="let projectCategory of projectCategories" value="{{projectCategory?.id}}">
+      {{projectCategory?.name}}
+    </md-button-toggle>
+</md-button-toggle-group>

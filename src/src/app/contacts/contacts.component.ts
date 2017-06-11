@@ -15,14 +15,14 @@ export class ContactsComponent implements OnInit {
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-    this.httpService.get<Contact[]>(ENDPOINTS.certificate)
-        .subscribe(
-            (contacts: Contact[]) => {
-              this.contacts = contacts; 
-            },
-            (error: any) => 
-              console.error(error)
-        );
+    // this.httpService.get<Contact[]>(ENDPOINTS.certificate)
+    //     .subscribe(
+    //         (contacts: Contact[]) => {
+    //           this.contacts = contacts; 
+    //         },
+    //         (error: any) => 
+    //           console.error(error)
+    //     );
   }
 
 }

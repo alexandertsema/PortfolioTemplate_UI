@@ -15,13 +15,13 @@ export class CertificatesComponent implements OnInit {
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-    this.httpService.get<Certificate[]>(ENDPOINTS.certificate)
-        .subscribe(
-            (certificates: Certificate[]) => {
-              this.certificates = certificates; 
-            },
-            (error: any) => 
-              console.error(error)
-        );
+    // this.httpService.get<Certificate[]>(ENDPOINTS.certificate)
+    //     .subscribe(
+    //         (certificates: Certificate[]) => {
+    //           this.certificates = certificates; 
+    //         },
+    //         (error: any) => 
+    //           console.error(error)
+    //     );
   }
 }

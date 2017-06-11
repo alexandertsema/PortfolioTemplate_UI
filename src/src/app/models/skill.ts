@@ -1,8 +1,7 @@
-import { SkillCategory } from "app/models/skillCategory";
+import { ISkillLevel } from "app/models/skillLevel";
+import { INode } from "app/models/node";
 
-export interface Skill {
-    id: number,
+export interface ISkill extends INode {
     name: string,
-    priority: number,
-    skillCategory: SkillCategory
+    skillLevel: ISkillLevel
 }

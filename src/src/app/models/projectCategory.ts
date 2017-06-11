@@ -1,6 +1,6 @@
 import { Project } from "app/models/project";
 
-export interface ProjectCategory {
+export interface IProjectCategory {
     id: number,
     name: string,
     portfolioItems: Project[]

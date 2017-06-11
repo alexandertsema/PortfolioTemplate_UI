@@ -3,6 +3,8 @@ import { Project } from "app/models/project";
 import { HttpService } from "app/services/http.service";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { mockProject } from "app/mocks/project.mock";
+import { IProjectCategory } from "app/models/projectCategory";
+import { mockProjectCategories } from "app/mocks/projectCategory.mock";
 
 @Component({
   selector: 'app-projects',
@@ -11,7 +13,9 @@ import { mockProject } from "app/mocks/project.mock";
 })
 export class ProjectsComponent implements OnInit {
 
-  projects: Project[];
+  
+  _projects: Project[];
+  projectCategoryFilter: number;
 
   constructor(private httpService: HttpService) { }
 
@@ -25,6 +29,25 @@ export class ProjectsComponent implements OnInit {
     //           console.error(error)
     //     );
 
-    this.projects = mockProject;
+    
+    this._projects = mockProject;
+  }
+
+  onFilterChange(filterValue: number) {
+    this.projectCategoryFilter = filterValue;
+  }
+
+  get projects(): Project[]{
+    if (+this.projectCategoryFilter != 0 && typeof this.projectCategoryFilter != 'undefined') {
+      return this._projects.map((project) => {
+        let match = project.projectCategory.id == (+this.projectCategoryFilter);
+        if(!match)
+          return null;
+        else
+          return project;
+      }).filter(x => !!x);
+    } else {
+      return this._projects;
+    }
   }
 }

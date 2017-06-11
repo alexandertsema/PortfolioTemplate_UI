@@ -14,7 +14,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ReferencesComponent } from './references/references.component';
 import { Routing } from "app/app.routes";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule} from '@angular/material';
+import {MdButtonModule, MdCardModule, MdButtonToggleModule} from '@angular/material';
+import { ProjectCategoryFilterComponent } from './project-category-filter/project-category-filter.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule} from '
     EducationComponent,
     ProjectsComponent,
     ContactsComponent,
-    ReferencesComponent
+    ReferencesComponent,
+    ProjectCategoryFilterComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import {MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule} from '
     HttpModule,
     Routing,
     BrowserAnimationsModule,
-    MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule
+    MdButtonModule, MdCardModule, MdButtonToggleModule
   ],
   providers: [ HttpService ],
   bootstrap: [ AppComponent ]

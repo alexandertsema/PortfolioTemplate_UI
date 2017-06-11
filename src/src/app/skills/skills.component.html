@@ -1,7 +1,5 @@
-<div *ngFor="let skill of skills">
-  <div class="skill">
-    <div class="name">
-      {{skill.name}}
-    </div>
+<div *ngFor="let skill of skills" class="skill">
+  <div class="name">
+    {{skill?.node?.name}}
   </div>
 </div>

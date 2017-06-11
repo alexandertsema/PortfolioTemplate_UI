@@ -2,16 +2,10 @@
     PROJECTS
 </div>
 <div class="description">
-  <div  class="projects-container">
-    <!--<md-card *ngFor="let project of projects" class="example-card">
-      <md-card-actions>
-        <md-card-title>{{ project?.name }}</md-card-title>
-        <md-card-subtitle>{{ project?.subtitle }}</md-card-subtitle>
-        <button md-button>DETAILS</button>
-      </md-card-actions>
-    </md-card>-->
+  <app-project-category-filter (onFilter)="onFilterChange($event)"></app-project-category-filter>
+  <div class="projects-container">
     <div *ngFor="let project of projects" class="project">
-      <div class="footer animate animate-slide-up">
+      <div class="footer animate animate-slide-up animate-slide-down">
         <p>{{ project?.name }}</p>
         <p>{{ project?.subtitle }}</p>
         <button md-button>DETAILS</button>

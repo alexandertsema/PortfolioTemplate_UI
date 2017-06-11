@@ -15,13 +15,13 @@ export class EducationComponent implements OnInit {
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-    this.httpService.get<School[]>(ENDPOINTS.certificate)
-        .subscribe(
-            (schools: School[]) => {
-              this.schools = schools; 
-            },
-            (error: any) => 
-              console.error(error)
-        );
+    // this.httpService.get<School[]>(ENDPOINTS.certificate)
+    //     .subscribe(
+    //         (schools: School[]) => {
+    //           this.schools = schools; 
+    //         },
+    //         (error: any) => 
+    //           console.error(error)
+    //     );
   }
 }
