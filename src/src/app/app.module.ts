@@ -16,6 +16,8 @@ import { Routing } from "app/app.routes";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule, MdCardModule, MdButtonToggleModule} from '@angular/material';
 import { ProjectCategoryFilterComponent } from './project-category-filter/project-category-filter.component';
+import { GridItemComponent } from './grid-item/grid-item.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ProjectCategoryFilterComponent } from './project-category-filter/projec
     ProjectsComponent,
     ContactsComponent,
     ReferencesComponent,
-    ProjectCategoryFilterComponent
+    ProjectCategoryFilterComponent,
+    GridItemComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,

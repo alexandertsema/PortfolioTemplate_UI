@@ -7,6 +7,7 @@ import { EducationComponent } from "app/education/education.component";
 import { ReferencesComponent } from "app/references/references.component";
 import { CertificatesComponent } from "app/certificates/certificates.component";
 import { ContactsComponent } from "app/contacts/contacts.component";
+import { ProjectDetailsComponent } from "app/project-details/project-details.component";
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsComponent
+  },
+  {
+    path: 'project',
+    component: ProjectDetailsComponent
   },
   {
     path: 'education',

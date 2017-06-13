@@ -1,0 +1,7 @@
+<div [style.background-image]="'url(' + image + ')'" (mouseenter)="toggleFooterState('up')" (mouseleave)="toggleFooterState('down')">
+  <footer [@footerState]="footerState">
+    <p>{{ name }}</p>
+    <p>{{ subtitle }}</p>
+    <button md-button>{{ buttonText }}</button>
+  </footer>
+</div>

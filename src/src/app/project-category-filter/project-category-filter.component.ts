@@ -19,7 +19,7 @@ export class ProjectCategoryFilterComponent implements OnInit {
     this.projectCategories = mockProjectCategories;
   }
 
-  private onFilterEnter(filterValue : number){
+  public onFilterEnter(filterValue : number){
     this.onFilter.emit(filterValue);
   }
 }
