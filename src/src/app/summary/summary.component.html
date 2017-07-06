@@ -1,20 +1,20 @@
-<div class="header">
-    ALEXANDER TSEMA
-</div>
-<div class="title">
-    {{ summary?.title }}
-</div>
-<div class="description">
-    {{ summary?.description }}
+<div class="container">
+    <div class="title">
+        {{ summary?.title }}
+    </div>
+    <div class="description">
+        {{ summary?.description }}
+    </div>
+    <div class="resume">
+        <a md-button href="{{summary?.resume?.data}}">RESUME</a>
+    </div>
+    <div class="down-arrow">
+        <a href="/skills">
+            <i class="material-icons arrow">arrow_back</i>
+        </a>
+    </div>
 </div>
 <div class="image">
     <img src="{{summary?.image?.data}}" alt="{{summary?.image?.name}}">
 </div>
-<div class="resume">
-     <a md-button href="{{summary?.resume?.data}}">RESUME</a>
-</div>
-<div class="down-arrow">
-    <a href="/skills">
-        <img src="../assets/images/arrow_down.png" alt="">
-    </a>
-</div>
+

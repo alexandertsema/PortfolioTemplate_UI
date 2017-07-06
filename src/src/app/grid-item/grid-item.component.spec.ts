@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { trigger, state, style, animate, transition } from '@angular/animations';
 import { GridItemComponent } from './grid-item.component';
 
 describe('GridItemComponent', () => {

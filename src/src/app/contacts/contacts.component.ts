@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from "app/models/contact";
+import { IContact } from "app/models/contact";
 import { HttpService } from "app/services/http.service";
 import { ENDPOINTS } from "app/settings/endpoints";
+import { mockContacts } from "app/mocks/contacts.mock";
 
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
-  styleUrls: ['./contacts.component.css']
+  styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
 
-  contacts: Contact[];
+  contacts: IContact[];
 
   constructor(private httpService: HttpService) { }
 
@@ -23,6 +24,7 @@ export class ContactsComponent implements OnInit {
     //         (error: any) => 
     //           console.error(error)
     //     );
-  }
 
+    this.contacts = mockContacts;
+  }
 }

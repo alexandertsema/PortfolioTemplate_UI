@@ -17,6 +17,9 @@ const routes: Routes = [
   },
   {
     path: 'home',
+    data: {
+      alias: 'alexander tsema'
+    },
     component: SummaryComponent
   },
   {

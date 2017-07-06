@@ -1,0 +1,43 @@
+.container{
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    flex-flow: column;
+    
+    -webkit-flex: auto;
+	-ms-flex: auto;
+	flex: auto;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    height: 100%;
+    width: 100%;
+    // position: absolute;
+
+    background-color: red;
+    
+    .contact{
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        // -webkit-order: 0;
+        // -ms-flex-order: 0;
+        // order: 0;
+        justify-content: center;
+        align-items: center;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        flex-wrap: nowrap;
+        
+        // z-index: 1;
+
+        // // margin: 2% 0 2% 0;
+
+        font-size: 1.5em;
+
+        background-color: violet;
+    }
+}

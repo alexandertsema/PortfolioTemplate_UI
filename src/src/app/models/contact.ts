@@ -1,4 +1,7 @@
-export interface Contact{
+import { ContactType } from "app/models/enums/contactType";
+
+export interface IContact {
     id: number,
-    name: string
+    contactType: ContactType,
+    value: string
 }

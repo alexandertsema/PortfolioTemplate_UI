@@ -1,7 +1,5 @@
-<div *ngFor="let contact of contacts">
-  <div class="contact">
-    <div class="name">
-      {{contacts.name}}
+<div  class="container">
+    <div *ngFor="let contact of contacts" class="contact">
+      {{contact.contactType}}<md-icon>email</md-icon>{{contact.value}}
     </div>
-  </div>
 </div>

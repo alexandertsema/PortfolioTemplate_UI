@@ -1,0 +1,74 @@
+<div class="container" >
+    <div class="nav-backdrop" [@navBackdropState]="navBackdropState"></div>
+    <div class="mini-nav nav" 
+        (mouseenter)="toggleNavState('show')" 
+        (mouseleave)="toggleNavState('hide')" 
+        [@navState]="navState">
+        <div class="nav-container">
+            <a routerLink='/home'>
+                <div routerLinkActive="active" class="nav-link">
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="text">home</div>
+                </div>
+            </a>
+            <a routerLink='/skills'>
+                <div routerLinkActive="active" class="nav-link">
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="text">skills</div>
+                </div>
+            </a>
+            <a routerLink='/projects'>
+                <div routerLinkActive="active" class="nav-link">
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="text">projects</div>
+                </div>
+            </a>
+            <a routerLink='/education'>
+                <div routerLinkActive="active" class="nav-link">
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="text">education</div>
+                </div>
+            </a>
+            <a routerLink='/references'>
+                <div routerLinkActive="active" class="nav-link">
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="text">references</div>
+                </div>
+            </a>
+            <a routerLink='/certificates'>
+                <div routerLinkActive="active" class="nav-link">
+                    <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="text">certificates</div>
+                </div>
+            </a>
+            <a routerLink='/contacts'>
+                <div routerLinkActive="active" class="nav-link">
+                   <div class="dot">
+                        <span></span>
+                    </div>
+                    <div class="text">contacts</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <section class="content">
+        <header>
+            {{header}}
+        </header>
+        <div class="view">
+            <router-outlet></router-outlet>
+        </div>
+    </section>
+</div>

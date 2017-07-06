@@ -14,7 +14,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ReferencesComponent } from './references/references.component';
 import { Routing } from "app/app.routes";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCardModule, MdButtonToggleModule} from '@angular/material';
+import {MdButtonModule, MdCardModule, MdButtonToggleModule, MdSidenavModule, MdIconModule} from '@angular/material';
 import { ProjectCategoryFilterComponent } from './project-category-filter/project-category-filter.component';
 import { GridItemComponent } from './grid-item/grid-item.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
@@ -39,7 +39,7 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     HttpModule,
     Routing,
     BrowserAnimationsModule,
-    MdButtonModule, MdCardModule, MdButtonToggleModule
+    MdButtonModule, MdCardModule, MdButtonToggleModule, MdSidenavModule, MdIconModule
   ],
   providers: [ HttpService ],
   bootstrap: [ AppComponent ]
