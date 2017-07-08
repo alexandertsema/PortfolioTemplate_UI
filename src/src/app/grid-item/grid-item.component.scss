@@ -1,10 +1,10 @@
 div {
     margin: 5px;
-    float: right;
+    // float: right;
     width: 250px;
     height: 250px;
-    transform: rotate(90deg);
-    transform-origin: right top;
+    // transform: rotate(90deg);
+    // transform-origin: right top;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: hidden;
@@ -18,7 +18,7 @@ footer{
     position: fixed;
 
     p{
-        padding: 0 0 0 5%;
+        // padding: 0 0 0 5%;
     }
     p:nth-child(1){
         font-size: 16px;
@@ -28,7 +28,7 @@ footer{
     }
     button{
         position: fixed;
-        margin: -21% 0 0 60%;
+        // margin: -21% 0 0 60%;
         float: right;
     }
 }

@@ -1,153 +1,94 @@
-$animation-speed: .3s;
-$animation-delay: .1s;
-$animation-timing-up: cubic-bezier(0.0, 0.0, 0.2, 1);
-$animation-timing-down: cubic-bezier(0.4, 0.0, 1, 1);
-$animation-fill: both;
-$animation-direction: alternate;
-$animation-slide-distance: 76px;
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
 
-// Keyframes
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-		@content;
-	}
-	
-	@keyframes #{$name} {
-		@content;
-	}
-}
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
 
-// Animation Mixin
-@mixin animation($name, $properties: null, $name2: null) {
-	@if $properties {
-	  animation: $name $properties;
-	} 
-	
-	@else if $name2 {
-	  animation-name: $name, $name2;
-	}
-	
-	@else {
-	  animation-name: $name $name2;
-	}
-}
-
-// Animation Properties Mixin
-@mixin animationBase($speed, $timing, $fill, $direction, $iterate: null) {
-  .animate {
-    animation-duration: $speed;
-    animation-timing-function: $timing;
-    animation-fill-mode: $fill;
-    animation-direction: $direction;
-    
-    @if $iterate {
-      animation-iteration-count: $iterate;
-    }
-  }
-}
-
-@mixin animate($type) {
-  .animate-with-delay {
-    animation-delay: $animation-delay;
-  }
-  @if $type == slideUp {
-    @include animationBase($animation-speed, $animation-timing-up, $animation-fill, $animation-direction);
-    .animate-slide-up {
-      @include keyframes(slideUp) {
-        0% {
-          transform: translateY(0);
-        }
-        100% {
-          transform: translateY(-$animation-slide-distance);
-        }
-      }
-      @include animation(slideUp);
-    }
-  }
-  @else{
-    @include animationBase($animation-speed, $animation-timing-down, $animation-fill, $animation-direction);
-    .animate-slide-down {
-      @include keyframes(slideDown) {
-        0% {
-          transform: translateY(-$animation-slide-distance);
-        }
-        100% {
-          transform: translateY(0);
-        }
-      }
-      @include animation(slideDown);
-    }
-  }
-}
-
-
-
-
-.description{
-    // padding-top: 3%;
-    font-family: Roboto Thin;
-    width: auto;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-::-webkit-scrollbar-button {
-  width: 0;
-  height: 0;
-}
-
-.projects-container{
-  padding-top: 3%;
-  // height: 1600px;
-  // width: 650px;
-  padding: 245px 25px 0 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform-origin: right top;
-  // transform:rotate(-90deg) translateY(-671px);
-}
-
-.project {
-  margin: 5px;
-  float: right;
-  width: 250px;
-  height: 250px;
-  transform: rotate(90deg);
-  transform-origin: right top;
-  background-image: url('~/assets/images/proj.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-y: hidden;
-
-  @include animate(slideDown);
-}
-
-.footer{
-  color: white;
-  background-color:  rgba(66, 66, 66, .5);
-  bottom: -76px;
+//
+  height: 100%;
   width: 100%;
-  position: fixed;
-  
-  p{
-    padding: 0 0 0 5%;
-  }
-  p:nth-child(1){
-    font-size: 16px;
-  }
-  p:nth-child(2){
-    font-size: 12px;
-  }
-  button{
-    position: fixed;
-    margin: -21% 0 0 60%;
-    float: right;
-  }
-}
-.project:hover{
-  @include animate(slideUp);
+  // position: fixed;
+  // left: 1.7%;
+//
+  background-color: blueviolet;
 }
 
+.filter {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+
+    height: 4em;
+    max-height: 4em;
+
+    background-color: green;
+  }
+
+  .projects-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+
+    -webkit-flex: 10 0 auto;
+    -ms-flex: 10 0 auto;
+    flex: 10 0 auto;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+
+    background-color: brown;
+    
+    // padding-top: 3%;
+    height: 500px;
+    // width: 650px;
+    // padding: 245px 25px 0 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // transform-origin: right top;
+    // transform:rotate(-90deg) translateY(-671px);
+  }
+
+// @media screen 
+//   and (min-width: 1900px) 
+//   and (max-width: 1950px) { 
+//     .responsive {
+//       height: 1887px;
+//       width: 797px;
+//       transform-origin: right top;
+//       -webkit-transform: rotate(-90deg) translateY(-671px);
+//       transform: rotate(-90deg) translateY(-1342px);
+//     }
+// }
+
+
+// ::-webkit-scrollbar {
+//   width: 0;
+//   height: 0;
+// }
+
+// ::-webkit-scrollbar-button {
+//   width: 0;
+//   height: 0;
+// }

@@ -1,3 +1,23 @@
+// .view {
+//     display: flex;
+//         display: -webkit-flex;
+//         -webkit-order: 1;
+//         -ms-flex-order: 1;
+//         order: 1;
+//         -webkit-flex: auto;
+//         -ms-flex: auto;
+//         flex: auto;
+
+//         // flex-direction: column;
+        
+//         justify-content: center; //cricial for contacts positioning
+//         // align-items: center;
+//         // align-content: center;
+
+//         height: 100%;
+
+//         background-color: gainsboro;
+
 .container{
     display: -webkit-flex;
 	display: -ms-flexbox;
@@ -19,7 +39,7 @@
     background-color: red;
     
     .contact{
-        display: -webkit-flex;
+       display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         // -webkit-order: 0;
@@ -41,3 +61,4 @@
         background-color: violet;
     }
 }
+// }

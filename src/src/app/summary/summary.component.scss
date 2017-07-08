@@ -2,29 +2,20 @@
     display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-    flex-flow: column;
+    flex-direction: column;
     
     -webkit-flex: auto;
-	-ms-flex:auto;
-	flex:auto;
+	-ms-flex: auto;
+	flex: auto;
 
-    justify-content: center;
-    // align-items: center;
-    // align-content: center;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
 
     height: 100%;
 
     background-color: blueviolet;
 }
-
-// .content {
-//     display: flex;
-//     display: -webkit-flex;
-//     flex-flow: column;
-//     // justify-content: space-around;
-//     // align-items: center;
-//     // align-content: center;
-// }
 
 .image{
     display: -webkit-flex;
