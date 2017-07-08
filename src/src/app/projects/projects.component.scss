@@ -50,9 +50,9 @@
     -ms-flex: 10 0 auto;
     flex: 10 0 auto;
 
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
 
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -67,28 +67,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     // transform-origin: right top;
-    // transform:rotate(-90deg) translateY(-671px);
+    // transform:rotate(-90deg) translateY(-500px);
   }
 
-// @media screen 
-//   and (min-width: 1900px) 
-//   and (max-width: 1950px) { 
-//     .responsive {
-//       height: 1887px;
-//       width: 797px;
-//       transform-origin: right top;
-//       -webkit-transform: rotate(-90deg) translateY(-671px);
-//       transform: rotate(-90deg) translateY(-1342px);
-//     }
-// }
 
-
-// ::-webkit-scrollbar {
-//   width: 0;
-//   height: 0;
-// }
-
-// ::-webkit-scrollbar-button {
-//   width: 0;
-//   height: 0;
-// }

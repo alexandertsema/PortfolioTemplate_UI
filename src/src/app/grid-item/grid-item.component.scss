@@ -1,34 +1,84 @@
-div {
-    margin: 5px;
-    // float: right;
-    width: 250px;
-    height: 250px;
-    // transform: rotate(90deg);
-    // transform-origin: right top;
+.container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+
+    margin: 0.4em;
+    width: 15em;
+    height: 15em;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: hidden;
 }
 
-footer{
-    color: white;
-    background-color:  rgba(66, 66, 66, .5);
-    bottom: -76px;
-    width: 100%;
-    position: fixed;
+footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 
-    p{
-        // padding: 0 0 0 5%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: row nowrap;
+
+
+    background-color:  rgba(66, 66, 66, .5);
+    width: 100%;
+    margin-bottom: -5.5em;
+    
+    .titles {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: space-around;
+        flex-flow: row wrap;
+
+        background-color: blue;
+        p {
+            margin-left: 4%;
+            color: white;
+        }
+
+        p:nth-child(1) {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+
+            font-size: 1em;
+        }
+        p:nth-child(2) {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+
+            font-size: 0.7em;
+        }
     }
-    p:nth-child(1){
-        font-size: 16px;
-    }
-    p:nth-child(2){
-        font-size: 12px;
-    }
-    button{
-        position: fixed;
-        // margin: -21% 0 0 60%;
-        float: right;
+    .button {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        margin: 2%;
+        background-color: red;
+        button {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+
+            color: white;
+            // position: fixed;
+            // margin: -20% 0 10% 60%;
+            // float: right;
+        }
     }
 }

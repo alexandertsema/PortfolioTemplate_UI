@@ -8,13 +8,13 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('footerState', [
       state('initial', style({
-        bottom: '-76px'
+        marginBottom: '-5.5em'
       })),
       state('down', style({
         transform: 'translateY(0)'
       })),
       state('up', style({
-        transform: 'translateY(-76px)'
+        transform: 'translateY(-5.5em)'
       })),
       transition('* => up', animate('.3s cubic-bezier(0.0, 0.0, 0.2, 1)')),
       transition('* => down', animate('.3s cubic-bezier(0.4, 0.0, 1, 1)'))

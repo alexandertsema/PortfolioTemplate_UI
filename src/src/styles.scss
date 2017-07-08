@@ -23,30 +23,39 @@ html, body {
     align-content: center;
 }
 
-// .material-icons {
-//     font-family: 'Material Icons';
-//     font-weight: normal;
-//     font-style: normal;
-//     font-size: 24px;  /* Preferred icon size */
-//     display: inline-block;
-//     line-height: 1;
-//     text-transform: none;
-//     letter-spacing: normal;
-//     word-wrap: normal;
-//     white-space: nowrap;
-//     direction: ltr;
+/// Mixin to customize scrollbars
+/// Beware, this does not work in all browsers
+/// @author Hugo Giraudel
+/// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+/// @param {Color} $foreground-color - Scrollbar's color
+/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
+/// @example scss - Scrollbar styling
+///   @include scrollbars(.5em, slategray);
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
 
-//     /* Support for all WebKit browsers. */
-//     -webkit-font-smoothing: antialiased;
-//     /* Support for Safari and Chrome. */
-//     text-rendering: optimizeLegibility;
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
 
-//     /* Support for Firefox. */
-//     -moz-osx-font-smoothing: grayscale;
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
 
-//     /* Support for IE. */
-//     font-feature-settings: 'liga';
-// }
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+// @include scrollbars(.5em, slategray);
+@include scrollbars(0, slategray);
+
 /*.header{
     margin-top: 3%;
     text-transform: uppercase;

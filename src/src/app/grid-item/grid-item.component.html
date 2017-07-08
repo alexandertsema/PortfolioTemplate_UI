@@ -1,7 +1,13 @@
-<div [style.background-image]="'url(' + image + ')'" (mouseenter)="toggleFooterState('up')" (mouseleave)="toggleFooterState('down')">
-  <!--<footer [@footerState]="footerState">
-    <p>{{ name }}</p>
-    <p>{{ subtitle }}</p>
-    <button md-button>{{ buttonText }}</button>
-  </footer>-->
+<div class="container" [style.background-image]="'url(' + image + ')'" (mouseenter)="toggleFooterState('up')" (mouseleave)="toggleFooterState('down')">
+  <footer [@footerState]="footerState">
+    <div class="titles">
+      <p>{{ name }}</p>
+      <p>{{ subtitle }}</p>
+    </div>
+    <div class="button">
+      <button md-button>{{ buttonText }}</button>
+    </div>
+  </footer>
 </div>
+
+<!--<div style="width: 100%; height: 100%; position:absolute; background-color:cadetblue; left:0; top:0;right:0;bottom:0; z-index:20"></div>-->

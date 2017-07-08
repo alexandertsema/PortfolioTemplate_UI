@@ -2,7 +2,7 @@
     <div class="filter">
         <app-project-category-filter (onFilter)="onFilterChange($event)"></app-project-category-filter>
     </div>
-    <div class="projects-container responsive">
+    <div class="projects-container">
         <app-grid-item *ngFor="let project of projects" [name]="project?.name" [subtitle]="project?.subtitle" [image]="project?.image?.data" [buttonText]="'DETAILS'"></app-grid-item>
     </div>
 </div>
