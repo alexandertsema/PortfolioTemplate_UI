@@ -6,6 +6,8 @@ import { mockProject } from "app/mocks/project.mock";
 import { IProjectCategory } from "app/models/projectCategory";
 import { mockProjectCategories } from "app/mocks/projectCategory.mock";
 
+import { trigger, state, style, animate, transition } from '@angular/animations';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',

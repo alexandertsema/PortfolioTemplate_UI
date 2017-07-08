@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-grid-item',
@@ -33,7 +34,7 @@ export class GridItemComponent implements OnInit {
   buttonText: string;
   footerState: string = "initial";
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -41,4 +42,5 @@ export class GridItemComponent implements OnInit {
   toggleFooterState(footerState) {
     this.footerState = footerState;
   }
+
 }
