@@ -1,12 +1,12 @@
 .container {
     display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+    display: -ms-flexbox;
+    display: flex;
     flex-flow: row wrap;
-    
+
     -webkit-flex: 1 0 auto;
-	-ms-flex: 1 0 auto;
-	flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
 
     justify-content: center;
     align-items: center;

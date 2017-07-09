@@ -18,6 +18,7 @@ import {MdButtonModule, MdCardModule, MdButtonToggleModule, MdSidenavModule, MdI
 import { ProjectCategoryFilterComponent } from './project-category-filter/project-category-filter.component';
 import { GridItemComponent } from './grid-item/grid-item.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     ReferencesComponent,
     ProjectCategoryFilterComponent,
     GridItemComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

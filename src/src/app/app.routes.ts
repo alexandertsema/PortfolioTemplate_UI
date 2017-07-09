@@ -8,6 +8,7 @@ import { ReferencesComponent } from "app/references/references.component";
 import { CertificatesComponent } from "app/certificates/certificates.component";
 import { ContactsComponent } from "app/contacts/contacts.component";
 import { ProjectDetailsComponent } from "app/project-details/project-details.component";
+import { PageNotFoundComponent } from "app/page-not-found/page-not-found.component";
 
 const routes: Routes = [
   {
@@ -54,9 +55,12 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  { // todo: implement 404
+  {
     path: '**', 
-    component: SummaryComponent 
+    component: PageNotFoundComponent ,
+    data: {
+      alias: '404'
+    },
   }
 ];
 
