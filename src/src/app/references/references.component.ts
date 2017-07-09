@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Reference } from "app/models/reference";
+import { IReference } from "app/models/reference";
 import { HttpService } from "app/services/http.service";
 import { ENDPOINTS } from "app/settings/endpoints";
+import { mockReferences } from "app/mocks/references.mock";
 
 @Component({
   selector: 'app-references',
@@ -10,7 +11,7 @@ import { ENDPOINTS } from "app/settings/endpoints";
 })
 export class ReferencesComponent implements OnInit {
 
-  references: Reference[]
+  references: IReference[]
 
   constructor(private httpService: HttpService) { }
 
@@ -23,6 +24,7 @@ export class ReferencesComponent implements OnInit {
     //         (error: any) => 
     //           console.error(error)
     //     );
+    this.references = mockReferences;
   }
 
 }

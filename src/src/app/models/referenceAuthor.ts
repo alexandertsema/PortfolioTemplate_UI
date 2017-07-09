@@ -1,11 +1,12 @@
-import { Reference } from "app/models/reference";
+import { IReference } from "app/models/reference";
+import { File } from "app/models/file"
 
-export interface ReferenceAuthor {
+export interface IReferenceAuthor {
     id: number,
     name: string,
     image: File,
     companyName: string,
     companyLink: string,
     position: string,
-    references: Reference[]
+    // references: IReference[]
 }

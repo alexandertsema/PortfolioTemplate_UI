@@ -11,11 +11,6 @@ import { ProjectDetailsComponent } from "app/project-details/project-details.com
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
-  {
     path: 'home',
     data: {
       alias: 'alexander tsema'
@@ -54,6 +49,15 @@ const routes: Routes = [
     path: 'contacts',
     component: ContactsComponent
   },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  { // todo: implement 404
+    path: '**', 
+    component: SummaryComponent 
+  }
 ];
 
 
