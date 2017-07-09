@@ -18,6 +18,7 @@ export class ProjectsComponent implements OnInit {
   
   _projects: Project[];
   projectCategoryFilter: number;
+  isVisible: string = "hidden";
 
   constructor(private httpService: HttpService) { }
 
@@ -51,5 +52,10 @@ export class ProjectsComponent implements OnInit {
     } else {
       return this._projects;
     }
+  }
+
+  onSelected(id: number) {
+    console.log(id); // trigger expand of project-detailed component
+    this.isVisible = 'visible';
   }
 }

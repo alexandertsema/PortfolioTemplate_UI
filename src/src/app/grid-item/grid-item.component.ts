@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { Component, OnInit, Input, HostListener, Output, EventEmitter } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Router } from '@angular/router'
 
@@ -25,6 +25,8 @@ import { Router } from '@angular/router'
 export class GridItemComponent implements OnInit {
 
   @Input()
+  id: number;
+  @Input()
   name: string;
   @Input()
   subtitle: string;
@@ -33,6 +35,8 @@ export class GridItemComponent implements OnInit {
   @Input()
   buttonText: string;
   footerState: string = "initial";
+  @Output() 
+  onSelected = new EventEmitter<number>();
 
   constructor(private router: Router) { }
 
@@ -43,4 +47,7 @@ export class GridItemComponent implements OnInit {
     this.footerState = footerState;
   }
 
+  detailedView(id: number) {
+    this.onSelected.emit(id);
+  }
 }

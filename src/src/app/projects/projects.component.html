@@ -3,6 +3,15 @@
         <app-project-category-filter (onFilter)="onFilterChange($event)"></app-project-category-filter>
     </div>
     <div class="projects-container">
-        <app-grid-item class="animate" *ngFor="let project of projects" [name]="project?.name" [subtitle]="project?.subtitle" [image]="project?.image?.data" [buttonText]="'DETAILS'"></app-grid-item>
+        <app-grid-item class="animate" 
+        *ngFor="let project of projects" 
+        [id] = "project?.id"
+        [name]="project?.name" 
+        [subtitle]="project?.subtitle" 
+        [image]="project?.image?.data" 
+        [buttonText]="'DETAILS'"
+        (onSelected)="onSelected($event)"></app-grid-item>
     </div>
 </div>
+
+<app-project-details [style.visibility]="isVisible"></app-project-details>
