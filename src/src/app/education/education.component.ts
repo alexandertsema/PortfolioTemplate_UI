@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from "app/services/http.service";
-import { School } from "app/models/school";
+import { ISchool } from "app/models/school";
 import { ENDPOINTS } from "app/settings/endpoints";
+import { mockSchools } from "app/mocks/shools.mock";
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
 
-  schools: School[];
+  schools: ISchool[];
 
   constructor(private httpService: HttpService) { }
 
@@ -23,5 +24,7 @@ export class EducationComponent implements OnInit {
     //         (error: any) => 
     //           console.error(error)
     //     );
+
+    this.schools = mockSchools;
   }
 }

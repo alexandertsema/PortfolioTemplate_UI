@@ -1,27 +1,30 @@
-<div *ngFor="let school of schools">
-  <div class="school">
-    <div class="image">
-      <img [src]="school.image?.name" [alt]="school.image?.name">
-    </div>
-    <div class="name">
-      {{school.name}}
-    </div>
-    <div class="degree">
-      {{school.degree}}
-    </div>
-    <div *ngIf="school.gpa" class="gpa">
-      {{school.gpa}}
-    </div>
-    <div class="description">
-      {{description.authority}}
-    </div>
-    <div class="dates">
-      {{school.startDate | date}} - {{school.endDate | date}}
-    </div>
-    <div class="courses" *ngFor="let course of school.courses">
-        <ul class="course">
-            <li>{{ course.name}}</li>
-        </ul>
+<div class="container">
+  <div id="cd-timeline" class="cd-container">
+      <div class="cd-timeline-block animate" *ngFor="let school of schools">
+        <div class="cd-timeline-img cd-picture">
+        </div>
+        <div class="cd-timeline-content">
+          <md-card>
+            <md-card-header>
+              <div md-card-avatar class="header-image"></div>
+              <md-card-title>{{ school?.name }}</md-card-title>
+              <md-card-subtitle>{{ school?.degree }} Degree in {{ school?.fieldOfStudy }}</md-card-subtitle>
+              <md-card-subtitle *ngIf="school?.gpa">GPA {{ school?.gpa }}</md-card-subtitle>
+            </md-card-header>
+            <md-card-content>
+              <p>
+                Graduation Thesis Work
+              </p>
+              <p>
+                "{{ school?.thesis?.name }}"
+              </p>
+            </md-card-content>
+            <md-card-actions>
+              <button md-button>DETAILS</button>
+            </md-card-actions>
+          </md-card>
+          <span class="cd-date">{{ school?.endDate }}</span>
+        </div>
+      </div>
     </div>
   </div>
-</div>
