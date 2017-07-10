@@ -1,8 +1,8 @@
 <div class="container" [style.background-image]="'url(' + image + ')'" (mouseenter)="toggleFooterState('up')" (mouseleave)="toggleFooterState('down')">
   <footer [@footerState]="footerState">
     <div class="titles">
-      <p>{{ name }}</p>
-      <p>{{ subtitle }}</p>
+      <div>{{ name }}</div>
+      <div>{{ subtitle }}</div>
     </div>
     <div class="button">
       <button md-button (click)="detailedView(id)">{{ buttonText }}</button>

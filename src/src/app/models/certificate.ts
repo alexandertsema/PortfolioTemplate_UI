@@ -1,7 +1,10 @@
-export interface Certificate{
+import { File } from "app/models/file"
+
+export interface ICertificate{
     id: number,
     name: string,
     authority: string,
-    recieveDate: string,
-    image: File
+    recieveDate: Date,
+    image: File,
+    pdf: File
 }

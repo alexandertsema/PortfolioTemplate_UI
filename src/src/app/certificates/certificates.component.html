@@ -1,16 +1,13 @@
-<div *ngFor="let certificate of certificates">
-  <div class="certificate">
-    <div class="name">
-      {{certificate.name}}
-    </div>
-    <div class="authority">
-      {{certificate.authority}}
-    </div>
-    <div class="date">
-      {{certificate.recieveDate | date}}
-    </div>
-    <div class="image">
-      <img [src]="certificate.image?.name" [alt]="certificate.image?.name">
-    </div>
+<div class="container">
+  <div class="certificates-container">
+    <app-grid-item class="animate" 
+      *ngFor="let certificate of certificates" 
+      [id] = "certificate?.id"
+      [name]="certificate?.name" 
+      [subtitle]="certificate?.authority"
+      [image]="certificate?.image?.data" 
+      [buttonText]="'PDF'"
+      (onSelected)="onSelected($event)">
+    </app-grid-item>
   </div>
 </div>

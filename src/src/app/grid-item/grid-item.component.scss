@@ -35,23 +35,23 @@ footer {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        align-content: space-around;
+        align-content: center;
         flex-flow: row wrap;
 
         background-color: blue;
-        p {
-            margin-left: 4%;
+        div {
+            margin: 4%;
             color: white;
         }
 
-        p:nth-child(1) {
+        div:nth-child(1) {
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
 
             font-size: 1em;
         }
-        p:nth-child(2) {
+        div:nth-child(2) {
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
@@ -76,9 +76,6 @@ footer {
             display: flex;
 
             color: white;
-            // position: fixed;
-            // margin: -20% 0 10% 60%;
-            // float: right;
         }
     }
 }

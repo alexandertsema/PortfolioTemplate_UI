@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from "app/services/http.service";
-import { Certificate } from "app/models/certificate";
+import { ICertificate } from "app/models/certificate";
 import { ENDPOINTS } from "app/settings/endpoints";
+import { certificatesMock } from "app/mocks/certificates.mock";
 
 @Component({
   selector: 'app-certificates',
   templateUrl: './certificates.component.html',
-  styleUrls: ['./certificates.component.css']
+  styleUrls: ['./certificates.component.scss']
 })
 export class CertificatesComponent implements OnInit {
 
-  certificates : Certificate[];
+  certificates : ICertificate[];
 
   constructor(private httpService: HttpService) { }
 
@@ -23,5 +24,7 @@ export class CertificatesComponent implements OnInit {
     //         (error: any) => 
     //           console.error(error)
     //     );
+
+    this.certificates = certificatesMock;
   }
 }
