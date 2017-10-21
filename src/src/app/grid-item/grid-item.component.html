@@ -5,7 +5,8 @@
       <div>{{ subtitle }}</div>
     </div>
     <div class="button">
-      <button md-button (click)="detailedView(id)">{{ buttonText }}</button>
+      <button mat-button (click)="detailedView(id)" *ngIf="!url">{{ buttonText }}</button>
+      <a mat-button href="{{url}}" *ngIf="url">{{ buttonText }}</a>
     </div>
   </footer>
 </div>

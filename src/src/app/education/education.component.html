@@ -4,27 +4,29 @@
         <div class="cd-timeline-img cd-picture">
         </div>
         <div class="cd-timeline-content">
-          <md-card>
-            <md-card-header>
-              <div md-card-avatar class="header-image"></div>
-              <md-card-title>{{ school?.name }}</md-card-title>
-              <md-card-subtitle>{{ school?.degree }} Degree in {{ school?.fieldOfStudy }}</md-card-subtitle>
-              <md-card-subtitle *ngIf="school?.gpa">GPA {{ school?.gpa }}</md-card-subtitle>
-            </md-card-header>
-            <md-card-content>
+          <mat-card>
+            <mat-card-header>
+              <div mat-card-avatar class="header-image"></div>
+              <mat-card-title>{{ school?.name }}</mat-card-title>
+              <mat-card-subtitle>{{ school?.degree }} Degree in {{ school?.fieldOfStudy }}</mat-card-subtitle>
+              <mat-card-subtitle *ngIf="school?.gpa">GPA {{ school?.gpa }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
               <p>
                 Graduation Thesis Work
               </p>
               <p>
                 "{{ school?.thesis?.name }}"
               </p>
-            </md-card-content>
-            <md-card-actions>
-              <button md-button>DETAILS</button>
-            </md-card-actions>
-          </md-card>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button (click)="detailedView(id)">DETAILS</button>
+            </mat-card-actions>
+          </mat-card>
           <span class="cd-date">{{ school?.endDate }}</span>
         </div>
       </div>
     </div>
   </div>
+
+  <app-project-details [style.visibility]="isVisible"></app-project-details>

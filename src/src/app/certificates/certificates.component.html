@@ -7,7 +7,7 @@
       [subtitle]="certificate?.authority"
       [image]="certificate?.image?.data" 
       [buttonText]="'PDF'"
-      (onSelected)="onSelected($event)">
+      [url]="certificate?.pdf?.data">
     </app-grid-item>
   </div>
 </div>

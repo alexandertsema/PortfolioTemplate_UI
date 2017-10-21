@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { IProjectCategory } from "app/models/projectCategory";
-import { mockProjectCategories } from "app/mocks/projectCategory.mock";
+import { IProjectCategory } from 'app/models/projectCategory';
+import { mockProjectCategories } from 'app/mocks/projectCategory.mock';
 
 @Component({
   selector: 'app-project-category-filter',
@@ -9,17 +9,17 @@ import { mockProjectCategories } from "app/mocks/projectCategory.mock";
 })
 export class ProjectCategoryFilterComponent implements OnInit {
 
-  projectCategories : IProjectCategory[];
+  projectCategories: IProjectCategory[];
   @Output()
   onFilter = new EventEmitter<number>();
-  
+
   constructor() { }
 
   ngOnInit() {
     this.projectCategories = mockProjectCategories;
   }
 
-  public onFilterEnter(filterValue : number){
+  public onFilterEnter(filterValue: number) {
     this.onFilter.emit(filterValue);
   }
 }

@@ -1,19 +1,19 @@
 <div class="container">
-  <md-card class="card animate" *ngFor="let reference of references">
-    <md-card-header>
-      <div md-card-avatar [style.background-image]="'url(' + reference?.referenceAuthor?.image?.data + ')'" class="header-image"></div>
-      <md-card-title>{{ reference?.referenceAuthor?.name }}</md-card-title>
-      <md-card-subtitle>{{ reference?.referenceAuthor?.position }} at {{ reference?.referenceAuthor?.companyName }}</md-card-subtitle>
-    </md-card-header>
-    <!--<img md-card-image src="../assets/images/proj.jpg">-->
-    <md-card-content>
+  <mat-card class="card animate" *ngFor="let reference of references">
+    <mat-card-header>
+      <div mat-card-avatar [style.background-image]="'url(' + reference?.referenceAuthor?.image?.data + ')'" class="header-image"></div>
+      <mat-card-title>{{ reference?.referenceAuthor?.name }}</mat-card-title>
+      <mat-card-subtitle>{{ reference?.referenceAuthor?.position }} at {{ reference?.referenceAuthor?.companyName }}</mat-card-subtitle>
+    </mat-card-header>
+    <!--<img mat-card-image src="../assets/images/proj.jpg">-->
+    <mat-card-content>
       <p>
         {{ reference?.description }}
       </p>
-    </md-card-content>
-    <md-card-actions>
-      <button md-button>DETAILS</button>
-      <a md-button href="{{reference?.pdf?.data}}">PDF</a>
-    </md-card-actions>
-  </md-card>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>DETAILS</button>
+      <a mat-button href="{{reference?.pdf?.data}}">PDF</a>
+    </mat-card-actions>
+  </mat-card>
 </div>

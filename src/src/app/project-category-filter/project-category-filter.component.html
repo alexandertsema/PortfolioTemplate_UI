@@ -1,8 +1,8 @@
-<md-button-toggle-group #group="mdButtonToggleGroup" (change)="onFilterEnter(group.value)">
-    <md-button-toggle value="0" checked="True">
+<mat-button-toggle-group #group="matButtonToggleGroup" (change)="onFilterEnter(group.value)">
+    <mat-button-toggle value="0" checked="True">
       All
-    </md-button-toggle>
-    <md-button-toggle *ngFor="let projectCategory of projectCategories" value="{{projectCategory?.id}}">
+    </mat-button-toggle>
+    <mat-button-toggle *ngFor="let projectCategory of projectCategories" value="{{projectCategory?.id}}">
       {{projectCategory?.name}}
-    </md-button-toggle>
-</md-button-toggle-group>
+    </mat-button-toggle>
+</mat-button-toggle-group>

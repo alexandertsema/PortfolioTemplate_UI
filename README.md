@@ -4,8 +4,6 @@
 
 This projects implements a web client of my personal website with portfolio
 
-live demo: http://new.alexandertsema.com
-
 ### Architecture
 
 TBD

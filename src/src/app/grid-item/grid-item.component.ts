@@ -34,6 +34,8 @@ export class GridItemComponent implements OnInit {
   image: string;
   @Input()
   buttonText: string;
+  @Input()
+  url?: string;
   footerState: string = "initial";
   @Output() 
   onSelected = new EventEmitter<number>();

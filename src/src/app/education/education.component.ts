@@ -12,6 +12,7 @@ import { mockSchools } from "app/mocks/shools.mock";
 export class EducationComponent implements OnInit {
 
   schools: ISchool[];
+  isVisible: string = "hidden";
 
   constructor(private httpService: HttpService) { }
 
@@ -26,5 +27,10 @@ export class EducationComponent implements OnInit {
     //     );
 
     this.schools = mockSchools;
+  }
+
+  detailedView(id: number) {
+    console.log(id); // trigger expand of project-detailed component
+    this.isVisible = 'visible';
   }
 }
