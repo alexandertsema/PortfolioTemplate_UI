@@ -1,67 +1,76 @@
-<!--<div class="flex-container">
-    <nav role="navigation">
-        <ul>
-            <li routerLinkActive="active">
-                <a routerLink='/home'><span class="dot"></span>home</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/skills'><span class="dot"></span>skills</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/projects'><span class="dot"></span>projects</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/education'><span class="dot"></span>education</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/references'><span class="dot"></span>references</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/certificates'><span class="dot"></span>certificates</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/contacts'><span class="dot"></span>contacts</a>
-            </li>
-        </ul>
+<div class="flex-container root-container" >
+    <div class="flex-item nav-back-drop" [@navBackdropState]="navBackdropState">
+    </div>
+    <nav class="flex-item flex-container"
+    [@navState]="navState"
+    (mouseenter)="toggleNavState('show')"
+    (mouseleave)="toggleNavState('hide')">
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/home'>
+            <div class="nav-link flex-container">
+                <div class="flex-item text">home</div>
+                <div class="flex-item dot">
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/skills'>
+            <div class="nav-link flex-container">
+                <div class="flex-item text">skills</div>
+                <div class="flex-item dot">
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/projects'>
+            <div class="nav-link flex-container">
+                <div class="flex-item text">projects</div>
+                <div class="flex-item dot">
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/education'>
+            <div class="nav-link flex-container">
+                <div class="flex-item text">education</div>
+                <div class="flex-item dot">
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/references'>
+            <div class="nav-link flex-container">
+                <div class="flex-item text">references</div>
+                <div class="flex-item dot">
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/certificates'>
+            <div class="nav-link flex-container">
+                <div class="flex-item text">certificates</div>
+                <div class="flex-item dot">
+                    <span></span>
+                </div>
+            </div>
+        </a>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/contacts'>
+            <div class="nav-link flex-container">
+                <div class="flex-item text">contacts</div>
+                <div class="flex-item dot">
+                    <span></span>
+                </div>
+            </div>
+        </a>
     </nav>
-    <section role="main">
-        <router-outlet></router-outlet>
-    </section>
-</div>-->
-
-<md-sidenav-container class="container">
-    <md-sidenav #sidenav class="nav">
-        <ul>
-            <li routerLinkActive="active">
-                <a routerLink='/home'><span class="dot"></span>home</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/skills'><span class="dot"></span>skills</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/projects'><span class="dot"></span>projects</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/education'><span class="dot"></span>education</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/references'><span class="dot"></span>references</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/certificates'><span class="dot"></span>certificates</a>
-            </li>
-            <li routerLinkActive="active">
-                <a routerLink='/contacts'><span class="dot"></span>contacts</a>
-            </li>
-        </ul>
-    </md-sidenav>
-    <div class="mini-nav">
-        ffff
+    <div class="flex-item flex-container content-container">
+        <header class="flex-item flex-container">
+            <mat-icon class="flex-item"
+            (click)="toggleNavState('show')"
+            (mouseleave)="toggleNavState('hide')">menu</mat-icon>
+            <h1 class="flex-item">{{header}}</h1>
+        </header>
+        <main class="flex-item">
+            <router-outlet></router-outlet>
+        </main>
     </div>
-    <div class="content">
-        <button type="button" md-button (click)="sidenav.open()">
-            Open sidenav
-        </button>
-        <router-outlet></router-outlet>
-    </div>
-</md-sidenav-container>
+</div>

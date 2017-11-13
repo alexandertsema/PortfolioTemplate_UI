@@ -3,7 +3,7 @@ import { Http, BaseRequestOptions } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
 import { HttpService } from './http.service';
 import { ENDPOINTS } from "app/settings/endpoints";
-import { Certificate } from "app/models/certificate";
+import { ICertificate } from "app/models/certificate";
 
 describe('HttpService', () => {
   beforeEach(() => {
@@ -27,9 +27,9 @@ describe('HttpService', () => {
 
   it('should return some data from the service', inject([HttpService], (service: HttpService) => {
     var result = null;
-    service.get<Certificate>(ENDPOINTS.certificate)
+    service.get<ICertificate>(ENDPOINTS.certificate)
         .subscribe(
-            (response: Certificate) => { result = response },
+            (response: ICertificate) => { result = response },
             (error: any) => this.errorMessage = error
         );
     expect(result).toBeTruthy();

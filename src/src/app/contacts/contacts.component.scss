@@ -1,64 +1,25 @@
-// .view {
-//     display: flex;
-//         display: -webkit-flex;
-//         -webkit-order: 1;
-//         -ms-flex-order: 1;
-//         order: 1;
-//         -webkit-flex: auto;
-//         -ms-flex: auto;
-//         flex: auto;
+@import '~styles/abstracts/functions';
+@import '~styles/abstracts/variables';
 
-//         // flex-direction: column;
-        
-//         justify-content: center; //cricial for contacts positioning
-//         // align-items: center;
-//         // align-content: center;
+.main-container {
+    background-color: greenyellow;
 
-//         height: 100%;
-
-//         background-color: gainsboro;
-
-.container{
-    display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-    flex-flow: column;
-    
-    -webkit-flex: auto;
-	-ms-flex: auto;
-	flex: auto;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-    height: 100%;
     width: 100%;
-    // position: absolute;
+    height: 100%;
 
-    background-color: red;
-    
-    .contact{
-       display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        // -webkit-order: 0;
-        // -ms-flex-order: 0;
-        // order: 0;
-        justify-content: center;
-        align-items: center;
-        -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-        flex-wrap: nowrap;
-        
-        // z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
 
-        margin: 2% 0 2% 0;
+.contact {
+    background-color: yellow;
 
-        font-size: 1.5em;
+    align-items: center;
+    flex-grow: 0;
 
-        background-color: violet;
+    p {
+        padding-left: rem(.1);
     }
 }
-// }

@@ -1,5 +1,6 @@
-<div  class="container">
-    <div *ngFor="let contact of contacts" class="contact">
-      {{contact.contactType}}<mat-icon>email</mat-icon>{{contact.value}}
+<div  class="flex-container main-container">
+    <div *ngFor="let contact of contacts" class="flex-item flex-container contact">
+      <mat-icon>email</mat-icon>
+      <p>{{contact.value}}</p>
     </div>
 </div>

@@ -1,0 +1,94 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@include scrollbars(0, slategray);
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: $root-size;
+
+    a {
+        font-family: $font-family;
+        color: black;
+    }
+
+    p {
+        font-family: $font-family-p;
+        font-size: $font-size-p-xs;
+        color: black;
+    }
+
+    h1 {
+        font-family: $font-family-h1;
+        text-transform: uppercase;
+        font-size: $font-size-h1-xs;
+        color: black;
+    }
+
+    @media screen and (min-width: $screen-s-min) {
+        p {
+            font-size:  $font-size-p-s;
+        }
+    }
+    @media screen and (min-width: $screen-m-min) {
+        p {
+            font-size:  $font-size-p-m;
+        }
+    }
+    @media screen and (min-width: $screen-l-min) {
+        p {
+            font-size:  $font-size-p-l;
+        }
+    }
+    @media screen and (min-width: $screen-xl-min) {
+        p {
+            font-size:  $font-size-p-xl;
+        }
+    }
+    @media screen and (min-width: $screen-xxl-min) {
+        p {
+            font-size:  $font-size-p-xxl;
+        }
+    }
+
+    @media screen and (min-width: $screen-s-min) {
+        h1 {
+            font-size: $font-size-h1-s;
+        }
+    }
+    @media screen and (min-width: $screen-m-min) {
+        h1 {
+            font-size: $font-size-h1-m;
+        }
+    }
+    @media screen and (min-width: $screen-l-min) {
+        h1 {
+            font-size: $font-size-h1-l;
+        }
+    }
+    @media screen and (min-width: $screen-xl-min) {
+        h1 {
+            font-size: $font-size-h1-xl;
+        }
+    }
+    @media screen and (min-width: $screen-xxl-min) {
+        h1 {
+            font-size: $font-size-h1-xxl;
+        }
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.flex-item {
+    flex: auto;
+}

@@ -5,24 +5,24 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 @Component({
   selector: 'app-root',
-  templateUrl: './new_app.component.html',
-  styleUrls: ['./new_app.component.scss'],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
   animations: [
     trigger('navState', [
       state('initial', style({
-        width: '1.7%'
+        left: '-30rem'
       })),
       state('show', style({
-        width: '10%'
+        left: '0'
       })),
       state('hide', style({
-        width: '1.7%'
+        left: '-30rem'
       })),
       transition('* => show', animate('.2s cubic-bezier(0.0, 0.0, 0.2, 1)')),
       transition('* => hide', animate('.2s cubic-bezier(0.4, 0.0, 1, 1)'))
     ]),
     trigger('navBackdropState', [
-      state('initial', style({ 
+      state('initial', style({
         visibility: 'hidden',
         opacity: '0'
       })),
@@ -40,10 +40,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class AppComponent {
-    
+
   header: string;
-  navState: string = "initial";
-  navBackdropState: string = "initial";
+  navState = 'initial';
+  navBackdropState = 'initial';
 
   constructor(private route: ActivatedRoute, private router: Router, private titleService: Title ) { }
 
@@ -63,7 +63,7 @@ export class AppComponent {
 
         this.header = header;
         this.titleService.setTitle(header.toUpperCase());
-      })
+      });
   }
 
   toggleNavState(navState) {

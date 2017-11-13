@@ -5,13 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "name": "Launch localhost",
+            "type": "chrome",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${file}",
-            "outFiles": [
-                "${workspaceRoot}/out/**/*.js"
-            ]
+            "url": "http://localhost/4200",
+            "webRoot": "${workspaceRoot}/wwwroot"
+        },
+        {
+            "name": "Launch index.html (disable sourcemaps)",
+            "type": "chrome",
+            "request": "launch",
+            "sourceMaps": false,
+            "file": "${workspaceRoot}/src/index.html"
         }
     ]
 }
