@@ -8,7 +8,10 @@ export let mockSummary = {
           id: 1,
           name: 'Alexander Tsema',
           size: 1024,
-          data: '../assets/images/man_xs.jpg',
+          responsiveData: {
+              xs: '../assets/images/man_xs.jpg',
+              m: '../assets/images/man_m.jpg'
+            },
           fileType: FileType.jpg
         },
       resume: {

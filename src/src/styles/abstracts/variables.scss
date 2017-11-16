@@ -8,14 +8,20 @@ $font-family-p: $font-family;
 
 $root-size: 10%;
 
-$font-size-h1-xs: rem(1.5);
-$font-size-h1-s: rem(1.7);
-$font-size-h1-m: rem(1.9);
-$font-size-h1-l: rem(2.1);
-$font-size-h1-xl: rem(3.3);
-$font-size-h1-xxl: rem(5.5);
+$font-size-h1-xs: rem(1.7);
+$font-size-h1-s: rem(1.9);
+$font-size-h1-m: rem(2.1);
+$font-size-h1-l: rem(2.3);
+$font-size-h1-xl: rem(3.5);
+$font-size-h1-xxl: rem(5.7);
 
-// $font-size-h2: 4em;
+$font-size-h2-xs: rem(1.3);
+$font-size-h2-s: rem(1.5);
+$font-size-h2-m: rem(1.7);
+$font-size-h2-l: rem(1.9);
+$font-size-h2-xl: rem(2.1);
+$font-size-h2-xxl: rem(2.3);
+
 $font-size-p-xs: rem(0.95);
 $font-size-p-s: rem(1.05);
 $font-size-p-m: rem(1.15);
@@ -26,12 +32,12 @@ $font-size-p-xxl: rem(1.45);
 // $font-size-grid-item-subtitle: rem(0.95);
 // $font-size-link-button: rem(0.95);
 
-$screen-xs-min: 360px !default;
-$screen-s-min: 600px !default;
-$screen-m-min: 840px !default;
-$screen-l-min: 1024px !default;
-$screen-xl-min: 1280px !default;
-$screen-xxl-min: 1600px !default;
+$screen-xs-min: 360px;
+$screen-s-min: 600px;
+$screen-m-min: 840px;
+$screen-l-min: 1024px;
+$screen-xl-min: 1280px;
+$screen-xxl-min: 1600px;
 
 $color-gray: #95989A;
 $color-violet: #673AB7;

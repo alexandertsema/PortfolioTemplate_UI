@@ -1,4 +1,4 @@
-export enum ContactType{
+export enum ContactType {
     email,
     phone,
     location,

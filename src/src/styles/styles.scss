@@ -27,55 +27,66 @@ html, body {
         color: black;
     }
 
+    h2 {
+        font-family: $font-family-h2;
+        text-transform: uppercase;
+        font-size: $font-size-h2-xs;
+        color: $color-gray;
+    }
+
     @media screen and (min-width: $screen-s-min) {
         p {
             font-size:  $font-size-p-s;
+        }
+        h1 {
+            font-size: $font-size-h1-s;
+        }
+        h2 {
+            font-size: $font-size-h2-s;
         }
     }
     @media screen and (min-width: $screen-m-min) {
         p {
             font-size:  $font-size-p-m;
         }
+        h1 {
+            font-size: $font-size-h1-m;
+        }
+        h2 {
+            font-size: $font-size-h2-m;
+        }
     }
     @media screen and (min-width: $screen-l-min) {
         p {
             font-size:  $font-size-p-l;
+        }
+        h1 {
+            font-size: $font-size-h1-l;
+        }
+        h2 {
+            font-size: $font-size-h2-l;
         }
     }
     @media screen and (min-width: $screen-xl-min) {
         p {
             font-size:  $font-size-p-xl;
         }
+        h1 {
+            font-size: $font-size-h1-xl;
+        }
+        h2 {
+            font-size: $font-size-h2-xl;
+        }
     }
     @media screen and (min-width: $screen-xxl-min) {
         p {
             font-size:  $font-size-p-xxl;
         }
-    }
-
-    @media screen and (min-width: $screen-s-min) {
-        h1 {
-            font-size: $font-size-h1-s;
-        }
-    }
-    @media screen and (min-width: $screen-m-min) {
-        h1 {
-            font-size: $font-size-h1-m;
-        }
-    }
-    @media screen and (min-width: $screen-l-min) {
-        h1 {
-            font-size: $font-size-h1-l;
-        }
-    }
-    @media screen and (min-width: $screen-xl-min) {
-        h1 {
-            font-size: $font-size-h1-xl;
-        }
-    }
-    @media screen and (min-width: $screen-xxl-min) {
         h1 {
             font-size: $font-size-h1-xxl;
+        }
+        h2 {
+            font-size: $font-size-h2-xxl;
         }
     }
 }

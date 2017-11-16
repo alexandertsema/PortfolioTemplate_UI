@@ -1,20 +1,21 @@
-<div class="container">
-    <div class="title">
-        {{ summary?.title }}
+<section class="flex-container">
+    <div class="flex-item flex-container title">
+        <div class="flex-item"></div>
+        <h2 class="flex-item">
+            {{ summary?.title }}
+        </h2>
     </div>
-    <div class="description">
+    
+    <p class="flex-item">
         {{ summary?.description }}
-    </div>
-    <div class="resume">
+    </p>
+    <div class="flex-item flex-container resume">
         <a mat-button href="{{summary?.resume?.data}}">RESUME</a>
     </div>
-    <div class="down-arrow">
-        <a href="/skills">
-            <i class="material-icons arrow">arrow_back</i>
+    <div class="flex-item flex-container arrow">
+        <a mat-button href="/skills">
+            <mat-icon>arrow_back</mat-icon>
         </a>
     </div>
-</div>
-<div class="image">
-    <img src="{{summary?.image?.data}}" alt="{{summary?.image?.name}}">
-</div>
-
+    <img class="flex-item" src="{{summary?.image?.data}}" alt="{{summary?.image?.name}}">
+</section>

@@ -63,6 +63,12 @@ export class AppComponent {
 
         this.header = header;
         this.titleService.setTitle(header.toUpperCase());
+
+        // class Title {
+        //   constructor(_doc: any)
+        //   getTitle(): string
+        //   setTitle(newTitle: string)
+        // }
       });
   }
 
