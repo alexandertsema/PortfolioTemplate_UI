@@ -7,14 +7,18 @@ section {
     height: 100%;
 }
 
-h2 {
-    background-color: pink;
-
-    // margin-left: rem(.6);
-}
-
-p {
-    margin: 0 rem(.3) 0 rem(.3);
+.text {
+    div:nth-child(1) {
+        flex: 1 0 0;
+    }
+    p {
+        flex: 8 0 0;
+        color: $color-gray;
+        font-family: 'Roboto Light';
+    }
+    div:nth-child(3) {
+        flex: 1 0 0;
+    }
 }
 
 img {
@@ -44,36 +48,50 @@ mat-icon {
 
 .title {
     div {
-        flex: 1 0 6rem;
+        flex: 4 0 6rem;
     }
     h2 {
-        flex: 20 0 auto;
+        flex: 65 0 5rem;
     }
 }
 
-
-@media screen and (min-width: $screen-s-min) {
-    // h2 {
-    //     margin-left: rem(.9);
-    // }
-    p {
-        margin: 0 rem(.6) 0 rem(.6);
-    }
-}
-
-@media screen and (min-width: $screen-m-min) {
-    // h2 {
-    //     margin-left: rem(.6);
-    // }
-    .title {
-        div {
-            flex-basis: 3rem;
+@media screen and (min-width: $screen-xs-min) {
+    .text {
+        div:nth-child(1) {
+            flex: 1 0 0;
+        }
+        p {
+            flex: 12 0 0;
+        }
+        div:nth-child(3) {
+            flex: 3 0 0;
         }
     }
 }
 
 @media screen and (min-width: $screen-l-min) {
-    // h2 {
-    //     margin-left: rem(.8);
-    // }
+    .title {
+        div {
+            flex: 1 0 8rem;
+        }
+        h2 {
+            flex: 15 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: $screen-xl-min) {
+    .text {
+        div:nth-child(3) {
+            flex: 5 0 0;
+        }
+    }
+}
+
+@media screen and (min-width: $screen-xxl-min) {
+    .title {
+        h2 {
+            flex: 18 0 auto;
+        }
+    }
 }

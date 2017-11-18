@@ -67,18 +67,14 @@ header {
     align-items: center;
     justify-content: flex-start;
 
-    // padding-left: rem(.1);
-
     mat-icon  {
-        flex-grow: 1;
+        flex: 1 0 4rem;
+        padding: 2rem 2rem 2rem 3rem;
         cursor: pointer;
     }
 
     h1 {
-        background-color: red;
-        flex-grow: 15;
-
-        // padding-left: rem(.1);
+        flex: 15 0 auto;
     }
 }
 
@@ -118,9 +114,6 @@ main {
                 }
             }
         }
-    }
-    main {
-        margin-left: rem(.6);
     }
     .active-link {
         background-color: inherit;

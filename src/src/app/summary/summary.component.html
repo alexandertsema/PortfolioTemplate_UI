@@ -5,10 +5,13 @@
             {{ summary?.title }}
         </h2>
     </div>
-    
-    <p class="flex-item">
-        {{ summary?.description }}
-    </p>
+    <div class="flex-item flex-container text">
+        <div class="flex-item"></div>
+        <p class="flex-item">
+            {{ summary?.description }}
+        </p>
+        <div class="flex-item"></div>
+    </div>
     <div class="flex-item flex-container resume">
         <a mat-button href="{{summary?.resume?.data}}">RESUME</a>
     </div>
