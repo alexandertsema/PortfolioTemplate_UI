@@ -49,26 +49,20 @@ export class AppComponent {
 
   ngOnInit() {
     this.router.events
-      .filter(event => event instanceof NavigationEnd)
       .subscribe(event => {
-        let currentRoute = this.route.root;
-        while (currentRoute.children[0] !== undefined) {
-          currentRoute = currentRoute.children[0];
+        if  (event instanceof NavigationEnd) {
+          let currentRoute = this.route.root;
+          while (currentRoute.children[0] !== undefined) {
+            currentRoute = currentRoute.children[0];
+          }
+          let header;
+          if (currentRoute.snapshot.data.alias !== undefined)
+            header = currentRoute.snapshot.data.alias;
+          else
+            header = currentRoute.snapshot.url[0].path;
+          this.header = header;
+          this.titleService.setTitle(`${header.toUpperCase()} | ALEXANDER TSEMA}`);
         }
-        let header;
-        if (currentRoute.snapshot.data.alias !== undefined)
-          header = currentRoute.snapshot.data.alias;
-        else
-          header = currentRoute.snapshot.url[0].path;
-
-        this.header = header;
-        this.titleService.setTitle(header.toUpperCase());
-
-        // class Title {
-        //   constructor(_doc: any)
-        //   getTitle(): string
-        //   setTitle(newTitle: string)
-        // }
       });
   }
 

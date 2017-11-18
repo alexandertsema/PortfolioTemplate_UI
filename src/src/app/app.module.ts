@@ -1,11 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CertificatesComponent } from './certificates/certificates.component';
-import { HttpService } from 'app/services/http.service';
 import { SkillsComponent } from './skills/skills.component';
 import { SummaryComponent } from './summary/summary.component';
 import { EducationComponent } from './education/education.component';
@@ -38,12 +36,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule ,
     Routing,
     BrowserAnimationsModule,
     MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule
   ],
-  providers: [ HttpService ],
+  providers: [ HttpClient  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

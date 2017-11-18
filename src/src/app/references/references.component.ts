@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IReference } from "app/models/reference";
-import { HttpService } from "app/services/http.service";
+// import { HttpService } from "app/services/http.service";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { mockReferences } from "app/mocks/references.mock";
 
@@ -13,7 +13,7 @@ export class ReferencesComponent implements OnInit {
 
   references: IReference[]
 
-  constructor(private httpService: HttpService) { }
+  // constructor(private httpService: HttpService) { }
 
   ngOnInit() {
     // this.httpService.get<Reference[]>(ENDPOINTS.certificate)

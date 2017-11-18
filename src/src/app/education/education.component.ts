@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from "app/services/http.service";
+// import { HttpService } from "app/services/http.service";
 import { ISchool } from "app/models/school";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { mockSchools } from "app/mocks/shools.mock";
@@ -14,7 +14,7 @@ export class EducationComponent implements OnInit {
   schools: ISchool[];
   isVisible: string = "hidden";
 
-  constructor(private httpService: HttpService) { }
+  // constructor(private httpService: HttpService) { }
 
   ngOnInit() {
     // this.httpService.get<School[]>(ENDPOINTS.certificate)

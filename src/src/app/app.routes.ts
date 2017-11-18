@@ -56,7 +56,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: '**', 
+    path: '**',
     component: PageNotFoundComponent ,
     data: {
       alias: '404'

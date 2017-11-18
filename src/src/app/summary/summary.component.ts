@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from "app/services/http.service";
+// import { HttpService } from "app/services/http.service";
 import { Summary } from "app/models/summary";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { mockSummary } from "app/mocks/summary.mock";
@@ -14,7 +14,7 @@ export class SummaryComponent implements OnInit {
 
   summary: Summary;
 
-  constructor(private httpService: HttpService) { }
+  // constructor(private httpService: HttpService) { }
 
   ngOnInit() {
     // this.httpService.get<Summary>(ENDPOINTS.certificate)

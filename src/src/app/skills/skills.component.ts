@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from "app/services/http.service";
+// import { HttpService } from "app/services/http.service";
 import { ISkill } from "app/models/skill";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { IEdge } from "app/models/edge";
@@ -15,7 +15,7 @@ export class SkillsComponent implements OnInit {
 
   skills : any[];//Map<INode, IEdge[]>;
 
-  constructor(private httpService: HttpService) { }
+  // constructor(private httpService: HttpService) { }
 
   ngOnInit() {
     // this.httpService.get<Skill[]>(ENDPOINTS.certificate)

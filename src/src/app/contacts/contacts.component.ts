@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IContact } from "app/models/contact";
-import { HttpService } from "app/services/http.service";
+// import { HttpService } from "app/services/http.service";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { mockContacts } from "app/mocks/contacts.mock";
 
@@ -13,7 +13,7 @@ export class ContactsComponent implements OnInit {
 
   contacts: IContact[];
 
-  constructor(private httpService: HttpService) { }
+  // constructor(private httpService: HttpService) { }
 
   ngOnInit() {
     // this.httpService.get<Contact[]>(ENDPOINTS.certificate)

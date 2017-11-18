@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from "app/models/project";
-import { HttpService } from "app/services/http.service";
+// import { HttpService } from "app/services/http.service";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { mockProject } from "app/mocks/project.mock";
 import { IProjectCategory } from "app/models/projectCategory";
@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
   projectCategoryFilter: number;
   isVisible: string = "hidden";
 
-  constructor(private httpService: HttpService) { }
+  // constructor(private httpService: HttpService) { }
 
   ngOnInit() {
     // this.httpService.get<Project[]>(ENDPOINTS.certificate)
