@@ -9,17 +9,16 @@ section {
 
     width: 100%;
     height: 100%;
+
+    @media screen and (min-width: $screen-m-min) {
+        margin-left: 6rem;
+    }
 }
 
 .contact {
     align-items: center;
     flex-grow: 0;
-
     p {
         padding-left: rem(.1);
-    }
-
-    @media screen and (min-width: $screen-m-min) {
-        margin-left: -(rem(.6));
     }
 }

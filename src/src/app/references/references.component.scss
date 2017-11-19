@@ -1,70 +1,44 @@
-.container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-flow: row wrap;
+@import '~styles/abstracts/variables';
+@import '~styles/abstracts/animations';
 
-    -webkit-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
+section {
+  height: 100%;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
-
-    height: 100%;
-    width: 100%;
-
-    overflow-y: auto;
-
-    background-color: red;
-
-    .animate {
-      opacity: 0;
-    }
-
-    .card {
-        width: 22em;
-        margin: 1.6em;
-    }
-
-    .header-image {
-        background-size: cover;
-    }
-}
-
-// animations
-$items: 9;
-$columns: 4;
-$rows: $items / $columns;
-
-@keyframes pulse {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+  @media screen and (min-width: $screen-m-min) {
+    margin-left: 6rem;
   }
 }
+.card {
+  max-width: 50rem;
+  margin: 1.5rem;
+  flex: 1 0 45rem;
 
-@mixin animate($animation, $duration, $delay: 0s) {
-  -webkit-animation: $animation $duration ease-in-out $delay;
-  -moz-animation: $animation $duration ease-in-out $delay;
-  -ms-animation: $animation $duration ease-in-out $delay;
-  -o-animation: $animation $duration ease-in-out $delay;
-  animation: $animation $duration ease-in-out $delay; 
+  animation-fill-mode: forwards !important;
 
-  animation-fill-mode: forwards;
-}
-      
+  .header-image {
+      background-size: cover;
+  }
 
-// choreographing fade
-.container .animate {
-  @for $m from 0 to $rows {
-    @for $n from 1 through $columns {
-      &:nth-child(#{$n + $m * $columns}) {
-        @include animate(pulse, 0.125s * $rows, 0.25s*(($m + $n) / $rows))
-      }
-    }
+  $lines-show: 9;
+  $line-height: 3.16rem;
+
+  mat-card-content {
+    position: relative;
+    height: $line-height*$lines-show;
+    overflow: hidden;
+  }
+
+  mat-card-content:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: $line-height;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
   }
 }

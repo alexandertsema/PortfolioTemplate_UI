@@ -1,19 +1,16 @@
-<div class="container">
-  <mat-card class="card animate" *ngFor="let reference of references">
+<section appAnimatePulse class="flex-container">
+  <mat-card class="flex-item card pulse" *ngFor="let reference of references">
     <mat-card-header>
       <div mat-card-avatar [style.background-image]="'url(' + reference?.referenceAuthor?.image?.data + ')'" class="header-image"></div>
       <mat-card-title>{{ reference?.referenceAuthor?.name }}</mat-card-title>
       <mat-card-subtitle>{{ reference?.referenceAuthor?.position }} at {{ reference?.referenceAuthor?.companyName }}</mat-card-subtitle>
     </mat-card-header>
-    <!--<img mat-card-image src="../assets/images/proj.jpg">-->
     <mat-card-content>
-      <p>
         {{ reference?.description }}
-      </p>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>DETAILS</button>
       <a mat-button href="{{reference?.pdf?.data}}">PDF</a>
     </mat-card-actions>
   </mat-card>
-</div>
+</section>

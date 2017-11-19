@@ -17,6 +17,7 @@ import { ProjectCategoryFilterComponent } from './project-category-filter/projec
 import { GridItemComponent } from './grid-item/grid-item.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AnimatePulseDirective } from './directives/animate/animate-pulse.directive';
 
 @NgModule({
   declarations: [
@@ -31,17 +32,18 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ProjectCategoryFilterComponent,
     GridItemComponent,
     ProjectDetailsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AnimatePulseDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule ,
+    HttpClientModule,
     Routing,
     BrowserAnimationsModule,
     MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule
   ],
-  providers: [ HttpClient  ],
+  providers: [ HttpClient ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
