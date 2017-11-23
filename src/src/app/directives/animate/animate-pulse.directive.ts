@@ -16,7 +16,9 @@ export class AnimatePulseDirective implements AfterViewInit {
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         if (items.length > col + row*columns) {
-          items[col + row*columns].style.animation = `${animation} ${0.125 * rows}s ease-in-out ${0.25*((row + col) / rows)}s`;
+          let item = items[col + row*columns];
+          item.style.animation = `${animation} ${0.125 * rows}s ease-in-out ${0.25*((row + col) / rows)}s`;
+          item.style['animation-fill-mode'] = 'forwards';
         }
      }
     }

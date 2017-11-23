@@ -1,79 +1,22 @@
-.container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-flow: column;
+@import '~styles/abstracts/variables';
+@import '~styles/abstracts/animations';
 
-  -webkit-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-
+section {
   height: 100%;
-  width: 100%;
-
-  background-color: blueviolet;
-}
-.certificates-container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-flow: row wrap;
-
-  -webkit-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-
+  flex-flow: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: center;
 
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-
-  background-color: brown;
-  
-  height: 500px;
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  .animate {
-    opacity: 0;
+  @media screen and (min-width: $screen-m-min) {
+    margin-left: 9rem;
+    // align-content: center;
   }
 }
 
-// animations
-$items: 4;
-$columns: 1;
-$rows: $items / $columns;
-
-@keyframes pulse {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@mixin animate($animation, $duration, $delay: 0s) {
-  -webkit-animation: $animation $duration ease-in-out $delay;
-  -moz-animation: $animation $duration ease-in-out $delay;
-  -ms-animation: $animation $duration ease-in-out $delay;
-  -o-animation: $animation $duration ease-in-out $delay;
-  animation: $animation $duration ease-in-out $delay; 
-
-  animation-fill-mode: forwards;
-}
-      
-
-// choreographing fade
-.certificates-container .animate {
-  @for $m from 0 to $rows {
-    @for $n from 1 through $columns {
-      &:nth-child(#{$n + $m * $columns}) {
-        @include animate(pulse, 0.125s * $rows, 0.25s*(($m + $n) / $rows))
-      }
-    }
-  }
+app-grid-item {
+  height: 50rem;
+  width: 50rem;
+  max-width: 50rem;
+  margin: 1.5rem;
 }

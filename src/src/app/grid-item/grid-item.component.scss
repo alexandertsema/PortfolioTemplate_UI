@@ -1,81 +1,77 @@
-.container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    align-content: center;
+@import '~styles/abstracts/variables';
 
-    margin: 0.4em;
-    width: 15em;
-    height: 15em;
+article {
+    flex-flow: column;
+
+    width: 100%;
+    height: 100%;
+
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: hidden;
+
+    overflow: hidden;
+
+    div:nth-child(1) {
+        flex: 10 0 0;
+    }
 }
 
-footer {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-flow: row nowrap;
-
-
+.content {
+    flex: 1 0 auto;
+    margin-bottom: -26rem;
     background-color:  rgba(66, 66, 66, .5);
-    width: 100%;
-    margin-bottom: -5.5em;
-    
-    .titles {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        flex-flow: row wrap;
+}
 
-        background-color: blue;
-        div {
-            margin: 4%;
-            color: white;
-        }
+.titles {
+    flex-direction: column;
+    justify-content: center;
 
-        div:nth-child(1) {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
+    flex: 10 0 0;
+    overflow: hidden;
 
-            font-size: 1em;
-        }
-        div:nth-child(2) {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
+    h3, p {
+        color: $color-white;
+        padding-left: 3.2rem;
+        padding-right: 1rem;
 
-            font-size: 0.7em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    div:nth-child(2) {
+        h3 {
+            margin-bottom: 1rem;
         }
     }
-    .button {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-
-        margin: 2%;
-        background-color: red;
-        button {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-
-            color: white;
+    div:nth-child(3) {
+        p {
+            margin-top: 1rem;
         }
+    }
+}
+
+.buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1 0 0;
+
+    div:nth-child(1) {
+        flex-grow: 50;
+    }
+    div:nth-child(2) {
+        flex: 1 0 0;
+        margin: .5rem 1rem .5rem 1rem;
+    }
+    div:nth-child(3) {
+        flex: 1 0 0;
+        margin: .5rem 1rem .5rem 1rem;
+        a {
+            color: $color-white;
+        }
+    }
+    div:nth-child(4) {
+        flex-grow: 50;
     }
 }

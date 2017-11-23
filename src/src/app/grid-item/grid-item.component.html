@@ -1,12 +1,29 @@
-<div class="container" [style.background-image]="'url(' + image + ')'" (mouseenter)="toggleFooterState('up')" (mouseleave)="toggleFooterState('down')">
-  <footer [@footerState]="footerState">
-    <div class="titles">
-      <div>{{ name }}</div>
-      <div>{{ subtitle }}</div>
+<article class="flex-container"
+[style.background-image]="'url(' + image + ')'"
+(mouseenter)="toggleContentState('up')"
+(mouseleave)="toggleContentState('down')">
+  <div  class="flex-item"></div>
+  <div class="flex-item flex-container content"
+    [@contentState]="contentState">
+    <div class="flex-item flex-container titles">
+      <div class="flex-item"></div>
+      <div class="flex-item">
+        <h3>{{ name }}</h3>
+      </div>
+      <div class="flex-item">
+        <p>{{ subtitle }}</p>
+      </div>
+      <div class="flex-item"></div>
     </div>
-    <div class="button">
-      <button mat-button (click)="detailedView(id)" *ngIf="!url">{{ buttonText }}</button>
-      <a mat-button href="{{url}}" *ngIf="url">{{ buttonText }}</a>
+    <div class="flex-item flex-container buttons">
+      <div class="flex-item"></div>
+      <div class="flex-item">
+        <button mat-button *ngIf="!url" (click)="detailedView(id)">{{ buttonText }}</button>
+      </div>
+      <div class="flex-item">
+        <a mat-button href="{{url}}" *ngIf="url">{{ buttonText }}</a>
+      </div>
+      <div class="flex-item"></div>
     </div>
-  </footer>
-</div>
+  </div>
+</article>

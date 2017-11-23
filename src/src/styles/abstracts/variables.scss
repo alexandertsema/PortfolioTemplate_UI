@@ -8,6 +8,7 @@ $font-medium: 'Roboto Medium';
 $font-family: $font-regular;
 $font-family-h1: $font-thin;
 $font-family-h2: $font-thin;
+$font-family-h3: $font-light;
 $font-family-p: $font-light;
 
 $root-size: 10%;
@@ -20,18 +21,25 @@ $font-size-h1-xl: 41rem;
 $font-size-h1-xxl: 61rem;
 
 $font-size-h2-xs: 11rem;
-$font-size-h2-s: rem(1.5);
-$font-size-h2-m: rem(1.7);
-$font-size-h2-l: rem(1.9);
-$font-size-h2-xl: rem(2.1);
-$font-size-h2-xxl: rem(2.3);
+$font-size-h2-s: 15rem;
+$font-size-h2-m: 17rem;
+$font-size-h2-l: 19rem;
+$font-size-h2-xl: 21rem;
+$font-size-h2-xxl: 23rem;
 
-$font-size-p-xs: rem(0.95);
-$font-size-p-s: rem(1.05);
-$font-size-p-m: rem(1.15);
-$font-size-p-l: rem(1.25);
-$font-size-p-xl: rem(1.35);
-$font-size-p-xxl: rem(1.45);
+$font-size-h3-xs: 11rem;
+$font-size-h3-s: 12rem;
+$font-size-h3-m: 13rem;
+$font-size-h3-l: 14rem;
+$font-size-h3-xl: 15rem;
+$font-size-h3-xxl: 16rem;
+
+$font-size-p-xs: 9.5rem;
+$font-size-p-s: 10.5rem;
+$font-size-p-m: 11.5rem;
+$font-size-p-l: 12.5rem;
+$font-size-p-xl: 13.5rem;
+$font-size-p-xxl: 14.5rem;
 // $font-size-grid-item-title: rem(0.95);
 // $font-size-grid-item-subtitle: rem(0.95);
 // $font-size-link-button: rem(0.95);

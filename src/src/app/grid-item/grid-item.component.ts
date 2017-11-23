@@ -7,15 +7,15 @@ import { Router } from '@angular/router'
   templateUrl: './grid-item.component.html',
   styleUrls: ['./grid-item.component.scss'],
   animations: [
-    trigger('footerState', [
+    trigger('contentState', [
       state('initial', style({
-        marginBottom: '-5.5em'
+        marginBottom: '-26rem'
       })),
       state('down', style({
         transform: 'translateY(0)'
       })),
       state('up', style({
-        transform: 'translateY(-5.5em)'
+        transform: 'translateY(-26rem)'
       })),
       transition('* => up', animate('.3s cubic-bezier(0.0, 0.0, 0.2, 1)')),
       transition('* => down', animate('.3s cubic-bezier(0.4, 0.0, 1, 1)'))
@@ -36,8 +36,8 @@ export class GridItemComponent implements OnInit {
   buttonText: string;
   @Input()
   url?: string;
-  footerState: string = "initial";
-  @Output() 
+  contentState: string = "initial";
+  @Output()
   onSelected = new EventEmitter<number>();
 
   constructor(private router: Router) { }
@@ -45,8 +45,8 @@ export class GridItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleFooterState(footerState) {
-    this.footerState = footerState;
+  toggleContentState(contentState) {
+    this.contentState = contentState;
   }
 
   detailedView(id: number) {

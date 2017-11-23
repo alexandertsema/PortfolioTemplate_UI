@@ -1,13 +1,11 @@
-<div class="container">
-  <div class="certificates-container">
-    <app-grid-item class="animate" 
-      *ngFor="let certificate of certificates" 
-      [id] = "certificate?.id"
-      [name]="certificate?.name" 
-      [subtitle]="certificate?.authority"
-      [image]="certificate?.image?.data" 
-      [buttonText]="'PDF'"
-      [url]="certificate?.pdf?.data">
-    </app-grid-item>
-  </div>
-</div>
+<section appAnimatePulse class="flex-container">
+  <app-grid-item class="flex-item pulse"
+    *ngFor="let certificate of certificates"
+    [id] = "certificate?.id"
+    [name]="certificate?.name"
+    [subtitle]="certificate?.authority"
+    [image]="certificate?.image?.data"
+    [buttonText]="'PDF'"
+    [url]="certificate?.pdf?.data">
+  </app-grid-item>
+</section>

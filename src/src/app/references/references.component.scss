@@ -6,17 +6,21 @@ section {
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: $screen-m-min) {
-    margin-left: 6rem;
+    margin-left: 9rem;
+    // align-content: center;
   }
 }
 .card {
+  // max-width: 50rem;
+  // margin: 1.5rem;
+  // flex: 1 0 45rem;
+  height: 50rem;
+  width: 45rem;
   max-width: 50rem;
   margin: 1.5rem;
-  flex: 1 0 45rem;
-
-  animation-fill-mode: forwards !important;
 
   .header-image {
       background-size: cover;
