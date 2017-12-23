@@ -80,7 +80,7 @@ export let certificatesMock = [
             data: "../assets/pdf/Alexander_Tsema_Resume.pdf",
             fileType: FileType.pdf
         }
-    }
+    },
     {
         id: 1,
         name: "Angular 2",

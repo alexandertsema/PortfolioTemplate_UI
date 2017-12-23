@@ -1,17 +1,18 @@
 @import '~styles/abstracts/functions';
 @import '~styles/abstracts/variables';
 
+
 section {
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
 
-    width: 100%;
     height: 100%;
 
     @media screen and (min-width: $screen-m-min) {
-        margin-left: 6rem;
+        margin-left: -3rem;
+        margin-top: -3rem;
     }
 }
 

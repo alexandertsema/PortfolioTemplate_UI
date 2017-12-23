@@ -1,16 +1,18 @@
-md-button-toggle-group {
-  margin-left: 0.7%;
-  
-  .mat-button-toggle-checked{
-    background-color: #19124A;
-    color: white;
-  }
+@import '~styles/abstracts/variables';
 
-  .mat-button-toggle-checked:nth-child(1) {
-    border-radius: 2px 0 0 2px;
-  }
+.mat-button-toggle-checked {
+  background-color: $color-violet;
+  color: $color-white;
+}
 
-  .mat-button-toggle-checked:nth-child(4) {
-    border-radius: 0 2px 2px 0;
-  }
+.mat-button-toggle-checked:nth-child(1) {
+  border-radius: 2px 0 0 2px;
+}
+
+.mat-button-toggle-checked:nth-child(4) {
+  border-radius: 0 2px 2px 0;
+}
+
+.mat-button-toggle {
+  font-size: 12rem;
 }

@@ -1,17 +1,17 @@
-<div class="container">
-    <div class="filter">
+<section class="flex-container">
+    <div class="flex-item filter">
         <app-project-category-filter (onFilter)="onFilterChange($event)"></app-project-category-filter>
     </div>
-    <div class="projects-container">
-        <app-grid-item class="animate" 
-        *ngFor="let project of projects" 
+    <div appAnimatePulse class="flex-item flex-container projects">
+        <app-grid-item class="flex-item pulse"
+        *ngFor="let project of projects"
         [id] = "project?.id"
-        [name]="project?.name" 
-        [subtitle]="project?.subtitle" 
-        [image]="project?.image?.data" 
+        [name]="project?.name"
+        [subtitle]="project?.subtitle"
+        [image]="project?.image?.data"
         [buttonText]="'DETAILS'"
         (onSelected)="onSelected($event)"></app-grid-item>
     </div>
-</div>
+</section>
 
-<app-project-details [style.visibility]="isVisible"></app-project-details>
+<!-- <app-project-details [style.visibility]="isVisible"></app-project-details> -->
