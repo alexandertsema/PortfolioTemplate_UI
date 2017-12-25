@@ -1,27 +1,33 @@
-<section class="flex-item flex-container">
-  <article *ngFor="let school of schools">
-    <span class="cd-date">{{ school?.endDate }}</span>
-    <div class="check-point"></div>
-    <mat-card>
-      <mat-card-header>
-        <div mat-card-avatar class="header-image"></div>
-        <mat-card-title>{{ school?.name }}</mat-card-title>
-        <mat-card-subtitle>{{ school?.degree }} Degree in {{ school?.fieldOfStudy }}</mat-card-subtitle>
-        <mat-card-subtitle *ngIf="school?.gpa">GPA {{ school?.gpa }}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Graduation Thesis Work
-        </p>
-        <p>
-          "{{ school?.thesis?.name }}"
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button (click)="detailedView(id)">DETAILS</button>
-      </mat-card-actions>
-    </mat-card>
-  </article>
+<section class="flex-container">
+  <div appAnimatePulse class="timeline flex-item">
+      <article class="entry pulse" *ngFor="let school of schools">
+        <div class="date">
+          <p>
+            {{ school?.endDate }}
+          </p>
+        </div>
+        <div class="date-marker"></div>
+        <div class="content">
+          <mat-card>
+            <mat-card-header>
+              <div mat-card-avatar class="header-image" [style.background-image]="'url(' + school?.image?.data + ')'"></div>
+              <mat-card-title>{{ school?.name }}</mat-card-title>
+              <mat-card-subtitle>{{ school?.degree }} Degree in {{ school?.fieldOfStudy }}</mat-card-subtitle>
+              <mat-card-subtitle class="gpa" *ngIf="school?.gpa">GPA {{ school?.gpa }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>
+                Graduation Thesis Work
+              </p>
+              <p>
+                "{{ school?.thesis?.name }}"
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button (click)="detailedView(id)">DETAILS</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </article>
+  </div>
 </section>
-
-  <!-- <app-project-details [style.visibility]="isVisible"></app-project-details> -->

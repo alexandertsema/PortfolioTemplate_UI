@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 // import { HttpService } from "app/services/http.service";
 import { ISchool } from "app/models/school";
 import { ENDPOINTS } from "app/settings/endpoints";
-import { mockSchools } from "app/mocks/shools.mock";
+import { mockSchools } from "app/mocks/schools.mock";
 
 @Component({
   selector: 'app-education',
