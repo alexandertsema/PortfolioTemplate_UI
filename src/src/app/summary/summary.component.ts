@@ -3,7 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { Summary } from "app/models/summary";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { mockSummary } from "app/mocks/summary.mock";
-import { ScreenSize } from 'app/models/enums/screenSize';
+import { ObservableMedia, MediaChange } from '@angular/flex-layout';
+import { Subscription } from 'rxjs/Rx';
+
 
 @Component({
   selector: 'app-summary',
@@ -13,8 +15,10 @@ import { ScreenSize } from 'app/models/enums/screenSize';
 export class SummaryComponent implements OnInit {
 
   summary: Summary;
+  mediaQuery: Subscription;
 
   // constructor(private httpService: HttpService) { }
+  constructor(private observableMedia: ObservableMedia) {}
 
   ngOnInit() {
     // this.httpService.get<Summary>(ENDPOINTS.certificate)
@@ -26,11 +30,21 @@ export class SummaryComponent implements OnInit {
     //           console.error(error)
     //     );
     this.summary = mockSummary;
-    if (ScreenSize.xs <= window.screen.width) {
-      this.summary.image.data = this.summary.image.responsiveData.xs;
-    }
-    if (ScreenSize.m <= window.screen.width) {
-      this.summary.image.data = this.summary.image.responsiveData.m;
+
+    this.mediaQuery = this.observableMedia.subscribe( (change: MediaChange) => {
+      this.setImage(change.mqAlias);
+    });
+  }
+
+  setImage(alias: string) {
+    switch (alias) {
+      case 'xs': this.summary.image.data = this.summary.image.responsiveData.xs; break;
+      case 's': this.summary.image.data = this.summary.image.responsiveData.xs; break;
+      case 'm': this.summary.image.data = this.summary.image.responsiveData.m; break;
+      case 'l': this.summary.image.data = this.summary.image.responsiveData.m; break;
+      case 'xl': this.summary.image.data = this.summary.image.responsiveData.m; break;
+      case 'xxl': this.summary.image.data = this.summary.image.responsiveData.m; break;
+      default: this.summary.image.data = null; break;
     }
   }
 }

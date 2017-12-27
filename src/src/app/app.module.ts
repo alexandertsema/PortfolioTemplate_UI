@@ -18,6 +18,7 @@ import { GridItemComponent } from './grid-item/grid-item.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AnimatePulseDirective } from './directives/animate/animate-pulse.directive';
+import { MediaBreakpointsModule } from 'app/modules/media-breakpoints.module';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { AnimatePulseDirective } from './directives/animate/animate-pulse.direct
     HttpClientModule,
     Routing,
     BrowserAnimationsModule,
+    MediaBreakpointsModule,
     MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule
   ],
   providers: [ HttpClient ],
