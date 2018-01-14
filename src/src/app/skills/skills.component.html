@@ -1,5 +1,7 @@
-<div *ngFor="let skill of skills" class="skill">
-  <div class="name">
-    {{skill?.node?.name}}
-  </div>
-</div>
+<section class="flex-container">
+  <mat-chip-list class="flex-container skills-container">
+    <mat-chip *ngFor="let skill of skills" class="skill">
+        <h3>{{skill?.node?.name}}</h3>
+    </mat-chip>
+  </mat-chip-list>
+</section>

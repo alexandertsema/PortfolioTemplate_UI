@@ -6,6 +6,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  // height: 100%;
 
   @media screen and (min-width: $screen-m-min) {
     margin-left: 9rem;

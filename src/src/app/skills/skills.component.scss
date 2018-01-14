@@ -1,22 +1,23 @@
-@mixin vertical-align {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
+@import '~styles/abstracts/variables';
 
-.skill{
-    border-radius: 50%;
-    width: 100px;
-	height: 100px;
-    background-color: #1E00FF;
-    text-align: center;
-    .name{
-        @include vertical-align();
-        font-family: Roboto Regular;
-        font-size: 20px;
-        color: white;
+section {
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @media screen and (min-width: $screen-m-min) {
+      margin-left: 9rem;
     }
-}
+  }
 
+  .skills-container {
+      max-width: 70%;
+      margin-top: -10rem;
+  }
+
+  .skill {
+      text-transform: uppercase;
+  }

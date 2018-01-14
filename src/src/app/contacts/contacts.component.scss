@@ -6,7 +6,7 @@ section {
     background-color: $color-white;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    // align-content: center !important;
     align-items: center;
 
     height: 100%;
@@ -23,4 +23,17 @@ section {
     p {
         padding-left: rem(.1);
     }
+}
+
+.blur {
+    user-select: none;
+    span {
+        transition: all 0.9s ease;
+        color: transparent;
+        text-shadow: 0 0 15px $color-black;
+  }
+}
+.blur span:hover {
+    transition: all 0.2s ease;
+    color: $color-black;
 }

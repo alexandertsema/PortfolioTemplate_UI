@@ -1,11 +1,10 @@
 <div class="flex-container root-container" >
-    <div class="flex-item nav-back-drop" [@navBackdropState]="navBackdropState">
-    </div>
+    <div class="flex-item nav-back-drop" [@navBackdropState]="navBackdropState" (click)="toggleNavState('hide')"></div>
     <nav class="flex-item flex-container"
     [@navState]="navState"
     (mouseenter)="toggleNavState('show')"
     (mouseleave)="toggleNavState('hide')">
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/home'>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/home' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
             <div class="nav-link flex-container">
                 <div class="flex-item text">home</div>
                 <div class="flex-item dot">
@@ -13,7 +12,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/skills'>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/skills' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
             <div class="nav-link flex-container">
                 <div class="flex-item text">skills</div>
                 <div class="flex-item dot">
@@ -21,7 +20,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/projects'>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/projects' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
             <div class="nav-link flex-container">
                 <div class="flex-item text">projects</div>
                 <div class="flex-item dot">
@@ -29,7 +28,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/education'>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/education' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
             <div class="nav-link flex-container">
                 <div class="flex-item text">education</div>
                 <div class="flex-item dot">
@@ -37,7 +36,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/references'>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/references' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
             <div class="nav-link flex-container">
                 <div class="flex-item text">references</div>
                 <div class="flex-item dot">
@@ -45,7 +44,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/certificates'>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/certificates' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
             <div class="nav-link flex-container">
                 <div class="flex-item text">certificates</div>
                 <div class="flex-item dot">
@@ -53,7 +52,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/contacts'>
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/contacts' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
             <div class="nav-link flex-container">
                 <div class="flex-item text">contacts</div>
                 <div class="flex-item dot">

@@ -1,8 +1,17 @@
 <section class="flex-item flex-container">
   <div class="flex-item"></div>
   <div *ngFor="let contact of contacts" class="flex-item flex-container contact">
-    <mat-icon>email</mat-icon>
-    <p>{{contact.value}}</p>
+    <mat-icon>{{contact?.contactType}}</mat-icon>
+    <div *ngIf="contact?.contactType === 'phone'">
+      <p class="blur">
+        <span *ngFor="let char of contact?.value?.split('')">{{char}}</span>
+      </p>
+    </div>
+    <div *ngIf="contact?.contactType !== 'phone'">
+      <p>
+        {{contact?.value}}
+      </p>
+    </div>
   </div>
   <div class="flex-item"></div>
 </section>

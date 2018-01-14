@@ -66,8 +66,8 @@ export class AppComponent {
       });
   }
 
-  toggleNavState(navState) {
-    this.navState = navState;
-    this.navBackdropState = navState;
+  toggleNavState(state) {
+    this.navState = state;
+    this.navBackdropState = state;
   }
 }

@@ -12,7 +12,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ReferencesComponent } from './references/references.component';
 import { Routing } from 'app/app.routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule, MatChipsModule } from '@angular/material';
 import { ProjectCategoryFilterComponent } from './project-category-filter/project-category-filter.component';
 import { GridItemComponent } from './grid-item/grid-item.component';
 import { DetailsComponent } from './details/details.component';
@@ -43,7 +43,7 @@ import { MediaBreakpointsModule } from 'app/modules/media-breakpoints.module';
     Routing,
     BrowserAnimationsModule,
     MediaBreakpointsModule,
-    MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule
+    MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule, MatChipsModule
   ],
   providers: [ HttpClient ],
   bootstrap: [ AppComponent ]
