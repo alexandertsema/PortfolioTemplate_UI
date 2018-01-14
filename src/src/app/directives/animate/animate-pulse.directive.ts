@@ -1,4 +1,4 @@
-import { Directive, Input, ElementRef, HostListener, AfterViewInit } from '@angular/core';
+import { Directive, Input, ElementRef, HostListener, AfterViewInit, OnChanges, OnInit, AfterViewChecked, AfterContentInit, AfterContentChecked } from '@angular/core';
 
 @Directive({
   selector: '[appAnimatePulse]'
@@ -9,9 +9,17 @@ export class AnimatePulseDirective implements AfterViewInit {
 
   ngAfterViewInit(): void {
     let items = this.el.nativeElement.children;
+    if (items.length == 0)
+      return;
+
     let animation = 'pulse';
-    let columns = Math.floor(screen.width / items[0].clientWidth);
-    let rows = Math.round(items.length / columns);
+    let rows = Math.floor(this.el.nativeElement.clientHeight / items[0].clientHeight);
+    let columns = Math.ceil(items.length / rows);
+    // let columns = Math.floor(this.el.nativeElement.clientWidth / items[0].clientWidth);
+    // if (columns > items.length) {
+    //   columns = items.length
+    // }
+    // let rows = Math.ceil(items.length / columns);
 
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {

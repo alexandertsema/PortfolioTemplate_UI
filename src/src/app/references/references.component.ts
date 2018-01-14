@@ -3,6 +3,7 @@ import { IReference } from "app/models/reference";
 // import { HttpService } from "app/services/http.service";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { mockReferences } from "app/mocks/references.mock";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-references',
@@ -13,7 +14,7 @@ export class ReferencesComponent implements OnInit {
 
   references: IReference[]
 
-  // constructor(private httpService: HttpService) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     // this.httpService.get<Reference[]>(ENDPOINTS.certificate)
@@ -26,5 +27,7 @@ export class ReferencesComponent implements OnInit {
     //     );
     this.references = mockReferences;
   }
-
+  detailedView(id: number) {
+    this.router.navigate([`references/details/${id}`]);
+  }
 }

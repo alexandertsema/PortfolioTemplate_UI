@@ -2,7 +2,7 @@
   <app-grid-item class="flex-item pulse"
     *ngFor="let certificate of certificates"
     [id] = "certificate?.id"
-    [name]="certificate?.name"
+    [title]="certificate?.name"
     [subtitle]="certificate?.authority"
     [image]="certificate?.image?.data"
     [buttonText]="'PDF'"

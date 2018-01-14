@@ -2,7 +2,6 @@
 @import '~styles/abstracts/animations';
 
 section {
-  // height: 100%;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -10,7 +9,6 @@ section {
 
   @media screen and (min-width: $screen-m-min) {
     margin-left: 9rem;
-    // align-content: center;
   }
 }
 

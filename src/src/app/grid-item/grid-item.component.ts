@@ -1,6 +1,7 @@
-import { Component, OnInit, Input, HostListener, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, HostListener, Output, EventEmitter, ChangeDetectorRef } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Router } from '@angular/router'
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-grid-item',
@@ -25,9 +26,11 @@ import { Router } from '@angular/router'
 export class GridItemComponent implements OnInit {
 
   @Input()
+  type: number;
+  @Input()
   id: number;
   @Input()
-  name: string;
+  title: string;
   @Input()
   subtitle: string;
   @Input()
@@ -37,10 +40,8 @@ export class GridItemComponent implements OnInit {
   @Input()
   url?: string;
   contentState: string = "initial";
-  @Output()
-  onSelected = new EventEmitter<number>();
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private location: Location) { }
 
   ngOnInit() {
   }
@@ -50,6 +51,6 @@ export class GridItemComponent implements OnInit {
   }
 
   detailedView(id: number) {
-    this.onSelected.emit(id);
+    this.router.navigate([`${this.location.path()}/details/${id}`]);
   }
 }

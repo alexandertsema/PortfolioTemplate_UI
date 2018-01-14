@@ -59,8 +59,6 @@ article {
 
 .header-image {
   background-size: cover;
-  // width: 8rem;
-  // height: 8rem;
 }
 
 mat-card-content, .gpa, .header-image{
@@ -91,7 +89,4 @@ mat-card-content, .gpa, .header-image{
       margin-left: -66rem;
     }
   }
-  // article:nth-child(even) .timeline {
-  //   margin-left: 66rem;
-  // }
 }

@@ -7,7 +7,7 @@ import { EducationComponent } from "app/education/education.component";
 import { ReferencesComponent } from "app/references/references.component";
 import { CertificatesComponent } from "app/certificates/certificates.component";
 import { ContactsComponent } from "app/contacts/contacts.component";
-import { ProjectDetailsComponent } from "app/project-details/project-details.component";
+import { DetailsComponent } from "app/details/details.component";
 import { PageNotFoundComponent } from "app/page-not-found/page-not-found.component";
 
 const routes: Routes = [
@@ -27,12 +27,8 @@ const routes: Routes = [
     component: ProjectsComponent
   },
   {
-    path: 'project',
-    component: ProjectDetailsComponent
-  },
-  {
-    path: 'projectdetails',
-    component: ProjectDetailsComponent
+    path: ':type/details/:id',
+    component: DetailsComponent
   },
   {
     path: 'education',

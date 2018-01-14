@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
 import { Project } from "app/models/project";
 // import { HttpService } from "app/services/http.service";
 import { ENDPOINTS } from "app/settings/endpoints";
@@ -15,12 +15,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class ProjectsComponent implements OnInit {
 
-  
-  _projects: Project[];
+  allProjects: Project[];
+  projects: Project[];
   projectCategoryFilter: number;
-  isVisible: string = "hidden";
 
-  // constructor(private httpService: HttpService) { }
+  constructor() { }
 
   ngOnInit() {
     // this.httpService.get<Project[]>(ENDPOINTS.certificate)
@@ -32,30 +31,14 @@ export class ProjectsComponent implements OnInit {
     //           console.error(error)
     //     );
 
-    
-    this._projects = mockProject;
+    this.projects = this.allProjects = mockProject;
   }
 
   onFilterChange(filterValue: number) {
-    this.projectCategoryFilter = filterValue;
-  }
-
-  get projects(): Project[]{
-    if (+this.projectCategoryFilter != 0 && typeof this.projectCategoryFilter != 'undefined') {
-      return this._projects.map((project) => {
-        let match = project.projectCategory.id == (+this.projectCategoryFilter);
-        if(!match)
-          return null;
-        else
-          return project;
-      }).filter(x => !!x);
+    if (filterValue != 0) {
+      this.projects = this.allProjects.filter((project) => project.projectCategory.id == filterValue);
     } else {
-      return this._projects;
+      this.projects = this.allProjects;
     }
-  }
-
-  onSelected(id: number) {
-    console.log(id); // trigger expand of project-detailed component
-    this.isVisible = 'visible';
   }
 }

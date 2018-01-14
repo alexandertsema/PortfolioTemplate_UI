@@ -15,7 +15,7 @@ import { Subscription } from 'rxjs/Rx';
 export class SummaryComponent implements OnInit {
 
   summary: Summary;
-  mediaQuery: Subscription;
+  watcher: Subscription;
 
   // constructor(private httpService: HttpService) { }
   constructor(private observableMedia: ObservableMedia) {}
@@ -31,9 +31,13 @@ export class SummaryComponent implements OnInit {
     //     );
     this.summary = mockSummary;
 
-    this.mediaQuery = this.observableMedia.subscribe( (change: MediaChange) => {
+    this.watcher = this.observableMedia.subscribe( (change: MediaChange) => {
       this.setImage(change.mqAlias);
     });
+  }
+
+  ngOnDestroy() {
+    this.watcher.unsubscribe();
   }
 
   setImage(alias: string) {

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ISchool } from "app/models/school";
 import { ENDPOINTS } from "app/settings/endpoints";
 import { mockSchools } from "app/mocks/schools.mock";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-education',
@@ -12,9 +13,8 @@ import { mockSchools } from "app/mocks/schools.mock";
 export class EducationComponent implements OnInit {
 
   schools: ISchool[];
-  isVisible: string = "hidden";
 
-  // constructor(private httpService: HttpService) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     // this.httpService.get<School[]>(ENDPOINTS.certificate)
@@ -30,7 +30,6 @@ export class EducationComponent implements OnInit {
   }
 
   detailedView(id: number) {
-    console.log(id); // trigger expand of project-detailed component
-    this.isVisible = 'visible';
+    this.router.navigate([`education/details/${id}`]);
   }
 }

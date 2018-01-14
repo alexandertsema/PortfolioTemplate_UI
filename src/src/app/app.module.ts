@@ -15,7 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule } from '@angular/material';
 import { ProjectCategoryFilterComponent } from './project-category-filter/project-category-filter.component';
 import { GridItemComponent } from './grid-item/grid-item.component';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { DetailsComponent } from './details/details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AnimatePulseDirective } from './directives/animate/animate-pulse.directive';
 import { MediaBreakpointsModule } from 'app/modules/media-breakpoints.module';
@@ -32,7 +32,7 @@ import { MediaBreakpointsModule } from 'app/modules/media-breakpoints.module';
     ReferencesComponent,
     ProjectCategoryFilterComponent,
     GridItemComponent,
-    ProjectDetailsComponent,
+    DetailsComponent,
     PageNotFoundComponent,
     AnimatePulseDirective
   ],

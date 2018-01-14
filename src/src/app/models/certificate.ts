@@ -1,4 +1,4 @@
-import { File } from 'app/models/file'
+import { File } from 'app/models/file';
 
 export interface ICertificate{
     id: number;

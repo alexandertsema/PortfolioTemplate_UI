@@ -19,6 +19,6 @@
         <a mat-button href="/skills">
             <mat-icon>arrow_back</mat-icon>
         </a>
-    </div> -->
-    <img class="flex-item" src="{{summary?.image?.data}}" alt="{{summary?.image?.name}}">
+    </div>
+    <img class="flex-item" *ngIf="summary?.image?.data" src="{{summary?.image?.data}}" title="{{summary?.image?.name}}" alt="{{summary?.image?.name}}">
 </section>
