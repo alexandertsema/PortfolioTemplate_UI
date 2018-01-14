@@ -1,0 +1,31 @@
+<section class="flex-container">
+    <div class="flex-item flex-container nav-back">
+        <div class="flex-item flex-container">
+            <a class="flex-container" (click)="goBack()">
+                <i class="flex-item material-icons">arrow_back</i>
+                <p class="flex-item">Back</p>
+            </a>
+        </div>
+    </div>
+    <article class="flex-item flex-container">
+        <div class="flex-item flex-container content">
+            <div class="flex-item flex-container header">
+                <div class="flex-item image" [style.background-image]="'url(' + details?.image?.data + ')'"></div>
+                <div class="flex-item buttons">
+                    <a mat-fab href="{{button?.link}}"  *ngFor="let button of details?.buttons">
+                        <mat-icon>{{ button?.type }}</mat-icon>
+                    </a>
+                </div>
+                <div class="flex-item title">
+                    <h2>{{ details?.title }}</h2>
+                    <h3 *ngIf="details?.subtitle">{{ details?.subtitle }}</h3>
+                </div>
+            </div>
+            <div class="flex-item text">
+                <p>
+                    {{ details?.text }}
+                </p>
+            </div>
+        </div>
+    </article>
+</section>
