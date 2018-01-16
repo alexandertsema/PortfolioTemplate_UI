@@ -1,4 +1,3 @@
-@import '~styles/abstracts/functions';
 @import '~styles/abstracts/variables';
 
 section {
@@ -14,7 +13,6 @@ section {
     p {
         flex: 8 0 0;
         color: $color-gray;
-        font-family: 'Roboto Light';
     }
     div:nth-child(3) {
         flex: 1 0 0;
@@ -56,7 +54,7 @@ mat-icon {
 @media screen and (min-width: $screen-xs-min) {
     .text {
         div:nth-child(1) {
-            flex: 1 0 0;
+            flex: 1 0 5rem;
         }
         p {
             flex: 12 0 0;

@@ -77,28 +77,17 @@ mat-card-content, .gpa, .header-image{
   }
 }
 
-@media screen and (min-width: $screen-m-min) {
-  .timeline {
-    margin-left: 66rem;
-  }
-  article:nth-child(even) {
-    .date {
-      left: 8rem;
-    }
-    .content {
-      margin-left: -66rem;
-    }
-  }
-}
-
-@media screen and (min-width: $screen-l-min) {
-
-  .content {
-    min-width: 66rem;
-  }
-  article:nth-child(even) {
-    .content {
-      margin-left: -73rem;
-    }
-  }
-}
+// todo: fix on iPad
+// @media screen and (min-width: $screen-m-min) {
+//   .timeline {
+//     margin-left: 60rem;
+//   }
+//   article:nth-child(even) {
+//     .date {
+//       left: 8rem;
+//     }
+//     .content {
+//       margin-left: -61rem;
+//     }
+//   }
+// }

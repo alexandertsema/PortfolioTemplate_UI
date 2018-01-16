@@ -13,7 +13,7 @@ section {
   }
 }
 .card {
-  height: 50rem;
+  max-height: 50rem;
   width: 45rem;
   max-width: 50rem;
   margin: 1.5rem;
@@ -23,15 +23,16 @@ section {
   }
 
   $lines-show: 9;
-  $line-height: 3.16rem;
+  $line-height: 3rem;
 
-  mat-card-content {
+  .card-content {
     position: relative;
     height: $line-height*$lines-show;
+    line-height: $line-height;
     overflow: hidden;
   }
 
-  mat-card-content:after {
+ .card-content:after {
     content: "";
     text-align: right;
     position: absolute;

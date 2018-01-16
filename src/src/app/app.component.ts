@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { trigger, state, style, animate, transition } from '@angular/animations';
@@ -9,23 +9,18 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   styleUrls: ['./app.component.scss'],
   animations: [
     trigger('navState', [
-      state('initial', style({
-        left: '-30rem'
-      })),
       state('show', style({
-        left: '0'
+        '-webkit-transform': 'translateX(30rem)',
+        transform: 'translateX(30rem)'
       })),
       state('hide', style({
-        left: '-30rem'
+        '-webkit-transform': 'none',
+        transform: 'none'
       })),
-      transition('* => show', animate('.2s cubic-bezier(0.0, 0.0, 0.2, 1)')),
-      transition('* => hide', animate('.2s cubic-bezier(0.4, 0.0, 1, 1)'))
+      transition('hide => show', animate('.2s cubic-bezier(0.0, 0.0, 0.2, 1)')),
+      transition('show => hide', animate('.2s cubic-bezier(0.4, 0.0, 1, 1)'))
     ]),
     trigger('navBackdropState', [
-      state('initial', style({
-        visibility: 'hidden',
-        opacity: '0'
-      })),
       state('show', style({
         visibility: 'visible',
         opacity: '1'
@@ -34,18 +29,22 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         visibility: 'hidden',
         opacity: '0'
       })),
-      transition('* => show', animate('.1s cubic-bezier(0.0, 0.0, 0.2, 1)')),
-      transition('* => hide', animate('.1s cubic-bezier(0.4, 0.0, 1, 1)'))
+      transition('hide => show', animate('.1s cubic-bezier(0.0, 0.0, 0.2, 1)')),
+      transition('show => hide', animate('.1s cubic-bezier(0.4, 0.0, 1, 1)'))
     ])
   ]
 })
 export class AppComponent {
 
-  header: string;
-  navState = 'initial';
-  navBackdropState = 'initial';
+  private swipeCoord?: [number, number];
+  private swipeTime?: number;
+  private header: string;
+  private navState: 'show' | 'hide';
+  private navBackdropState: 'show' | 'hide';
 
-  constructor(private route: ActivatedRoute, private router: Router, private titleService: Title ) { }
+  constructor(private route: ActivatedRoute, private router: Router, private titleService: Title ) {
+      this.navState = this.navBackdropState = 'hide';
+   }
 
   ngOnInit() {
     this.router.events
@@ -55,13 +54,11 @@ export class AppComponent {
           while (currentRoute.children[0] !== undefined) {
             currentRoute = currentRoute.children[0];
           }
-          let header;
           if (currentRoute.snapshot.data.alias !== undefined)
-            header = currentRoute.snapshot.data.alias;
+            this.header = currentRoute.snapshot.data.alias;
           else
-            header = currentRoute.snapshot.url[0].path;
-          this.header = header;
-          this.titleService.setTitle(`${header.toUpperCase()} | ALEXANDER TSEMA}`);
+            this.header = currentRoute.snapshot.url[0].path;
+          this.titleService.setTitle(`${currentRoute.snapshot.routeConfig.path.toUpperCase()} | ALEXANDER TSEMA`);
         }
       });
   }
@@ -69,5 +66,27 @@ export class AppComponent {
   toggleNavState(state) {
     this.navState = state;
     this.navBackdropState = state;
+  }
+
+
+  swipe(e: TouchEvent, when: string): void {
+    const coords: [number, number] = [e.changedTouches[0].pageX, e.changedTouches[0].pageY];
+    const time = new Date().getTime();
+
+    if (when === 'start') {
+      this.swipeCoord = coords;
+      this.swipeTime = time;
+    }
+    else if (when === 'end') {
+      const direction = [coords[0] - this.swipeCoord[0], coords[1] - this.swipeCoord[1]];
+      const duration = time - this.swipeTime;
+
+      if (duration < 1000
+            && Math.abs(direction[1]) < Math.abs(direction[0])
+              && Math.abs(direction[0]) > 30) {
+        const swipe = direction[0] < 0 ? 'hide' : 'show';
+        this.toggleNavState(swipe);
+      }
+    }
   }
 }

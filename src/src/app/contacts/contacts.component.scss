@@ -6,7 +6,6 @@ section {
     background-color: $color-white;
     flex-direction: column;
     justify-content: center;
-    // align-content: center !important;
     align-items: center;
 
     height: 100%;
@@ -20,20 +19,20 @@ section {
 .contact {
     align-items: center;
     flex-grow: 0;
+    user-select: none;
     p {
         padding-left: rem(.1);
     }
 }
 
 .blur {
-    user-select: none;
     span {
-        transition: all 0.9s ease;
+        transition: all .9s ease;
         color: transparent;
         text-shadow: 0 0 15px $color-black;
   }
 }
 .blur span:hover {
-    transition: all 0.2s ease;
+    transition: all .2s ease;
     color: $color-black;
 }

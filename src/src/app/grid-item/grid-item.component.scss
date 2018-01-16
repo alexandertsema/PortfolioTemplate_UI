@@ -18,8 +18,17 @@ article {
 
 .content {
     flex: 1 0 auto;
-    margin-bottom: -26rem;
     background-color:  rgba(66, 66, 66, .5);
+
+    -webkit-transform: translateY(26rem);
+    transform: translateY(26rem);
+	transition: transform .3s cubic-bezier(.4, 0, 1, 1);
+}
+
+article:hover .content{
+    -webkit-transform: none;
+    transform: none;
+    transition: transform .3s cubic-bezier(0, 0, .2, 1);
 }
 
 .titles {

@@ -1,10 +1,11 @@
 <div class="flex-container root-container" >
-    <div class="flex-item nav-back-drop" [@navBackdropState]="navBackdropState" (click)="toggleNavState('hide')"></div>
+    <div class="flex-item nav-back-drop" [@navBackdropState]="navBackdropState" 
+    (click)="toggleNavState('hide')"></div>
     <nav class="flex-item flex-container"
-    [@navState]="navState"
-    (mouseenter)="toggleNavState('show')"
-    (mouseleave)="toggleNavState('hide')">
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/home' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
+        [@navState]="navState"
+        (mouseenter)="toggleNavState('show')"
+        (mouseleave)="toggleNavState('hide')">
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/home'>
             <div class="nav-link flex-container">
                 <div class="flex-item text">home</div>
                 <div class="flex-item dot">
@@ -12,7 +13,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/skills' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/skills'>
             <div class="nav-link flex-container">
                 <div class="flex-item text">skills</div>
                 <div class="flex-item dot">
@@ -20,7 +21,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/projects' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/projects'>
             <div class="nav-link flex-container">
                 <div class="flex-item text">projects</div>
                 <div class="flex-item dot">
@@ -28,7 +29,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/education' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/education'>
             <div class="nav-link flex-container">
                 <div class="flex-item text">education</div>
                 <div class="flex-item dot">
@@ -36,7 +37,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/references' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/references'>
             <div class="nav-link flex-container">
                 <div class="flex-item text">references</div>
                 <div class="flex-item dot">
@@ -44,7 +45,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/certificates' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/certificates'>
             <div class="nav-link flex-container">
                 <div class="flex-item text">certificates</div>
                 <div class="flex-item dot">
@@ -52,7 +53,7 @@
                 </div>
             </div>
         </a>
-        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/contacts' (mouseenter)="toggleNavState('show')" (click)="toggleNavState('hide')">
+        <a class="flex-item flex-container" routerLinkActive="active-link" routerLink='/contacts'>
             <div class="nav-link flex-container">
                 <div class="flex-item text">contacts</div>
                 <div class="flex-item dot">
@@ -74,3 +75,6 @@
         <footer class="flex-item"></footer>
     </div>
 </div>
+
+<!-- (touchstart)="swipe($event, 'start')" 
+    (touchend)="swipe($event, 'end')" -->

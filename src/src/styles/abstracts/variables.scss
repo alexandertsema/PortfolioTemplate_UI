@@ -1,15 +1,19 @@
 @import 'functions';
 
-$font-thin: 'Roboto Thin';
-$font-light: 'Roboto Light';
-$font-regular: 'Roboto';
-$font-medium: 'Roboto Medium';
+// $font-thin: 'Roboto Thin';
+// $font-light: 'Roboto Light';
+// $font-regular: 'Roboto';
+// $font-medium: 'Roboto Medium';
 
-$font-family: $font-regular;
-$font-family-h1: $font-thin;
-$font-family-h2: $font-thin;
-$font-family-h3: $font-light;
-$font-family-p: $font-light;
+$font-family: 'Roboto', sans-serif;
+// $font-family-h1: $font-thin;
+// $font-family-h2: $font-thin;
+// $font-family-h3: $font-light;
+// $font-family-p: $font-light;
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
 
 $root-size: 10%;
 
