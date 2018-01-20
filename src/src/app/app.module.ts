@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -19,6 +19,9 @@ import { DetailsComponent } from './details/details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AnimatePulseDirective } from './directives/animate/animate-pulse.directive';
 import { MediaBreakpointsModule } from 'app/modules/media-breakpoints.module';
+import { NavigationLinkComponent } from 'app/navigation-link/navigation-link.component';
+import { NavigationMenuComponent } from 'app/navigation-menu/navigation-menu.component';
+import { CustomHammerConfig } from 'app/hummer-config';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { MediaBreakpointsModule } from 'app/modules/media-breakpoints.module';
     GridItemComponent,
     DetailsComponent,
     PageNotFoundComponent,
-    AnimatePulseDirective
+    AnimatePulseDirective,
+    NavigationLinkComponent,
+    NavigationMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +50,13 @@ import { MediaBreakpointsModule } from 'app/modules/media-breakpoints.module';
     MediaBreakpointsModule,
     MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule, MatChipsModule
   ],
-  providers: [ HttpClient ],
+  providers: [
+    HttpClient,
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: CustomHammerConfig
+    }
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

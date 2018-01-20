@@ -1,0 +1,11 @@
+<a class='flex-item flex-container' routerLinkActive='active-link' routerLink='{{ route }}'
+(mouseenter)="toggleHoverState('on')"
+(mouseleave)="toggleHoverState('off')"
+[@hoverState]="hoverState">
+  <div class='flex-container nav-link'>
+    <div class='flex-item text'>{{ name }}</div>
+    <div class='flex-item dot'>
+      <span></span>
+    </div>
+  </div>
+</a>

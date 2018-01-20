@@ -1,0 +1,54 @@
+@import '~styles/abstracts/variables';
+
+a {
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 1 10rem;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-size: 12rem;
+    color: $color-gray;
+}
+
+.nav-link {
+    padding: 3rem 0 3rem 3rem;
+}
+
+.active-link {
+    background-color: $color-black-transparent;
+}
+
+@media screen and (min-width: $screen-m-min) {
+    a  {
+        font-size: 12rem;
+        .nav-link {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            .text {
+                flex: 4 0 20rem;
+            }
+            .dot {
+                flex: 1 0 auto;
+                span {
+                    display: block;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    border: 1px solid $color-gray;
+                    background-color: $color-white;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    .active-link {
+        background-color: inherit;
+        .dot span{
+            background-color: $color-gray !important;
+        }
+    }
+}

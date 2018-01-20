@@ -1,81 +1,8 @@
 @import '~styles/abstracts/variables';
-@import '~styles/abstracts/functions';
 
 .root-container {
     width: 100%;
     height: 100%;
-}
-
-.nav-back-drop {
-    // visibility: hidden;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    z-index: 2;
-    background-color: $color-black-trasparent;
-
-    // opacity: 0;
-    // transition: opacity .1s cubic-bezier(.4, 0, 1, 1);
-}
-
-// nav:hover .nav-back-drop {
-//     // visibility: visible;
-//     // opacity: 1;
-//     // transition: opacity .1s cubic-bezier(0, 0, .2, 1);
-//     background-color: red;
-// }
-
-nav {
-    background-color: $color-white;
-
-    position: fixed;
-    left: -30rem;
-    width: 30rem;
-    height: 100%;
-
-    flex-direction: column;
-    justify-content: center;
-
-    z-index: 3;
-    overflow: auto;
-
-    // -webkit-transform: none;
-    // transform: none;
-	// transition: transform .2s cubic-bezier(0.4, 0.0, 1, 1);
-
-    a {
-        justify-content: flex-start;
-        align-items: center;
-        flex: 0 1 10rem;
-
-        text-transform: uppercase;
-        text-decoration: none;
-
-        font-size: 12rem;
-        color: $color-gray;
-    }
-
-    a:hover{
-        background-color: $color-black-trasparent;
-    }
-}
-
-// nav:hover {
-//     -webkit-transform: translateX(30rem);
-//     transform: translateX(30rem);
-// 	transition: transform .2s cubic-bezier(0, 0, .2, 1);
-// }
-
-.nav-link {
-    padding-left: rem(.3);
-}
-
-.active-link {
-    background-color: $color-black-trasparent;
 }
 
 .content-container {
@@ -112,47 +39,5 @@ footer {
 @media screen and (min-width: $screen-m-min) {
     mat-icon  {
         visibility: hidden;
-    }
-    nav {
-        width: rem(3.6);
-        -webkit-box-shadow: 1px 0px 13px -3px rgba(0,0,0,0.75);
-        -moz-box-shadow: 1px 0px 13px -3px rgba(0,0,0,0.75);
-        box-shadow: 1px 0px 13px -3px rgba(0,0,0,0.75);
-        a  {
-            font-size: rem(1.2);
-            .nav-link {
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: center;
-                width: 100%;
-                .text {
-                    flex: 4 0 rem(2);
-                }
-                .dot {
-                    flex: 1 0 auto;
-                    span {
-                        display: block;
-                        border-radius: 50%;
-                        width: 8px;
-                        height: 8px;
-                        border: 1px solid $color-gray;
-                        background-color: $color-white;
-                        background-repeat: no-repeat;
-                    }
-                }
-            }
-        }
-    }
-    .active-link {
-        background-color: inherit;
-        .dot span{
-            background-color: $color-gray !important;
-        }
-    }
-}
-
-@media screen and (min-width: $screen-xl-min) {
-    nav {
-        box-shadow: none;
     }
 }
