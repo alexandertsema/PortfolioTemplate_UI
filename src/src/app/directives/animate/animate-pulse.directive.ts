@@ -1,5 +1,4 @@
 import { Directive, Input, ElementRef,  AfterViewInit } from '@angular/core';
-import { element } from 'protractor';
 
 @Directive({
   selector: '[appAnimatePulse]'

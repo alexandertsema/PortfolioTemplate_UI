@@ -5,6 +5,7 @@ import { ENDPOINTS } from "app/settings/endpoints";
 import { mockSummary } from "app/mocks/summary.mock";
 import { ObservableMedia, MediaChange } from '@angular/flex-layout';
 import { Subscription } from 'rxjs/Rx';
+import { Router } from '@angular/router'
 
 
 @Component({
@@ -18,7 +19,7 @@ export class SummaryComponent implements OnInit {
   watcher: Subscription;
 
   // constructor(private httpService: HttpService) { }
-  constructor(private observableMedia: ObservableMedia) {}
+  constructor(private observableMedia: ObservableMedia, private router: Router) {}
 
   ngOnInit() {
     // this.httpService.get<Summary>(ENDPOINTS.certificate)
@@ -50,5 +51,9 @@ export class SummaryComponent implements OnInit {
       case 'xxl': this.summary.image.data = this.summary.image.responsiveData.m; break;
       default: this.summary.image.data = null; break;
     }
+  }
+
+  navigateTo(route: string) {
+    this.router.navigate([route]);
   }
 }

@@ -21,7 +21,9 @@ import { AnimatePulseDirective } from './directives/animate/animate-pulse.direct
 import { MediaBreakpointsModule } from 'app/modules/media-breakpoints.module';
 import { NavigationLinkComponent } from 'app/navigation-link/navigation-link.component';
 import { NavigationMenuComponent } from 'app/navigation-menu/navigation-menu.component';
-import { CustomHammerConfig } from 'app/hummer-config';
+import { CustomHammerConfig } from 'app/hammer-config';
+import { ScrollNavDirective } from 'app/directives/scroll/scroll-nav.directive';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +40,10 @@ import { CustomHammerConfig } from 'app/hummer-config';
     DetailsComponent,
     PageNotFoundComponent,
     AnimatePulseDirective,
+    ScrollNavDirective,
     NavigationLinkComponent,
-    NavigationMenuComponent
+    NavigationMenuComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
