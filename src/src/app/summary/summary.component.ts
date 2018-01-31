@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-// import { HttpService } from "app/services/http.service";
-import { Summary } from "app/models/summary";
-import { ENDPOINTS } from "app/settings/endpoints";
+import { ISummary } from "app/models/summary";
 import { mockSummary } from "app/mocks/summary.mock";
 import { ObservableMedia, MediaChange } from '@angular/flex-layout';
 import { Subscription } from 'rxjs/Rx';
 import { Router } from '@angular/router'
+import { HttpService } from 'app/services/http/http.service';
+import { Observable } from 'rxjs/Observable';
+import { SpinnerService } from 'app/services/spinner/spinner.service';
 
 
 @Component({
@@ -14,24 +15,20 @@ import { Router } from '@angular/router'
   styleUrls: ['./summary.component.scss']
 })
 export class SummaryComponent implements OnInit {
-
-  summary: Summary;
+  summary: ISummary;
   watcher: Subscription;
 
-  // constructor(private httpService: HttpService) { }
-  constructor(private observableMedia: ObservableMedia, private router: Router) {}
+  constructor(private observableMedia: ObservableMedia, private router: Router, private httpService: HttpService) {}
 
   ngOnInit() {
-    // this.httpService.get<Summary>(ENDPOINTS.certificate)
-    //     .subscribe(
-    //         (summary: Summary) => {
-    //           this.summary = summary;
-    //         },
-    //         (error: any) =>
-    //           console.error(error)
-    //     );
-    this.summary = mockSummary;
+    this.httpService.get<ISummary>('summary')
+      .subscribe(summary => {
+        this.summary = summary;
+        this.watchMediaChange();
+      });
+  }
 
+  watchMediaChange() {
     this.watcher = this.observableMedia.subscribe( (change: MediaChange) => {
       this.setImage(change.mqAlias);
     });

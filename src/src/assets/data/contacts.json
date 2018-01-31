@@ -1,0 +1,14 @@
+[
+    {
+        "contactType": "email",
+        "value": "at.webdes@gmail.com"
+    },
+    {
+        "contactType": "phone",
+        "value": "+1 917 945 17 55"
+    },
+    {
+        "contactType": "location_city",
+        "value": "New York, NY, USA"
+    }
+]

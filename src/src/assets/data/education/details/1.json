@@ -1,0 +1,16 @@
+{
+    "id": 1,
+    "image": {
+        "name": "CUNY",
+        "data": "../assets/images/proj.jpg"
+    },
+    "buttons": [
+        {
+            "type": "explore",
+            "link": "http://www2.cuny.edu/"
+        }
+    ],
+    "title": "CUNY",
+    "subtitle": "Master's Degree in Computer Science 2015-2017",
+    "text": "<p>The Department of Computer Science is committed to providing students with a curriculum that satisfies both the technical demands of today's business and the research needed to meet tomorrow's information requirements. The areas of specialization include artificial intelligence, computer vision, networking, database systems, computer-human interaction, computer graphics, and numerical and symbolic computation. The faculty enhances their teaching activities with a number of active research programs in such areas as digital signal processing, computer architecture, computer communications, computer security, pattern recognition, image analysis, symbolic computation, software engineering, verification and testing.</p><hr/><h3>Graduation Thesis Work: Scene Classification for Indoor Localization System</h3><p> This project is a part of fully functioning vision based assistive indoor localization system for visually impaired people. The convolutional neural network was developed to classify high-resolution omnidirectional images to reduce the time complexity of the sample search algorithm. Firstly, the dataset was generated and normalized. Secondly, the CNN’s architecture was developed and global parameters were optimized. Thirdly, the trained model was validated and tested on distinct datasets to ensure generalization ability correctness. The classification accuracy for top 1 candidate class on the testing dataset is up to 89% on average, for top 2 candidate classes is 100%. All work was done using Tensorflow 1.0 with original Python API. All the insides of the CNN were visualized in the Tensorboard. The results of the research will be published in a book “Assistive Computer Vision” by April 2018.</p>"
+}

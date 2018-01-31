@@ -1,5 +1,2 @@
-const BASE_URL = "http://localhost:5000/api/";
-export const ENDPOINTS = {
-    "certificate" : `${BASE_URL}certificate/`,
-};
+export const BASE_URL = "http://localhost:4200/assets/data";
 

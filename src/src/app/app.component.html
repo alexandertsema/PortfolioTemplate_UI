@@ -1,5 +1,4 @@
 <div class="flex-container root-container"
-    
     (swiperight)="navMenu.toggleNavState('show')"
     (swipeleft)="navMenu.toggleNavState('hide')">
     <app-navigation-menu #navMenu></app-navigation-menu>
@@ -10,6 +9,7 @@
             <h1 class="flex-item">{{header}}</h1>
         </header>
         <main class="flex-item">
+            <app-spinner></app-spinner>
             <router-outlet></router-outlet>
         </main>
         <footer class="flex-item"></footer>

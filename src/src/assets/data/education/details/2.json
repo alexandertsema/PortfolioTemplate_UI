@@ -1,0 +1,16 @@
+{
+    "id": 1,
+    "image": {
+        "name": "ITMO University",
+        "data": "../assets/images/proj.jpg"
+    },
+    "buttons": [
+        {
+            "type": "explore",
+            "link": "http://en.ifmo.ru/en/"
+        }
+    ],
+    "title": "ITMO University",
+    "subtitle": "Master's Degree in Software Engineering 2014-2016",
+    "text": "<p>Training in the field of Intelligent Information Systems is dedicated to creating fast search algorithms, knowledge bases, organization of data in knowledge bases, providing quick inference, knowledge extraction from non-formalized sources, including social networks. In addition to intelligent information systems, the sphere of interest of the department also includes intelligent control methods in technical systems, intelligent image processing methods and principles for the implementation of computer vision systems. This field of study trains highly skilled systems analysts, experts in the field of ontological engineering, data mining specialists capable of working in high-tech IT-companies, industrial enterprises, in the field of science, education and public authorities, wherever modern data analysis techniques are used, the information research, decision-making.</p><hr/><h3>Graduation Thesis Work: Face Recognition of Race and Ethnicity</h3><p>The main purpose of this research was to develop a method for the determination of the national affiliation of a person by the image of his face. Firstly, the metrics were developed and formalized, the database was constructed and all data was normalized and separated into training, validation and test sets. Secondly, was made an analysis of fully connected neural networks and theirtraining methods. Third, determined the most appropriate configuration of the neural network, experimental and empirically selected the most appropriate network settings. Finally, conducted testing of the developed method. Among technologies used were Python with NumPy, Keras with Theano backend. All experiments were made using Jupyter Notebook. All data was visualized with Matplotlib and Seaborn.</p>"
+}

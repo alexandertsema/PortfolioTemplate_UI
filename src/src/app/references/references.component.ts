@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IReference } from "app/models/reference";
-// import { HttpService } from "app/services/http.service";
-import { ENDPOINTS } from "app/settings/endpoints";
 import { mockReferences } from "app/mocks/references.mock";
 import { Router } from '@angular/router';
+import { HttpService } from 'app/services/http/http.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-references',
@@ -12,20 +12,12 @@ import { Router } from '@angular/router';
 })
 export class ReferencesComponent implements OnInit {
 
-  references: IReference[]
+  references: Observable<IReference[]>;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private httpService: HttpService) { }
 
   ngOnInit() {
-    // this.httpService.get<Reference[]>(ENDPOINTS.certificate)
-    //     .subscribe(
-    //         (references: Reference[]) => {
-    //           this.references = references; 
-    //         },
-    //         (error: any) => 
-    //           console.error(error)
-    //     );
-    this.references = mockReferences;
+    this.references = this.httpService.get<IReference[]>('references');
   }
   detailedView(id: number) {
     this.router.navigate([`references/details/${id}`]);

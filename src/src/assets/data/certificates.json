@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Building Web Applications with Angular 2",
+        "authority": "Learning Tree International",
+        "image": {
+            "name": "Building Web Applications with Angular 2",
+            "data": "../assets/images/proj.jpg"
+        },
+        "pdf": {
+            "name": "Building Web Applications with Angular 2",
+            "data": "../assets/pdf/Alexander_Tsema_Resume.pdf"
+        }
+    },
+    {
+        "name": "WCF, Web API and SignalR Services for .NET",
+        "authority": "Learning Tree International",
+        "image": {
+            "name": "WCF, Web API and SignalR Services for .NET",
+            "data": "../assets/images/proj.jpg"
+        },
+        "pdf": {
+            "name": "WCF, Web API and SignalR Services for .NET",
+            "data": "../assets/pdf/Alexander_Tsema_Resume.pdf"
+        }
+    }
+]

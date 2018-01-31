@@ -58,11 +58,12 @@ const baseRoutes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: '404',
+    component: PageNotFoundComponent
+  },
+  {
     path: '**',
-    component: PageNotFoundComponent ,
-    data: {
-      alias: '404'
-    }
+    redirectTo: '/404'
   }
 ];
 

@@ -28,7 +28,7 @@ section {
 }
 
 .nav-back {
-    flex: 10 0 auto;
+    flex: 0 0 auto;
     padding-left: 1rem;
 
     a {
@@ -47,7 +47,7 @@ section {
 article {
     background-color: $color-white;
 
-    flex: 50 0 auto;
+    flex: 0 0 auto;
     justify-content: center;
 }
 
@@ -70,6 +70,7 @@ article {
     height: 40em;
     max-width: 112rem;
 
+    background-color: $color-white;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -85,6 +86,7 @@ article {
     margin-top: -6rem;
 
     a {
+        background-color: $color-violet;
         margin: .7rem;
     }
 }

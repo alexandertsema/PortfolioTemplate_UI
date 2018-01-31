@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "CUNY",
+        "gpa": 3.5,
+        "degree": "Master's",
+        "fieldOfStudy": "Computer Science",
+        "endDate": 2017,
+        "image": {
+            "name": "CUNY",
+            "data": "../assets/images/proj.jpg"
+        },
+        "thesis": {
+            "name": "Scene Classification for Indoor Localization System"
+        }
+    },
+    {
+        "id": 2,
+        "name": "ITMO University",
+        "degree": "Master's",
+        "fieldOfStudy": "Software Engineering",
+        "endDate": 2016,
+        "image": {
+            "name": "ITMO University",
+            "data": "../assets/images/proj.jpg"
+        },
+        "thesis": {
+            "name": "Face Recognition of Race and Ethnicity"
+        }
+    },
+    {
+        "id": 3,
+        "name": "ITMO University",
+        "degree": "Bachelor's",
+        "fieldOfStudy": "Computer Science and Engineering",
+        "endDate": 2014,
+        "image": {
+            "name": "ITMO University",
+            "data": "../assets/images/proj.jpg"
+        },
+        "thesis": {
+            "name": "Pattern Recognition in Video Streams"
+        }
+    }
+]

@@ -1,6 +1,6 @@
 <section class="flex-item flex-container">
   <div class="flex-item"></div>
-  <div *ngFor="let contact of contacts" class="flex-item flex-container contact">
+  <div *ngFor="let contact of contacts | async" class="flex-item flex-container contact">
     <mat-icon>{{contact?.contactType}}</mat-icon>
     <div *ngIf="contact?.contactType === 'phone'">
       <p class="blur">

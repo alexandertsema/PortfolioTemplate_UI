@@ -1,0 +1,16 @@
+{
+    "id": 2,
+    "image": {
+        "name": "Vasilisa Kosova",
+        "data": "../assets/images/proj.jpg"
+    },
+    "buttons": [
+        {
+            "type": "explore",
+            "link": "http://www.thetigerparty.com/"
+        }
+    ],
+    "title": "Vasilisa Kosova",
+    "subtitle": "Project Manager at Tiger Party",
+    "text": "<p>Excellent work! Easy to work overall. Alex's final product was great and easy for us to take over. He was clean in his delivery and willing to help all step of the way. Alexander is always on time with his work and will go extra time if it is necessary. No revision needed. excellent experience. I will work with Alexander again soon.</p>"
+}

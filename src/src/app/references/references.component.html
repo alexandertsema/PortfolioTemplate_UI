@@ -1,5 +1,5 @@
 <section appAnimatePulse class="flex-container">
-  <mat-card class="flex-item card pulse" *ngFor="let reference of references">
+  <mat-card class="flex-item card pulse" *ngFor="let reference of references | async">
     <mat-card-header>
       <div mat-card-avatar [style.background-image]="'url(' + reference?.referenceAuthor?.image?.data + ')'" class="header-image"></div>
       <mat-card-title>{{ reference?.referenceAuthor?.name }}</mat-card-title>
@@ -10,7 +10,7 @@
     </mat-card-content>
     <mat-card-actions>
       <button mat-button (click)="detailedView(reference?.id)">DETAILS</button>
-      <a mat-button href="{{reference?.pdf?.data}}">PDF</a>
+      <a mat-button *ngIf="reference?.pdf" href="{{reference?.pdf?.data}}">PDF</a>
     </mat-card-actions>
   </mat-card>
 </section>

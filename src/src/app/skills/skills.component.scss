@@ -1,23 +1,30 @@
 @import '~styles/abstracts/variables';
 
 section {
-    flex-flow: row;
-    flex-wrap: wrap;
-    align-content: center;
     justify-content: center;
-    align-items: center;
-    height: 100%;
 
     @media screen and (min-width: $screen-m-min) {
-      margin-left: 9rem;
+        margin: 10rem -9rem;
     }
-  }
+}
 
-  .skills-container {
-      max-width: 70%;
-      margin-top: -10rem;
-  }
+.skills-container {
+    max-width: 70%;
+    flex-wrap: wrap;
+}
 
-  .skill {
-      text-transform: uppercase;
-  }
+.skill {
+    text-transform: uppercase;
+    border-radius: 24px;
+    padding: 1rem;
+    margin: .5rem;
+    background-color: $color-gray;
+    text-align: center;
+    box-shadow: none;
+    transition: box-shadow .28s cubic-bezier(.4, 0, .2, 1);
+}
+
+.skill:hover {
+    box-shadow: 0 3px 8px 0 rgba(92 ,92, 92, 1);
+    transition: box-shadow .28s cubic-bezier(.4, 0, .2, 1);
+}

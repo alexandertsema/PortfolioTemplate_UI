@@ -1,12 +1,11 @@
 import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
-import { Project } from "app/models/project";
-// import { HttpService } from "app/services/http.service";
-import { ENDPOINTS } from "app/settings/endpoints";
+import { IProject } from "app/models/project";
 import { mockProject } from "app/mocks/project.mock";
 import { IProjectCategory } from "app/models/projectCategory";
 import { mockProjectCategories } from "app/mocks/projectCategory.mock";
 
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { HttpService } from 'app/services/http/http.service';
 
 @Component({
   selector: 'app-projects',
@@ -15,23 +14,17 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class ProjectsComponent implements OnInit {
 
-  allProjects: Project[];
-  projects: Project[];
+  allProjects: IProject[];
+  projects: IProject[];
   projectCategoryFilter: number;
 
-  constructor() { }
+  constructor(private httpService: HttpService) {}
 
   ngOnInit() {
-    // this.httpService.get<Project[]>(ENDPOINTS.certificate)
-    //     .subscribe(
-    //         (projects: Project[]) => {
-    //           this.projects = projects; 
-    //         },
-    //         (error: any) => 
-    //           console.error(error)
-    //     );
-
-    this.projects = this.allProjects = mockProject;
+    this.httpService.get<IProject[]>('projects')
+      .subscribe(projects => {
+        this.projects = this.allProjects = projects;
+      });
   }
 
   onFilterChange(filterValue: number) {

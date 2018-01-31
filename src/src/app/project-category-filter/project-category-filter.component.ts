@@ -1,6 +1,8 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { IProjectCategory } from 'app/models/projectCategory';
 import { mockProjectCategories } from 'app/mocks/projectCategory.mock';
+import { HttpService } from 'app/services/http/http.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-project-category-filter',
@@ -9,14 +11,14 @@ import { mockProjectCategories } from 'app/mocks/projectCategory.mock';
 })
 export class ProjectCategoryFilterComponent implements OnInit {
 
-  projectCategories: IProjectCategory[];
+  projectCategories: Observable<IProjectCategory[]>;
   @Output()
   onFilter = new EventEmitter<number>();
 
-  constructor() { }
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-    this.projectCategories = mockProjectCategories;
+    this.projectCategories = this.httpService.get<IProjectCategory[]>('projectCategories');
   }
 
   public onFilterEnter(filterValue: number) {

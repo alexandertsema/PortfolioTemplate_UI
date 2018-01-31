@@ -21,11 +21,7 @@
                     <h3 *ngIf="details?.subtitle">{{ details?.subtitle }}</h3>
                 </div>
             </div>
-            <div class="flex-item text">
-                <p>
-                    {{ details?.text }}
-                </p>
-            </div>
+            <div class="flex-item text" [innerHTML]="details?.text"></div>
         </div>
     </article>
 </section>

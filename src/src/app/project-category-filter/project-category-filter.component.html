@@ -2,7 +2,7 @@
     <mat-button-toggle value="0" checked="True">
       All
     </mat-button-toggle>
-    <mat-button-toggle *ngFor="let projectCategory of projectCategories" value="{{projectCategory?.id}}">
+    <mat-button-toggle *ngFor="let projectCategory of projectCategories | async" value="{{projectCategory?.id}}">
       {{projectCategory?.name}}
     </mat-button-toggle>
 </mat-button-toggle-group>

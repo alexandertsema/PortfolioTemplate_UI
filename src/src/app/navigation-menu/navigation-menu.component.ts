@@ -9,11 +9,13 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     trigger('navState', [
       state('show', style({
         '-webkit-transform': 'translateX(30rem)',
-        transform: 'translateX(30rem)'
+        transform: 'translateX(30rem)',
+        'box-shadow': '1px 0px 13px -3px rgba(0,0,0,0.87)'
       })),
       state('hide', style({
         '-webkit-transform': 'none',
-        transform: 'none'
+        transform: 'none',
+        'box-shadow': 'none'
       })),
       transition('hide => show', animate('.2s cubic-bezier(0, 0, .2, 1)')),
       transition('show => hide', animate('.2s cubic-bezier(.4, 0, 1, 1)'))

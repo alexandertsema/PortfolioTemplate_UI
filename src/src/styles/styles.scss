@@ -8,111 +8,117 @@ html, body {
     height: 100%;
     margin: 0 auto;
     font-size: $root-size;
+}
 
-    a {
-        font-family: $font-family;
-        font-weight: $font-weight-regular;
-        color: black;
-    }
+hr {
+    background-color: $color-gray;
+    height: 1px;
+    border: 0;
+}
 
+a {
+    font-family: $font-family;
+    font-weight: $font-weight-regular;
+    color: $color-black;
+}
+
+p {
+    font-family: $font-family;
+    font-weight:$font-weight-light;
+    font-size: $font-size-p-xs;
+    color: $color-black;
+}
+
+h1 {
+    font-family: $font-family;
+    font-weight: $font-weight-thin;
+    text-transform: uppercase;
+    font-size: $font-size-h1-xs;
+    color: $color-black;
+}
+
+h2 {
+    font-family: $font-family;
+    font-weight:$font-weight-thin;
+    text-transform: uppercase;
+    font-size: $font-size-h2-xs;
+    color: $color-gray;
+}
+
+h3 {
+    font-family: $font-family;
+    font-weight:$font-weight-light;
+    font-size: $font-size-h3-xs;
+}
+
+@media screen and (min-width: $screen-s-min) {
     p {
-        font-family: $font-family;
-        font-weight:$font-weight-light;
-        font-size: $font-size-p-xs;
-        color: black;
+        font-size:  $font-size-p-s;
     }
-
     h1 {
-        font-family: $font-family;
-        font-weight: $font-weight-thin;
-        text-transform: uppercase;
-        font-size: $font-size-h1-xs;
-        color: black;
+        font-size: $font-size-h1-s;
     }
-
     h2 {
-        font-family: $font-family;
-        font-weight:$font-weight-thin;
-        text-transform: uppercase;
-        font-size: $font-size-h2-xs;
-        color: $color-gray;
+        font-size: $font-size-h2-s;
     }
-
     h3 {
-        font-family: $font-family;
-        font-weight:$font-weight-light;
-        font-size: $font-size-h3-xs;
+        font-size: $font-size-h3-s;
     }
-
-    @media screen and (min-width: $screen-s-min) {
-        p {
-            font-size:  $font-size-p-s;
-        }
-        h1 {
-            font-size: $font-size-h1-s;
-        }
-        h2 {
-            font-size: $font-size-h2-s;
-        }
-        h3 {
-            font-size: $font-size-h3-s;
-        }
+}
+@media screen and (min-width: $screen-m-min) {
+    p {
+        font-size:  $font-size-p-m;
     }
-    @media screen and (min-width: $screen-m-min) {
-        p {
-            font-size:  $font-size-p-m;
-        }
-        h1 {
-            font-size: $font-size-h1-m;
-        }
-        h2 {
-            font-size: $font-size-h2-m;
-        }
-        h3 {
-            font-size: $font-size-h3-m;
-        }
+    h1 {
+        font-size: $font-size-h1-m;
     }
-    @media screen and (min-width: $screen-l-min) {
-        p {
-            font-size:  $font-size-p-l;
-        }
-        h1 {
-            font-size: $font-size-h1-l;
-        }
-        h2 {
-            font-size: $font-size-h2-l;
-        }
-        h3 {
-            font-size: $font-size-h3-l;
-        }
+    h2 {
+        font-size: $font-size-h2-m;
     }
-    @media screen and (min-width: $screen-xl-min) {
-        p {
-            font-size:  $font-size-p-xl;
-        }
-        h1 {
-            font-size: $font-size-h1-xl;
-        }
-        h2 {
-            font-size: $font-size-h2-xl;
-        }
-        h3 {
-            font-size: $font-size-h3-xl;
-        }
+    h3 {
+        font-size: $font-size-h3-m;
     }
-    @media screen and (min-width: $screen-xxl-min) {
-        p {
-            font-size:  $font-size-p-xxl;
-        }
-        h1 {
-            font-size: $font-size-h1-xxl;
-        }
-        h2 {
-            font-size: $font-size-h2-xxl;
-        }
-        h3 {
-            font-size: $font-size-h3-xxl;
-        }
+}
+@media screen and (min-width: $screen-l-min) {
+    p {
+        font-size:  $font-size-p-l;
+    }
+    h1 {
+        font-size: $font-size-h1-l;
+    }
+    h2 {
+        font-size: $font-size-h2-l;
+    }
+    h3 {
+        font-size: $font-size-h3-l;
+    }
+}
+@media screen and (min-width: $screen-xl-min) {
+    p {
+        font-size:  $font-size-p-xl;
+    }
+    h1 {
+        font-size: $font-size-h1-xl;
+    }
+    h2 {
+        font-size: $font-size-h2-xl;
+    }
+    h3 {
+        font-size: $font-size-h3-xl;
+    }
+}
+@media screen and (min-width: $screen-xxl-min) {
+    p {
+        font-size:  $font-size-p-xxl;
+    }
+    h1 {
+        font-size: $font-size-h1-xxl;
+    }
+    h2 {
+        font-size: $font-size-h2-xxl;
+    }
+    h3 {
+        font-size: $font-size-h3-xxl;
     }
 }
 

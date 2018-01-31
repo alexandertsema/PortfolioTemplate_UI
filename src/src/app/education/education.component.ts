@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-// import { HttpService } from "app/services/http.service";
 import { ISchool } from "app/models/school";
-import { ENDPOINTS } from "app/settings/endpoints";
 import { mockSchools } from "app/mocks/schools.mock";
 import { Router } from '@angular/router';
+import { HttpService } from 'app/services/http/http.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-education',
@@ -12,21 +12,12 @@ import { Router } from '@angular/router';
 })
 export class EducationComponent implements OnInit {
 
-  schools: ISchool[];
+  schools: Observable<ISchool[]>;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private httpService: HttpService) { }
 
   ngOnInit() {
-    // this.httpService.get<School[]>(ENDPOINTS.certificate)
-    //     .subscribe(
-    //         (schools: School[]) => {
-    //           this.schools = schools; 
-    //         },
-    //         (error: any) => 
-    //           console.error(error)
-    //     );
-
-    this.schools = mockSchools;
+    this.schools = this.httpService.get<ISchool[]>('education');
   }
 
   detailedView(id: number) {

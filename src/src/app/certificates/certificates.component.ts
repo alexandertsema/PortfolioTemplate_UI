@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// import { HttpService } from "app/services/http.service";
 import { ICertificate } from "app/models/certificate";
-import { ENDPOINTS } from "app/settings/endpoints";
 import { certificatesMock } from "app/mocks/certificates.mock";
+import { HttpService } from 'app/services/http/http.service';
 
 @Component({
   selector: 'app-certificates',
@@ -13,18 +12,12 @@ export class CertificatesComponent implements OnInit {
 
   certificates : ICertificate[];
 
-  // constructor(private httpService: HttpService) { }
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-    // this.httpService.get<Certificate[]>(ENDPOINTS.certificate)
-    //     .subscribe(
-    //         (certificates: Certificate[]) => {
-    //           this.certificates = certificates; 
-    //         },
-    //         (error: any) => 
-    //           console.error(error)
-    //     );
-
-    this.certificates = certificatesMock;
+    this.httpService.get<ICertificate[]>('certificates')
+      .subscribe(certificates => {
+        this.certificates = certificates;
+      });
   }
 }

@@ -1,0 +1,47 @@
+[
+    {
+        "name": "copyright",
+        "content": "Copyright (c)2018 Alexander Tsema. All Rights Reserved.",
+        "isOg": false
+    },
+    {
+        "name": "description",
+        "content": "Senior Full Stack Software Engineer based in New York. Interested in microservices, machine learning, and computer vision",
+        "isGlobal": true
+    },
+    {
+        "name": "keywords",
+        "content": "Alexander Tsema, Aleksandr Tsema, Software Engineer, Full Stack, C#, ASP.NET Core, Python, Microservices, Angular, React, Redux, MongoDb, Azure, Flexbox, Machine Learning, AI, Computer Vision, New York, Russian, ITMO University",
+        "isOg": false
+    },
+    {
+        "name": "author",
+        "content": "Alexander Tsema",
+        "isOg": false
+    },
+    {
+        "name": "robots",
+        "content": "index,follow",
+        "isOg": false
+    },
+    {
+        "name": "title",
+        "content": "Alexander Tsema | Senior Full Stack Software Engineer | New York",
+        "isOg": true
+    },
+    {
+        "name": "type",
+        "content": "website",
+        "isOg": true
+    },
+    {
+        "name": "url",
+        "content": "http://alexandertsema.com/",
+        "isOg": true
+    },
+    {
+        "name": "image",
+        "content": "http://alexandertsema.com/assets/logo.png",
+        "isOg": true
+    }
+]

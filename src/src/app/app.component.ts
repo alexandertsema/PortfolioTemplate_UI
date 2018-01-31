@@ -5,6 +5,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 import { ScrollDispatcher } from '@angular/cdk/scrolling';
 import { window } from 'rxjs/operators/window';
 import { Element } from '@angular/compiler';
+import { MetaService } from 'app/services/meta/meta.service';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +15,10 @@ import { Element } from '@angular/compiler';
 export class AppComponent {
   private header: string;
 
-  constructor(private route: ActivatedRoute, private router: Router, private titleService: Title) { }
+  constructor(private route: ActivatedRoute, private router: Router, private titleService: Title, private metaService: MetaService) { }
 
   ngOnInit() {
+    this.metaService.setMetaTags();
     this.router.events
       .subscribe(event => {
         if  (event instanceof NavigationEnd) {
@@ -28,7 +30,7 @@ export class AppComponent {
             this.header = currentRoute.snapshot.data.alias;
           else
             this.header = currentRoute.snapshot.url[0].path;
-          this.titleService.setTitle(`${event.url.toUpperCase()} | ALEXANDER TSEMA`);
+          this.titleService.setTitle(`${event.url.replace('/', '').toUpperCase()} | Alexander Tsema | Senior Full Stack Software Engineer | New York`);
         }
       });
   }

@@ -1,7 +1,7 @@
 import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -12,7 +12,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ReferencesComponent } from './references/references.component';
 import { Routing } from 'app/app.routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule, MatChipsModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule, MatChipsModule, MatProgressBarModule } from '@angular/material';
 import { ProjectCategoryFilterComponent } from './project-category-filter/project-category-filter.component';
 import { GridItemComponent } from './grid-item/grid-item.component';
 import { DetailsComponent } from './details/details.component';
@@ -24,6 +24,9 @@ import { NavigationMenuComponent } from 'app/navigation-menu/navigation-menu.com
 import { CustomHammerConfig } from 'app/hammer-config';
 import { ScrollNavDirective } from 'app/directives/scroll/scroll-nav.directive';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { HttpService } from 'app/services/http/http.service';
+import { SpinnerService } from 'app/services/spinner/spinner.service';
+import { MetaService } from 'app/services/meta/meta.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     ScrollNavDirective,
     NavigationLinkComponent,
     NavigationMenuComponent,
-    SpinnerComponent
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,10 +55,12 @@ import { SpinnerComponent } from './spinner/spinner.component';
     Routing,
     BrowserAnimationsModule,
     MediaBreakpointsModule,
-    MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule, MatChipsModule
+    MatButtonModule, MatCardModule, MatButtonToggleModule, MatSidenavModule, MatIconModule, MatChipsModule, MatProgressBarModule
   ],
   providers: [
-    HttpClient,
+    HttpService,
+    SpinnerService,
+    MetaService,
     {
       provide: HAMMER_GESTURE_CONFIG,
       useClass: CustomHammerConfig

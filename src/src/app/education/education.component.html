@@ -1,6 +1,6 @@
 <section class="flex-container">
   <div appAnimatePulse class="timeline flex-item">
-      <article class="entry pulse" *ngFor="let school of schools">
+      <article class="entry pulse" *ngFor="let school of schools | async">
         <div class="date">
           <p>
             {{ school?.endDate }}

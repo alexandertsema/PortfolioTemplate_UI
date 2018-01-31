@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IContact } from "app/models/contact";
-// import { HttpService } from "app/services/http.service";
-import { ENDPOINTS } from "app/settings/endpoints";
 import { mockContacts } from "app/mocks/contacts.mock";
+import { HttpService } from 'app/services/http/http.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-contacts',
@@ -11,20 +11,11 @@ import { mockContacts } from "app/mocks/contacts.mock";
 })
 export class ContactsComponent implements OnInit {
 
-  contacts: IContact[];
+  contacts: Observable<IContact[]>;
 
-  // constructor(private httpService: HttpService) { }
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-    // this.httpService.get<Contact[]>(ENDPOINTS.certificate)
-    //     .subscribe(
-    //         (contacts: Contact[]) => {
-    //           this.contacts = contacts; 
-    //         },
-    //         (error: any) => 
-    //           console.error(error)
-    //     );
-
-    this.contacts = mockContacts;
+    this.contacts = this.httpService.get<IContact[]>('contacts');
   }
 }

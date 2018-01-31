@@ -8,13 +8,13 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('hoverState', [
       state('on', style({
-        background: 'rgba(0, 0, 0, .6)'
+        background: 'rgba(90, 91, 91, .1)'
       })),
       state('off', style({
         background: 'none'
       })),
-      transition('* => on', animate('.1s cubic-bezier(0, 0, .2, 1)')),
-      transition('* => off', animate('.1s cubic-bezier(0, 0, .2, 1)'))
+      transition('* => on', animate('0s')),
+      transition('* => off', animate('0s'))
     ])
   ]
 })

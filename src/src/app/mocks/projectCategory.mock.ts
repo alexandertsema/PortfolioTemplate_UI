@@ -1,17 +1,14 @@
 export let mockProjectCategories = [
     {
         id: 1,
-        name: "Web",
-        portfolioItems: null
+        name: "Web"
     },
     {
         id: 2,
-        name: "Desktop",
-        portfolioItems: null
+        name: "Desktop"
     },
     {
         id: 3,
-        name: "AI",
-        portfolioItems: null
+        name: "AI"
     }
 ]
