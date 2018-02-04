@@ -3,11 +3,18 @@
     [@navState]="navState"
     (mouseenter)="toggleNavState('show')"
     (mouseleave)="toggleNavState('hide')">
-    <app-navigation-link route='/home' name='home' #home (click)="home.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')"></app-navigation-link>
-    <app-navigation-link route='/skills' name='skills' #skills (click)="skills.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')"></app-navigation-link>
-    <app-navigation-link route='/projects' name='projects' #projects (click)="projects.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')"></app-navigation-link>
-    <app-navigation-link route='/education' name='education' #education (click)="education.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')"></app-navigation-link>
-    <app-navigation-link route='/references' name='references' #references (click)="references.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')"></app-navigation-link>
-    <app-navigation-link route='/certificates' name='certificates' #certificates (click)="certificates.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')"></app-navigation-link>
-    <app-navigation-link route='/contacts' name='contacts' #contacts (click)="contacts.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')"></app-navigation-link>
+    <app-navigation-link route='/home' name='home'
+        #home (click)="home.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')" class="flex-item flex-container"></app-navigation-link>
+    <app-navigation-link route='/skills' name='skills'
+        #skills (click)="skills.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')" class="flex-item flex-container"></app-navigation-link>
+    <app-navigation-link route='/projects' name='projects'
+        #projects (click)="projects.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')" class="flex-item flex-container"></app-navigation-link>
+    <app-navigation-link route='/education' name='education'
+        #education (click)="education.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')" class="flex-item flex-container"></app-navigation-link>
+    <app-navigation-link route='/references' name='references'
+        #references (click)="references.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')" class="flex-item flex-container"></app-navigation-link>
+    <app-navigation-link route='/certificates' name='certificates'
+        #certificates (click)="certificates.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')" class="flex-item flex-container"></app-navigation-link>
+    <app-navigation-link route='/contacts' name='contacts'
+        #contacts (click)="contacts.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')" class="flex-item flex-container"></app-navigation-link>
 </nav>

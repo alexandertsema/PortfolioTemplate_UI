@@ -32,10 +32,6 @@ main {
     height: 100%;
 }
 
-footer {
-    flex: 10 0 5rem;
-}
-
 @media screen and (min-width: $screen-m-min) {
     mat-icon  {
         visibility: hidden;

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { IContact } from "app/models/contact";
-import { mockContacts } from "app/mocks/contacts.mock";
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';
 

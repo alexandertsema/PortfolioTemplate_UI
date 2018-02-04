@@ -16,12 +16,7 @@
               <mat-card-subtitle class="gpa" *ngIf="school?.gpa">GPA {{ school?.gpa }}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
-              <p>
-                Graduation Thesis Work
-              </p>
-              <p>
-                "{{ school?.thesis?.name }}"
-              </p>
+                Graduation Thesis Work: {{ school?.thesis?.name }}
             </mat-card-content>
             <mat-card-actions>
               <button mat-button (click)="detailedView(school?.id)">DETAILS</button>

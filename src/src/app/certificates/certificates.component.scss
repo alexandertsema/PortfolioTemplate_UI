@@ -6,16 +6,40 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  // height: 100%;
-
-  @media screen and (min-width: $screen-m-min) {
-    margin-left: 9rem;
-  }
+  padding-bottom: 5rem;
 }
 
 app-grid-item {
   height: 50rem;
-  width: 50rem;
-  max-width: 50rem;
+  max-width: 100rem;
   margin: 1.5rem;
+}
+
+@media screen and (min-width: $screen-xs-min) {
+  app-grid-item {
+    width: 50rem;
+    height: 50rem;
+  }
+}
+
+@media screen and (min-width: $screen-s-min) {
+  app-grid-item {
+    width: 75rem;
+    height: 75rem;
+  }
+}
+
+@media screen and (min-width: $screen-m-min) {
+  section {
+    margin-left: 9rem;
+  }
+  app-grid-item {
+    height: 100rem;
+  }
+}
+
+@media screen and (min-width: $screen-l-min) {
+  app-grid-item {
+    width: 100rem;
+  }
 }

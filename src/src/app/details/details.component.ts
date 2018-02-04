@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IDetails } from 'app/models/details';
-import { projectDetails } from 'app/mocks/projectDetails.mock';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { HttpService } from 'app/services/http/http.service';

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ICertificate } from "app/models/certificate";
-import { certificatesMock } from "app/mocks/certificates.mock";
 import { HttpService } from 'app/services/http/http.service';
 
 @Component({

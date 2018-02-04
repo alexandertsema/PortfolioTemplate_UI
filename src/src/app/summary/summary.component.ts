@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ISummary } from "app/models/summary";
-import { mockSummary } from "app/mocks/summary.mock";
 import { ObservableMedia, MediaChange } from '@angular/flex-layout';
 import { Subscription } from 'rxjs/Rx';
 import { Router } from '@angular/router'

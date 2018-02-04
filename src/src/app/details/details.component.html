@@ -10,7 +10,7 @@
     <article class="flex-item flex-container">
         <div class="flex-item flex-container content">
             <div class="flex-item flex-container header">
-                <div class="flex-item image" [style.background-image]="'url(' + details?.image?.data + ')'"></div>
+                <div class="flex-item image" [style.background-image]="details ? 'url(' + details?.image?.data + ')' : 'none'"></div>
                 <div class="flex-item buttons">
                     <a mat-fab href="{{button?.link}}"  *ngFor="let button of details?.buttons">
                         <mat-icon>{{ button?.type }}</mat-icon>

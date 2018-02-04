@@ -1,6 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { IProjectCategory } from 'app/models/projectCategory';
-import { mockProjectCategories } from 'app/mocks/projectCategory.mock';
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';
 

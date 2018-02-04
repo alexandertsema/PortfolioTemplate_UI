@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { IReference } from "app/models/reference";
-import { mockReferences } from "app/mocks/references.mock";
 import { Router } from '@angular/router';
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';

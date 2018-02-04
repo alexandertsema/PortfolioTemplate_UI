@@ -27,6 +27,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { HttpService } from 'app/services/http/http.service';
 import { SpinnerService } from 'app/services/spinner/spinner.service';
 import { MetaService } from 'app/services/meta/meta.service';
+import { SquareDirective } from 'app/directives/square/square.directive';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { MetaService } from 'app/services/meta/meta.service';
     PageNotFoundComponent,
     AnimatePulseDirective,
     ScrollNavDirective,
+    SquareDirective,
     NavigationLinkComponent,
     NavigationMenuComponent,
     SpinnerComponent,

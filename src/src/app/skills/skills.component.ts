@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ISkill } from "app/models/skill";
 import { IEdge } from "app/models/edge";
-import { mockSkill } from "app/mocks/skill.mock";
 import { INode } from "app/models/node";
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';
