@@ -23,7 +23,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])]
 })
 export class SpinnerComponent implements OnInit {
-  private isSpinning: boolean;
+  public isSpinning: boolean;
   constructor(private spinnerService: SpinnerService) { }
 
   ngOnInit() {

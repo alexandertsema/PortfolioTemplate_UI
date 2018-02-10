@@ -35,8 +35,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class NavigationMenuComponent {
-  private navState: 'show' | 'hide';
-  private navBackdropState: 'show' | 'hide';
+  public navState: 'show' | 'hide';
+  public navBackdropState: 'show' | 'hide';
 
   constructor() {
     this.navState = this.navBackdropState = 'hide';

@@ -12,7 +12,7 @@ import { MetaService } from 'app/services/meta/meta.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private header: string;
+  public header: string;
 
   constructor(private route: ActivatedRoute, private router: Router, private titleService: Title, private metaService: MetaService) { }
 

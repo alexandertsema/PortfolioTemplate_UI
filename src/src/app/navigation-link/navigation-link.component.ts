@@ -20,10 +20,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class NavigationLinkComponent {
   @Input()
-  private route: string;
+  public route: string;
   @Input()
-  private name: string;
-  private hoverState: 'on' | 'off';
+  public name: string;
+  public hoverState: 'on' | 'off';
 
   toggleHoverState(state: 'on' | 'off') {
     this.hoverState = state;
