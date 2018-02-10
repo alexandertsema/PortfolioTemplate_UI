@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IReference } from "app/models/reference";
+import { IReference } from 'app/models/reference';
 import { Router } from '@angular/router';
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';
@@ -11,7 +11,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class ReferencesComponent implements OnInit {
 
-  references: Observable<IReference[]>;
+  public references: Observable<IReference[]>;
 
   constructor(private router: Router, private httpService: HttpService) { }
 

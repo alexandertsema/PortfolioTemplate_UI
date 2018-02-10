@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ISchool } from "app/models/school";
+import { ISchool } from 'app/models/school';
 import { Router } from '@angular/router';
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';
@@ -11,7 +11,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class EducationComponent implements OnInit {
 
-  schools: Observable<ISchool[]>;
+  public schools: Observable<ISchool[]>;
 
   constructor(private router: Router, private httpService: HttpService) { }
 

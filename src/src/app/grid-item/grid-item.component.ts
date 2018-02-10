@@ -11,19 +11,19 @@ import { Location } from '@angular/common';
 export class GridItemComponent {
 
   @Input()
-  type: number;
+  public type: number;
   @Input()
-  id: number;
+  public id: number;
   @Input()
-  title: string;
+  public title: string;
   @Input()
-  subtitle: string;
+  public subtitle: string;
   @Input()
-  image: string;
+  public image: string;
   @Input()
-  buttonText: string;
+  public buttonText: string;
   @Input()
-  url?: string;
+  public url?: string;
 
   constructor(private router: Router, private location: Location) { }
 

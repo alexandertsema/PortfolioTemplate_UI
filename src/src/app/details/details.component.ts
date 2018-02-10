@@ -10,7 +10,7 @@ import { HttpService } from 'app/services/http/http.service';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
-  details: IDetails;
+  public details: IDetails;
 
   constructor(private route: ActivatedRoute, private location: Location, private httpService: HttpService) { }
 

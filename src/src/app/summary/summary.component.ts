@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ISummary } from "app/models/summary";
+import { ISummary } from 'app/models/summary';
 import { ObservableMedia, MediaChange } from '@angular/flex-layout';
 import { Subscription } from 'rxjs/Rx';
 import { Router } from '@angular/router'
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';
 import { SpinnerService } from 'app/services/spinner/spinner.service';
+import { OnDestroy } from '@angular/core/src/metadata/lifecycle_hooks';
 
 
 @Component({
@@ -13,9 +14,9 @@ import { SpinnerService } from 'app/services/spinner/spinner.service';
   templateUrl: './summary.component.html',
   styleUrls: ['./summary.component.scss']
 })
-export class SummaryComponent implements OnInit {
-  summary: ISummary;
-  watcher: Subscription;
+export class SummaryComponent implements OnInit, OnDestroy {
+  public summary: ISummary;
+  private watcher: Subscription;
 
   constructor(private observableMedia: ObservableMedia, private router: Router, private httpService: HttpService) {}
 

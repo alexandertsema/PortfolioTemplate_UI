@@ -42,9 +42,9 @@ export class NavigationMenuComponent {
     this.navState = this.navBackdropState = 'hide';
   }
 
-  toggleNavState(state: 'show' | 'hide') {
-    this.navState = state;
-    this.navBackdropState = state;
+  toggleNavState(sharedState: 'show' | 'hide') {
+    this.navState = sharedState;
+    this.navBackdropState = sharedState;
   }
 
 }

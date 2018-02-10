@@ -1,7 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
-import { IProject } from "app/models/project";
-import { IProjectCategory } from "app/models/projectCategory";
-
+import { IProject } from 'app/models/project';
+import { IProjectCategory } from 'app/models/projectCategory';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { HttpService } from 'app/services/http/http.service';
 
@@ -12,9 +11,8 @@ import { HttpService } from 'app/services/http/http.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  allProjects: IProject[];
-  projects: IProject[];
-  projectCategoryFilter: number;
+  private allProjects: IProject[];
+  public projects: IProject[];
 
   constructor(private httpService: HttpService) {}
 
@@ -26,8 +24,8 @@ export class ProjectsComponent implements OnInit {
   }
 
   onFilterChange(filterValue: number) {
-    if (filterValue != 0) {
-      this.projects = this.allProjects.filter((project) => project.projectCategory.id == filterValue);
+    if (+filterValue !== 0) {
+      this.projects = this.allProjects.filter((project) => project.projectCategory.id === +filterValue);
     } else {
       this.projects = this.allProjects;
     }

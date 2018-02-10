@@ -1,5 +1,5 @@
-import { IReference } from "app/models/reference";
-import { File } from "app/models/file"
+import { IReference } from 'app/models/reference';
+import { IFile } from 'app/models/file'
 
 export interface IReferenceAuthor {
     id: number,
@@ -7,6 +7,5 @@ export interface IReferenceAuthor {
     image: File,
     companyName: string,
     companyLink: string,
-    position: string,
-    // references: IReference[]
+    position: string
 }

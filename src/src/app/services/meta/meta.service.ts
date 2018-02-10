@@ -13,13 +13,12 @@ export class MetaService {
       .subscribe(metaTags => {
         metaTags.forEach(metaTag => {
           if (metaTag.isGlobal) {
-            let tag = this.createMetaTag(metaTag.name, metaTag.content, false);
-            let ogTag = this.createMetaTag(metaTag.name, metaTag.content, true);
+            const tag = this.createMetaTag(metaTag.name, metaTag.content, false);
+            const ogTag = this.createMetaTag(metaTag.name, metaTag.content, true);
             document.head.appendChild(tag);
             document.head.appendChild(ogTag);
-          }
-          else {
-            let tag = this.createMetaTag(metaTag.name, metaTag.content, metaTag.isOg);
+          } else {
+            const tag = this.createMetaTag(metaTag.name, metaTag.content, metaTag.isOg);
             document.head.appendChild(tag);
           }
         });
@@ -27,7 +26,7 @@ export class MetaService {
   }
 
   createMetaTag(name: string, content: string, isOg: boolean) {
-    let tag = document.createElement('meta');
+    const tag = document.createElement('meta');
     tag.setAttribute(isOg ? 'property' : 'name', isOg ? `og:${name}` : name);
     tag.setAttribute('content', content);
 

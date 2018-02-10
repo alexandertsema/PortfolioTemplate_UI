@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ISkill } from "app/models/skill";
-import { IEdge } from "app/models/edge";
-import { INode } from "app/models/node";
+import { ISkill } from 'app/models/skill';
+import { IEdge } from 'app/models/edge';
+import { INode } from 'app/models/node';
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';
 
@@ -11,7 +11,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  skills : Observable<ISkill[]>;
+  public skills: Observable<ISkill[]>;
   constructor(private httpService: HttpService) {}
 
   ngOnInit() {

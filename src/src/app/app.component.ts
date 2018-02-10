@@ -5,13 +5,14 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 import { window } from 'rxjs/operators/window';
 import { Element } from '@angular/compiler';
 import { MetaService } from 'app/services/meta/meta.service';
+import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   public header: string;
 
   constructor(private route: ActivatedRoute, private router: Router, private titleService: Title, private metaService: MetaService) { }
@@ -25,11 +26,13 @@ export class AppComponent {
           while (currentRoute.children[0] !== undefined) {
             currentRoute = currentRoute.children[0];
           }
-          if (currentRoute.snapshot.data.alias !== undefined)
+          if (currentRoute.snapshot.data.alias !== undefined) {
             this.header = currentRoute.snapshot.data.alias;
-          else
+          } else {
             this.header = currentRoute.snapshot.url[0].path;
-          this.titleService.setTitle(`${event.url.replace('/', '').toUpperCase()} | Alexander Tsema | Senior Full Stack Software Engineer | New York`);
+          }
+          this.titleService.setTitle(`${event.url.replace('/', '').toUpperCase()}
+            | Alexander Tsema | Senior Full Stack Software Engineer | New York`);
         }
       });
   }

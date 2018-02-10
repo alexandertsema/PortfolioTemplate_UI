@@ -1,2 +1,2 @@
-export const BASE_URL = "/assets/data";
+export const BASE_URL = '/assets/data';
 

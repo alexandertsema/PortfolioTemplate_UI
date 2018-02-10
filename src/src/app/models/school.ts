@@ -1,6 +1,6 @@
-import { ICourse } from "app/models/course";
-import { File } from "app/models/file"
-import { IThesis } from "app/models/thesis";
+import { ICourse } from 'app/models/course';
+import { IFile } from 'app/models/file'
+import { IThesis } from 'app/models/thesis';
 
 export interface ISchool {
     id: number,
@@ -11,7 +11,7 @@ export interface ISchool {
     fieldOfStudy: string;
     startDate: number,
     endDate: number,
-    image: File,
+    image: IFile,
     thesis: IThesis,
     courses?: ICourse[]
 }

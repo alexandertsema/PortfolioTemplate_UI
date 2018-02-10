@@ -1,4 +1,4 @@
-import { IPosition } from "app/models/position";
+import { IPosition } from 'app/models/position';
 
 export interface IParticle {
     direction: IPosition,

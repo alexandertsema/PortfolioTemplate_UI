@@ -28,8 +28,8 @@ export class SpinnerComponent implements OnInit {
 
   ngOnInit() {
     this.spinnerService.spinnerSubject
-      .subscribe(state =>
-          this.isSpinning = state
+      .subscribe(spinningState =>
+          this.isSpinning = spinningState
       );
   }
 }

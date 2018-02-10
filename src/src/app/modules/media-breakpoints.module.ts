@@ -9,7 +9,7 @@ import {
 
 
 function setBreakpoints() {
-  let arr = new Array<BreakPoint>();
+  const arr = new Array<BreakPoint>();
   arr.push({
     mediaQuery: '(max-width: 359px)',
     alias: ''

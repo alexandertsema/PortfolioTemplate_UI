@@ -12,7 +12,7 @@ export class HttpService {
   private timer: any;
   constructor(private http: HttpClient, private spinnerService: SpinnerService) { }
 
-  public get<T>(url : string): Observable<T> {
+  public get<T>(url: string): Observable<T> {
     const timer = this.spinnerService.setSpinner();
     return this.http
       .get<T>(`${BASE_URL}/${url}.json`)

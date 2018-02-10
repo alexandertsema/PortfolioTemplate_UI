@@ -15,7 +15,7 @@ export class ScrollNavDirective {
       .subscribe(event => {
         if  (event instanceof NavigationEnd) {
           const currentRoute = this.formatRoute(event.url);
-          let currentIndex = navMenuRoutes.map(x => x.path).indexOf(currentRoute);
+          const currentIndex = navMenuRoutes.map(x => x.path).indexOf(currentRoute);
           const prevElement = navMenuRoutes[currentIndex - 1];
           const nextElement = navMenuRoutes[currentIndex + 1];
 

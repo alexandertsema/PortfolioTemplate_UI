@@ -2,7 +2,7 @@ import { TestBed, inject } from '@angular/core/testing';
 import { Http, BaseRequestOptions } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
 import { HttpService } from './http.service';
-import { ICertificate } from "app/models/certificate";
+import { ICertificate } from 'app/models/certificate';
 
 describe('HttpService', () => {
   beforeEach(() => {
@@ -25,7 +25,7 @@ describe('HttpService', () => {
   }));
 
   it('should return some data from the service', inject([HttpService], (service: HttpService) => {
-    var result = null;
+    let result = null;
     service.get<ICertificate>('certificates')
         .subscribe(
             (response: ICertificate) => { result = response },

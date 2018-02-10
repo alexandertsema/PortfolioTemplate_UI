@@ -1,9 +1,9 @@
-import { File } from 'app/models/file';
+import { IFile } from 'app/models/file';
 
 export interface ISummary {
     id: number;
     title: string;
     description: string;
-    image: File;
-    resume: File;
+    image: IFile;
+    resume: IFile;
 }

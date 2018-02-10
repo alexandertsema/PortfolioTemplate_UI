@@ -25,7 +25,7 @@ export class NavigationLinkComponent {
   public name: string;
   public hoverState: 'on' | 'off';
 
-  toggleHoverState(state: 'on' | 'off') {
-    this.hoverState = state;
+  toggleHoverState(hoverState: 'on' | 'off') {
+    this.hoverState = hoverState;
   }
 }

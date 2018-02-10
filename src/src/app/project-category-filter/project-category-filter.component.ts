@@ -10,9 +10,9 @@ import { Observable } from 'rxjs/Observable';
 })
 export class ProjectCategoryFilterComponent implements OnInit {
 
-  projectCategories: Observable<IProjectCategory[]>;
+  public projectCategories: Observable<IProjectCategory[]>;
   @Output()
-  onFilter = new EventEmitter<number>();
+  public onFilter = new EventEmitter<number>();
 
   constructor(private httpService: HttpService) { }
 

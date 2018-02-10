@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ICertificate } from "app/models/certificate";
+import { ICertificate } from 'app/models/certificate';
 import { HttpService } from 'app/services/http/http.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { HttpService } from 'app/services/http/http.service';
 })
 export class CertificatesComponent implements OnInit {
 
-  certificates : ICertificate[];
+  public certificates: ICertificate[];
 
   constructor(private httpService: HttpService) { }
 
