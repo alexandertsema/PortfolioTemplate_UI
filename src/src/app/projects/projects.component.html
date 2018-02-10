@@ -2,7 +2,7 @@
     <div class="flex-item filter">
         <app-project-category-filter (onFilter)="onFilterChange($event)"></app-project-category-filter>
     </div>
-    <div appAnimatePulse class="flex-item flex-container projects">
+    <div class="flex-item flex-container projects">
         <app-grid-item class="flex-item pulse"
         *ngFor="let project of projects"
         [id] = "project?.id"

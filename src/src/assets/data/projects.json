@@ -1,16 +1,74 @@
 [
     {
         "id": 1,
+        "name": "Portfolio Template UI",
+        "subtitle": "Angular 5, Flexbox",
+        "image": {
+            "name": "Portfolio Template UI",
+            "data": "../assets/images/proj.jpg"
+        },
+        "projectCategory": {
+            "id": 1
+        }
+    },
+    {
+        "id": 2,
         "name": "Portfolio Template",
-        "subtitle": "ASP.NET Core",
+        "subtitle": "ASP.NET Core, MS SQL Server",
         "image": {
             "name": "Portfolio Template",
             "data": "../assets/images/proj.jpg"
         },
-        "description": "Literally venmo before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before they sold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. Drinking vinegar marfa you probably haven't heard of them consequat post-ironic, shabbychic williamsburg raclette vaporware readymade selfies brunch. Venmo selvage biodiesel marfa. Tbh literally 3 wolf moon, proident elit raclette chambray consequat edison bulb four loko accusamus. Semiotics godard eiusmod, ex esse air plant quinoa vaporware selfies keytar. Actually yuccie ennui flannel single-origin coffee, williamsburgcardigan banjo forage pug distillery tumblr hexagon vinyl occaecat.Literally venmo before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before theysold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.",
-        "link": "google.com",
         "projectCategory": {
             "id": 1
+        }
+    },
+    {
+        "id": 3,
+        "name": "Indoor Localization Scene Classifier",
+        "subtitle": "Python, Tensorflow, NumPy",
+        "image": {
+            "name": "Indoor Localization Scene Classifier",
+            "data": "../assets/images/proj.jpg"
+        },
+        "projectCategory": {
+            "id": 3
+        }
+    },
+    {
+        "id": 4,
+        "name": "Home Surveillance System",
+        "subtitle": "Python, OpenCV, NumPy",
+        "image": {
+            "name": "Home Surveillance System",
+            "data": "../assets/images/proj.jpg"
+        },
+        "projectCategory": {
+            "id": 3
+        }
+    },
+    {
+        "id": 5,
+        "name": "Dashboard",
+        "subtitle": ".NET Core, Web Sockets",
+        "image": {
+            "name": "Dashboard",
+            "data": "../assets/images/proj.jpg"
+        },
+        "projectCategory": {
+            "id": 1
+        }
+    },
+    {
+        "id": 6,
+        "name": "OneTwoPrint",
+        "subtitle": "WPF",
+        "image": {
+            "name": "OneTwoPrint",
+            "data": "../assets/images/proj.jpg"
+        },
+        "projectCategory": {
+            "id": 2
         }
     }
 ]

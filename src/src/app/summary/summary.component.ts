@@ -34,7 +34,9 @@ export class SummaryComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.watcher.unsubscribe();
+    if (this.watcher) {
+      this.watcher.unsubscribe();
+    }
   }
 
   setImage(alias: string) {

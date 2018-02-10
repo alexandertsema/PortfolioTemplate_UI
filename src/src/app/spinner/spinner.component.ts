@@ -10,11 +10,13 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     trigger('spinnerState', [
       state('true', style({
         '-webkit-transform': 'none',
-        transform: 'none'
+        transform: 'none',
+        display: 'block'
       })),
       state('false', style({
         '-webkit-transform': 'translateY(-3rem)',
-        transform: 'translateY(-3rem)'
+        transform: 'translateY(-3rem)',
+        display: 'none'
       })),
       transition('false => true', animate('.2s cubic-bezier(0, 0, .2, 1)')),
       transition('true => false', animate('.8s cubic-bezier(.4, 0, 1, 1)'))

@@ -1,0 +1,16 @@
+{
+    "id": 4,
+    "image": {
+        "name": "Home Surveillance System",
+        "data": "../assets/images/proj.jpg"
+    },
+    "buttons": [
+        {
+            "type": "code",
+            "link": "https://github.com/alexandertsema/HomeSurveillanceSystem"
+        }
+    ],
+    "title": "Home Surveillance System",
+    "subtitle": "Python, OpenCV, Pyaudio, Ffmpeg",
+    "text": "<p>This project implements very simple system for video surveillance which can be used at home with laptop and web camera or with Raspberry Pi and CSI camera. The system can detect motions and notify user about that. This system will become a part of my SmartAqua IoT system.</p><p>P.S.</p><p>I was always curious what is my dog doing when I'm at work. And since I have a fish tank now it makes even more sense.</p>"
+}

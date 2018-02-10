@@ -1,14 +1,27 @@
 [
     {
+        "isLink": false,
         "contactType": "email",
         "value": "at.webdes@gmail.com"
     },
     {
+        "isLink": false,
         "contactType": "phone",
         "value": "+1 917 945 17 55"
     },
     {
+        "isLink": false,
         "contactType": "location_city",
         "value": "New York, NY, USA"
+    },
+    {
+        "isLink": true,
+        "contactType": "github",
+        "value": "https://github.com/alexandertsema"
+    },
+    {
+        "isLink": true,
+        "contactType": "linkedin",
+        "value": "https://www.linkedin.com/"
     }
 ]

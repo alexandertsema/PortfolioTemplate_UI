@@ -1,6 +1,6 @@
 <section class="flex-item flex-container">
   <div class="flex-item"></div>
-  <div *ngFor="let contact of contacts | async" class="flex-item flex-container contact">
+  <div *ngFor="let contact of contacts | filterContacts:false" class="flex-item flex-container contact">
     <mat-icon>{{contact?.contactType}}</mat-icon>
     <div *ngIf="contact?.contactType === 'phone'">
       <p class="blur">
@@ -11,6 +11,13 @@
       <p>
         {{contact?.value}}
       </p>
+    </div>
+  </div>
+  <div class="flex-item flex-container social-media-container">
+    <div *ngFor="let contact of contacts | filterContacts:true" class="flex-item social-media">
+      <a href="{{contact?.value}}">
+        <mat-icon svgIcon="{{contact?.contactType}}"></mat-icon>
+      </a>
     </div>
   </div>
   <div class="flex-item"></div>

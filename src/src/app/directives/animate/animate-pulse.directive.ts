@@ -1,13 +1,13 @@
-import { Directive, Input, ElementRef,  AfterViewInit } from '@angular/core';
+import { Directive, Input, ElementRef,  AfterViewInit, AfterViewChecked } from '@angular/core';
 
 @Directive({
   selector: '[appAnimatePulse]'
 })
-export class AnimatePulseDirective implements AfterViewInit {
+export class AnimatePulseDirective implements AfterViewChecked {
 
   constructor(private el: ElementRef) { }
 
-  ngAfterViewInit(): void {
+  ngAfterViewChecked(): void {
     const items = this.el.nativeElement.children;
     if (items.length === 0) {
       return;

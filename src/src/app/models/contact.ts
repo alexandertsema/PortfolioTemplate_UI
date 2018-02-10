@@ -1,7 +1,8 @@
-import { ContactType } from 'app/models/enums/contactType';
+import { IContactType } from 'app/models/enums/contactType';
 
 export interface IContact {
     id: number;
-    contactType: ContactType;
+    isLink: boolean;
+    contactType: IContactType;
     value: string;
 }

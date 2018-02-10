@@ -2,7 +2,6 @@ import { Component, ViewEncapsulation, ElementRef } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { ScrollDispatcher } from '@angular/cdk/scrolling';
 import { window } from 'rxjs/operators/window';
 import { Element } from '@angular/compiler';
 import { MetaService } from 'app/services/meta/meta.service';

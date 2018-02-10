@@ -1,16 +1,20 @@
 {
     "id": 1,
     "image": {
-        "name": "Angular 2",
+        "name": "Portfolio Template UI",
         "data": "../assets/images/proj.jpg"
     },
     "buttons": [
         {
-            "type": "check",
-            "link": "#"
+            "type": "link",
+            "link": "/"
+        },
+        {
+            "type": "code",
+            "link": "https://github.com/alexandertsema/PortfolioTemplate_UI"
         }
     ],
-    "title": "Portfolio Template",
-    "subtitle": "Portfolio Template",
-    "text": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus"
+    "title": "Portfolio Template UI",
+    "subtitle": "Angular 5, Flexbox, HammerJS",
+    "text": "<p>I started to develop it with Angular version 2 and have been updating the version to the most recent one, so now it's running Angular 5.2. The layout is powered by pure Flexbox and CSS3 along with HTML5. By the way, the web site you are on is using this template.</p>"
 }

@@ -2,7 +2,6 @@
 @import '~styles/abstracts/animations';
 
 section {
-  flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -10,22 +9,16 @@ section {
 }
 
 app-grid-item {
-  height: 50rem;
-  max-width: 100rem;
+  height: 35rem;
+  width: 35rem;
+  max-width: 75rem;
   margin: 1.5rem;
-}
-
-@media screen and (min-width: $screen-xs-min) {
-  app-grid-item {
-    width: 50rem;
-    height: 50rem;
-  }
 }
 
 @media screen and (min-width: $screen-s-min) {
   app-grid-item {
-    width: 75rem;
-    height: 75rem;
+    width: 65rem;
+    height: 65rem;
   }
 }
 
@@ -34,12 +27,6 @@ app-grid-item {
     margin-left: 9rem;
   }
   app-grid-item {
-    height: 100rem;
-  }
-}
-
-@media screen and (min-width: $screen-l-min) {
-  app-grid-item {
-    width: 100rem;
+    height: 75rem;
   }
 }

@@ -28,6 +28,8 @@ import { HttpService } from 'app/services/http/http.service';
 import { SpinnerService } from 'app/services/spinner/spinner.service';
 import { MetaService } from 'app/services/meta/meta.service';
 import { SquareDirective } from 'app/directives/square/square.directive';
+import { HttpModule } from '@angular/http';
+import { FilterContactsPipe } from 'app/pipes/filter-contacts/filter-contacts.pipe';
 
 @NgModule({
   declarations: [
@@ -49,11 +51,13 @@ import { SquareDirective } from 'app/directives/square/square.directive';
     NavigationLinkComponent,
     NavigationMenuComponent,
     SpinnerComponent,
+    FilterContactsPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    HttpModule,
     Routing,
     BrowserAnimationsModule,
     MediaBreakpointsModule,

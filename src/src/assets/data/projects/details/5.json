@@ -1,0 +1,16 @@
+{
+    "id": 5,
+    "image": {
+        "name": "Dashboard",
+        "data": "../assets/images/proj.jpg"
+    },
+    "buttons": [
+        {
+            "type": "code",
+            "link": "https://github.com/alexandertsema/Dashboard"
+        }
+    ],
+    "title": "Dashboard",
+    "subtitle": ".NET Core, Web Sockets",
+    "text": "<p>Sometimes SA needs to check performance of the certain server in the environment and he should connect to remote server using Remote Desktop Connection (RDC), temviewer etc and go to Task Manager manually. There are many solutions to that problem, but all of them cost a lot of money. This is a free to use software with open source code which can be adjusted to any needs.</p><p>This projects implements OS and hardware monitoring dashboard system for remote servers. It uses custom Web Socket protocol implementation with encrypted communication. The Main Service works as a demultiplexer for the received from the Monitoring Service data. All data is in cozy Json format.</p>"
+}

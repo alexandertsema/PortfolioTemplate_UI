@@ -1,0 +1,16 @@
+{
+    "id": 6,
+    "image": {
+        "name": "OneTwoPrint",
+        "data": "../assets/images/proj.jpg"
+    },
+    "buttons": [
+        {
+            "type": "code",
+            "link": "https://github.com/alexandertsema/OneTwoPrint"
+        }
+    ],
+    "title": "OneTwoPrint",
+    "subtitle": "WPF",
+    "text": "<p>This project was a part of OneTwoPrint startup which my friend and I started in Saint Petersburg back in 2014. OneTwoPrint is a autonomous vending machine which prints photos from Instragram. We produced those machines from ground to up. This piece of the system was the core component as it represented the UI of the vending machine. It talked to hardware (printer and bill acceptor), to Instragram API and Master monitoring service which was responsible for monitoring money transactions, consumables levels and interaction with administrators.</p>"
+}
