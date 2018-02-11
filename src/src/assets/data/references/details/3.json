@@ -1,8 +1,9 @@
 {
     "id": 2,
+    "type": "references",
     "image": {
         "name": "Daniel Jones",
-        "data": "../assets/images/proj.jpg"
+        "data": "../assets/images/daniel_jones_open_languages.jpg"
     },
     "buttons": [
         {

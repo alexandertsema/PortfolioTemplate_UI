@@ -4,11 +4,11 @@
         "authority": "Learning Tree International",
         "image": {
             "name": "Building Web Applications with Angular 2",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/building_web_applications_with_angular_2.png"
         },
         "pdf": {
             "name": "Building Web Applications with Angular 2",
-            "data": "../assets/pdf/Alexander_Tsema_Resume.pdf"
+            "data": "../assets/pdf/building_web_applications_with_angular_2.pdf"
         }
     },
     {
@@ -16,11 +16,11 @@
         "authority": "Learning Tree International",
         "image": {
             "name": "WCF, Web API and SignalR Services for .NET",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/wcf_web_api_and_signalr_services_for_dot_net.png"
         },
         "pdf": {
             "name": "WCF, Web API and SignalR Services for .NET",
-            "data": "../assets/pdf/Alexander_Tsema_Resume.pdf"
+            "data": "../assets/pdf/wcf_web_api_and_signalr_services_for_dot_net.pdf"
         }
     }
 ]

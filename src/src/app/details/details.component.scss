@@ -66,16 +66,30 @@ article {
     flex-direction: column;
 }
 
-.image {
-    height: 25em;
-    max-width: 112rem;
-
+%image-base {
     background-color: $color-white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, .75);
+}
+
+.image {
+    @extend %image-base;
+    height: 25em;
+    max-width: 112rem;
+}
+
+.image-round {
+    @extend %image-base;
+    align-self: center;
+    height: 25rem;
+    width: 25rem;
+    margin-top: -9.5rem;
+    margin-bottom: 5rem;
+    border-radius: 50%;
+    border: 3px solid $color-white;
 }
 
 .title {
@@ -96,15 +110,13 @@ article {
     padding: 0 2rem;
 }
 
-// @media screen and (min-width: $screen-xs-min) {
-//     .image {
-//         height: 50em;
-//     }
-// }
-
 @media screen and (min-width: $screen-s-min) {
     .image {
         height: 45em;
+    }
+    .image-round {
+        width: 30rem;
+        height: 30em;
     }
 }
 
@@ -116,6 +128,13 @@ article {
     .image {
         margin-top: -30rem;
         width: 90rem;
+    }
+    .image-round {
+        margin-left: -1rem;
+        margin-top: -30rem;
+        width: 50rem;
+        max-width: 50rem;
+        height: 50rem;
     }
     .content  {
         margin-top: 35rem;

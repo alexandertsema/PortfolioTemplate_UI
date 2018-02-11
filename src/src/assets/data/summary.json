@@ -4,8 +4,8 @@
   "image": {
     "name": "Alexander Tsema",
     "responsiveData": {
-        "xs": "../assets/images/man_xs.jpg",
-        "m": "../assets/images/man_m.jpg"
+        "xs": "../assets/images/alexander_tsema_xs.jpg",
+        "m": "../assets/images/alexander_tsema_m.jpg"
       }
   },
   "resume": {

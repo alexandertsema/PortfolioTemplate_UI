@@ -4,13 +4,13 @@
         "description": "I have known Alexander Tsema for about two years since 2014. I worked as the Head of Automation Department for MAYKOR Company, St. Petersburg branch and Alexander reported to me in the position of Middle C# Developer. MAYKOR is a leading Russian provider of IT and business process outsourcing services with extensive network of branches and delivery centers across Russia. The Automation Department served companies from key sectors such as: retail, oil and gas, finance, telecommunications, manufacturing and the public sector.",
         "pdf": {
             "name": "Victor Pogodin",
-            "data": "../assets/pdf/Alexander_Tsema_Resume.pdf"
+            "data": "../assets/pdf/victor_pogodin_maykor_reference.pdf"
         },
         "referenceAuthor": {
             "name": "Victor Pogodin",
             "image": {
                 "name": "Victor Pogodin",
-                "data": "../assets/images/proj.jpg"
+                "data": "../assets/images/victor_pogodin_maykor_thumb.jpg"
             },
             "companyName": "MAYKOR",
             "position": "Head of Automation"
@@ -23,7 +23,7 @@
             "name": "Daniel Jones",
             "image": {
                 "name": "Daniel Jones",
-                "data": "../assets/images/proj.jpg"
+                "data": "../assets/images/daniel_jones_open_languages_thumb.jpg"
             },
             "companyName": "Open Languages",
             "position": "CEO"
@@ -36,7 +36,7 @@
             "name": "Daniel Jones",
             "image": {
                 "name": "Daniel Jones",
-                "data": "../assets/images/proj.jpg"
+                "data": "../assets/images/daniel_jones_open_languages_thumb.jpg"
             },
             "companyName": "Open Languages",
             "position": "CEO"
@@ -49,7 +49,7 @@
             "name": "Vasilisa Kosova",
             "image": {
                 "name": "Vasilisa Kosova",
-                "data": "../assets/images/proj.jpg"
+                "data": "../assets/images/vasilisa_kosova_tiger_party_thumb.jpg"
             },
             "companyName": "Tiger Party",
             "position": "Project Manager"

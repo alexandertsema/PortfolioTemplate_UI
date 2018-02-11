@@ -8,7 +8,7 @@
         "endDate": 2017,
         "image": {
             "name": "CUNY",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/cuny_thumb.jpg"
         },
         "thesis": {
             "name": "Scene Classification for Indoor Localization System"
@@ -22,7 +22,7 @@
         "endDate": 2016,
         "image": {
             "name": "ITMO University",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/itmo_university_2_thumb.jpg"
         },
         "thesis": {
             "name": "Face Recognition of Race and Ethnicity"
@@ -36,7 +36,7 @@
         "endDate": 2014,
         "image": {
             "name": "ITMO University",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/itmo_university_thumb.jpg"
         },
         "thesis": {
             "name": "Pattern Recognition in Video Streams"

@@ -1,8 +1,9 @@
 {
     "id": 1,
+    "type": "references",
     "image": {
         "name": "Victor Pogodin",
-        "data": "../assets/images/proj.jpg"
+        "data": "../assets/images/victor_pogodin_maykor.jpg"
     },
     "buttons": [
         {
@@ -11,7 +12,7 @@
         },
         {
             "type": "picture_as_pdf",
-            "link": "../assets/pdf/Alexander_Tsema_Resume.pdf"
+            "link": "../assets/pdf/victor_pogodin_maykor_reference.pdf"
         }
     ],
     "title": "Victor Pogodin",
