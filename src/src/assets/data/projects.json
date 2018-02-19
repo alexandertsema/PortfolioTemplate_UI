@@ -5,7 +5,7 @@
         "subtitle": "Angular 5, Flexbox",
         "image": {
             "name": "Portfolio Template UI",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/portfolio_template_ui_thumb.png"
         },
         "projectCategory": {
             "id": 1
@@ -17,7 +17,7 @@
         "subtitle": "ASP.NET Core, MS SQL Server",
         "image": {
             "name": "Portfolio Template",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/portfolio_template_thumb.png"
         },
         "projectCategory": {
             "id": 1
@@ -29,7 +29,7 @@
         "subtitle": "Python, Tensorflow, NumPy",
         "image": {
             "name": "Indoor Localization Scene Classifier",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/indoor_localization_scene_classifier_thumb.png"
         },
         "projectCategory": {
             "id": 3
@@ -41,7 +41,7 @@
         "subtitle": "Python, OpenCV, NumPy",
         "image": {
             "name": "Home Surveillance System",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/home_surveillance_system_thumb.jpg"
         },
         "projectCategory": {
             "id": 3
@@ -53,7 +53,7 @@
         "subtitle": ".NET Core, Web Sockets",
         "image": {
             "name": "Dashboard",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/dashboard_thumb.png"
         },
         "projectCategory": {
             "id": 1
@@ -65,10 +65,34 @@
         "subtitle": "WPF",
         "image": {
             "name": "OneTwoPrint",
-            "data": "../assets/images/proj.jpg"
+            "data": "../assets/images/onetwoprint.png"
         },
         "projectCategory": {
             "id": 2
+        }
+    },
+    {
+        "id": 7,
+        "name": "InstaSync",
+        "subtitle": "WPF",
+        "image": {
+            "name": "InstaSync",
+            "data": "../assets/images/insta_sync.png"
+        },
+        "projectCategory": {
+            "id": 2
+        }
+    },
+    {
+        "id": 8,
+        "name": "Indoor Localization System",
+        "subtitle": "Python, Tensorflow, NumPy",
+        "image": {
+            "name": "Indoor Localization System",
+            "data": "../assets/images/indoor_localization_system_thumb.png"
+        },
+        "projectCategory": {
+            "id": 3
         }
     }
 ]

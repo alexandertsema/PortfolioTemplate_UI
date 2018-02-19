@@ -1,0 +1,16 @@
+{
+    "id": 7,
+    "image": {
+        "name": "InstaSync",
+        "data": "../assets/images/insta_sync.png"
+    },
+    "buttons": [
+        {
+            "type": "code",
+            "link": "https://github.com/alexandertsema/InstaSync"
+        }
+    ],
+    "title": "InstaSync",
+    "subtitle": "WPF",
+    "text": "<p></p>"
+}

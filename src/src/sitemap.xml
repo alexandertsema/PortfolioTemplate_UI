@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://www.alexandertsema.com/home</loc>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/skills</loc>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/projects</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/portfolio_template_ui_thumb.png</image:loc>
+        <image:caption>Portfolio Template UI - Angular 5, Flexbox</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/portfolio_template_thumb.png</image:loc>
+        <image:caption>Portfolio Template - ASP.NET Core, MS SQL Server</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/indoor_localization_scene_classifier_thumb.png</image:loc>
+        <image:caption>Indoor Localization Scene Classifier - Python, Tensorflow, NumPy</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/home_surveillance_system_thumb.jpg</image:loc>
+        <image:caption>Home Surveillance System - Python, OpenCV, NumPy</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/dashboard_thumb.png</image:loc>
+        <image:caption>Dashboard - .NET Core, Web Sockets</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/onetwoprint_thumb.png</image:loc>
+        <image:caption>OneTwoPrint - WPF</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/insta_sync_thumb.png</image:loc>
+        <image:caption>InstaSync - WPF</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/indoor_localization_system_thumb.png</image:loc>
+        <image:caption>Indoor Localization System - Python, Tensorflow, NumPy</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/education</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/cuny_thumb.jpg</image:loc>
+        <image:caption>CUNY - Scene Classification for Indoor Localization System</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/itmo_university_2_thumb.jpg</image:loc>
+        <image:caption>ITMO University - Face Recognition of Race and Ethnicity</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/itmo_university_thumb.jpg</image:loc>
+        <image:caption>ITMO University - Pattern Recognition in Video Streams</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/references</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/victor_pogodin_maykor_thumb.jpg</image:loc>
+        <image:caption>Victor Pogodin - MAYKOR</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/daniel_jones_open_languages_thumb.jpg</image:loc>
+        <image:caption>Daniel Jones - Open Languages</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/vasilisa_kosova_tiger_party_thumb.jpg</image:loc>
+        <image:caption>Vasilisa Kosova - Tiger Party</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/certificates</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/wcf_web_api_and_signalr_services_for_dot_net.png</image:loc>
+        <image:caption>WCF, Web API and SignalR Services for .NET - Learning Tree International</image:caption>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/building_web_applications_with_angular_2.png</image:loc>
+        <image:caption>Building Web Applications with Angular 2 - Learning Tree International</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/contacts</loc>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/projects/details/2</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/portfolio_template_ui.png</image:loc>
+        <image:caption>Portfolio Template UI - Angular 5, Flexbox</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/projects/details/2</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/portfolio_template.png</image:loc>
+        <image:caption>Portfolio Template - ASP.NET Core, MS SQL Server</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/projects/details/3</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/indoor_localization_scene_classifier.png</image:loc>
+        <image:caption>Indoor Localization Scene Classifier - Python, Tensorflow, NumPy</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/projects/details/4</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/home_surveillance_system.jpg</image:loc>
+        <image:caption>Home Surveillance System - Python, OpenCV, NumPy</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/projects/details/5</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/dashboard.png</image:loc>
+        <image:caption>Dashboard - .NET Core, Web Sockets</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/projects/details/6</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/onetwoprint.png</image:loc>
+        <image:caption>OneTwoPrint - WPF</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/projects/details/7</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/insta_sync.png</image:loc>
+        <image:caption>InstaSync - WPF</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/projects/details/8</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/indoor_localization_system_thumb.png</image:loc>
+        <image:caption>Indoor Localization System - Python, Tensorflow, NumPy</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/education/details/1</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/cuny.jpg</image:loc>
+        <image:caption>CUNY - Scene Classification for Indoor Localization System</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/education/details/2</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/itmo_university_2.jpg</image:loc>
+        <image:caption>ITMO University - Face Recognition of Race and Ethnicity</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/education/details/3</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/itmo_university.jpg</image:loc>
+        <image:caption>ITMO University - Pattern Recognition in Video Streams</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/references/details/1</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/victor_pogodin_maykor.jpg</image:loc>
+        <image:caption>Victor Pogodin - MAYKOR</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/references/details/2</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/daniel_jones_open_languages.jpg</image:loc>
+        <image:caption>Daniel Jones - Open Languages</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/references/details/3</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/daniel_jones_open_languages.jpg</image:loc>
+        <image:caption>Daniel Jones - Open Languages</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.alexandertsema.com/references/details/4</loc>
+    <image:image>
+        <image:loc>http://www.alexandertsema.com/assets/images/vasilisa_kosova_tiger_party.jpg</image:loc>
+        <image:caption>Vasilisa Kosova - Tiger Party</image:caption>
+    </image:image>
+  </url>
+</urlset>

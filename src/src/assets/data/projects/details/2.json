@@ -2,7 +2,7 @@
     "id": 2,
     "image": {
         "name": "Portfolio Template",
-        "data": "../assets/images/proj.jpg"
+        "data": "../assets/images/portfolio_template.png"
     },
     "buttons": [
         {

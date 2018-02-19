@@ -2,7 +2,7 @@
     "id": 5,
     "image": {
         "name": "Dashboard",
-        "data": "../assets/images/proj.jpg"
+        "data": "../assets/images/dashboard.png"
     },
     "buttons": [
         {

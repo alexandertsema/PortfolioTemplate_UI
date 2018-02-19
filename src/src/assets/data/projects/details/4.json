@@ -2,7 +2,7 @@
     "id": 4,
     "image": {
         "name": "Home Surveillance System",
-        "data": "../assets/images/proj.jpg"
+        "data": "../assets/images/home_surveillance_system.jpg"
     },
     "buttons": [
         {
