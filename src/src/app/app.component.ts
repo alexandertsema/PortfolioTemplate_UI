@@ -6,6 +6,9 @@ import { window } from 'rxjs/operators/window';
 import { Element } from '@angular/compiler';
 import { MetaService } from 'app/services/meta/meta.service';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { BASE_TITLE } from 'app/utils/constants';
+import { concat } from 'rxjs/observable/concat';
+import { toTitleCase } from 'app/utils/helpers';
 
 @Component({
   selector: 'app-root',
@@ -31,8 +34,11 @@ export class AppComponent implements OnInit {
           } else {
             this.header = currentRoute.snapshot.url[0].path;
           }
-          this.titleService.setTitle(`${event.url.replace('/', '').toUpperCase()}
-            | Alexander Tsema | Senior Full Stack Software Engineer | New York`);
+          if (event.url !== '/') {
+            this.titleService.setTitle(`${toTitleCase(event.url.replace('/', ''))} | ${BASE_TITLE}`);
+          } else {
+            this.titleService.setTitle(`${BASE_TITLE}`);
+          }
         }
       });
   }

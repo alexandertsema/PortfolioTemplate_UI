@@ -16,5 +16,5 @@
     ],
     "title": "Portfolio Template UI",
     "subtitle": "Angular 5, Flexbox, HammerJS",
-    "text": "<p>I started to develop it with Angular version 2 and have been updating the version to the most recent one, so now it's running Angular 5.2. The layout is powered by pure Flexbox and CSS3 along with HTML5. By the way, the web site you are on is using this template.</p>"
+    "text": "<p>I started to develop this project with Angular 2 and have been updating the version to the most recent one, so now it uses Angular 5.2.4. The layout is powered by pure Flexbox and CSS3 along with HTML5. To support gestures on mobile devices I've integrated HammerJS. This website template is SEO optimized with a help of dynamic meta tags, titles, and slugs. I use yarn instead of npm and there is a custom production build script which compresses bundles with gzipper. All the content could be pulled from any CMS via API calls. There is another <a href='/projects/details/portfolio-template-asp.net-core-ms-sql-server-2'>project</a> in my portfolio with the custom CMS designed for this template.</p><p>By the way, this website is using this template. It is deployed as a static website on Google Cloud Platform bucket."
 }

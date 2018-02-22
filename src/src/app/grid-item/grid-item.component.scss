@@ -16,6 +16,10 @@ article {
     }
 }
 
+a {
+    color: $color-white;
+}
+
 .content {
     flex: 1 0 auto;
     background-color:  rgba(66, 66, 66, .5);

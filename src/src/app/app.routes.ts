@@ -46,7 +46,7 @@ export const navMenuRoutes: Routes = [
 
 const otherRoutes: Routes = [
   {
-    path: ':type/details/:id',
+    path: ':type/details/:slug',
     component: DetailsComponent
   }
 ];

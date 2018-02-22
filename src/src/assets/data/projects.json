@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Portfolio Template UI",
-        "subtitle": "Angular 5, Flexbox",
+        "subtitle": "Angular 5, Flexbox, HammerJS",
         "image": {
             "name": "Portfolio Template UI",
             "data": "../assets/images/portfolio_template_ui_thumb.png"

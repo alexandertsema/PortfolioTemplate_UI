@@ -1,6 +1,6 @@
 <section class="flex-container">
   <div class="flex-container references-container">
-    <mat-card class="flex-item card pulse" *ngFor="let reference of references | async">
+    <mat-card class="flex-item card pulse" *ngFor="let reference of references | async | shuffle">
       <mat-card-header>
         <div mat-card-avatar [style.background-image]="'url(' + reference?.referenceAuthor?.image?.data + ')'" class="header-image"></div>
         <mat-card-title>{{ reference?.referenceAuthor?.name }}</mat-card-title>
@@ -10,7 +10,7 @@
           {{ reference?.description }}
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button (click)="detailedView(reference?.id)">DETAILS</button>
+        <a mat-button href="references/details/{{ getSlug([reference?.referenceAuthor?.name, reference?.referenceAuthor?.position, reference?.referenceAuthor?.companyName]) }}-{{ reference?.id }}">DETAILS</a>
         <a mat-button *ngIf="reference?.pdf" href="{{reference?.pdf?.data}}">PDF</a>
       </mat-card-actions>
     </mat-card>

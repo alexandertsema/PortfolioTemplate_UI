@@ -13,7 +13,7 @@ export class SpinnerService {
   setSpinner() {
     return setTimeout(() => {
       this.show();
-    }, 100);
+    }, 500);
   }
 
   resetSpinner(timer) {

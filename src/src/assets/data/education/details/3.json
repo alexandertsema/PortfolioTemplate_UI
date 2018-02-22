@@ -12,5 +12,5 @@
     ],
     "title": "ITMO University",
     "subtitle": "Bachelor's Degree in Computer Science and Engineering 2010-2014",
-    "text": "<p>This is one of the largest faculties at ITMO University, which provides training for specialists in the field of computing technologies, computer software and information security.</p><hr/><h3>Graduation Thesis Work: Pattern Recognition in Video Streams</h3><p>The main purpose of this research was to develop a method for the hand gestures recognition using web camera. The method was developed with OpenCV using SIFT and SURF descriptors. Studied and analyzed methods of video preprocessing and scene segmentation.</p>"
+    "text": "<p>This is one of the largest faculties at ITMO University, which provides training for specialists in the field of computing technologies, computer software and information security.</p><hr/><h3>Graduation Thesis Work: Pattern Recognition in Video Streams</h3><p>The main purpose of this research was to develop a method for the hand gestures recognition using the web camera. The method was developed with OpenCV using SIFT and SURF descriptors. Studied and analyzed methods of video preprocessing and scene segmentation.</p>"
 }

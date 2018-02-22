@@ -36,6 +36,7 @@ import { MetaService } from 'app/services/meta/meta.service';
 import { SquareDirective } from 'app/directives/square/square.directive';
 import { HttpModule } from '@angular/http';
 import { FilterContactsPipe } from 'app/pipes/filter-contacts/filter-contacts.pipe';
+import { ShufflePipe } from 'app/pipes/shuffle/shuffle.pipe';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { FilterContactsPipe } from 'app/pipes/filter-contacts/filter-contacts.pi
     NavigationLinkComponent,
     NavigationMenuComponent,
     SpinnerComponent,
-    FilterContactsPipe
+    FilterContactsPipe,
+    ShufflePipe
   ],
   imports: [
     BrowserModule,

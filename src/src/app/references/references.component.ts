@@ -3,6 +3,7 @@ import { IReference } from 'app/models/reference';
 import { Router } from '@angular/router';
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';
+import { generateSlugFromTitle } from 'app/utils/helpers';
 
 @Component({
   selector: 'app-references',
@@ -18,7 +19,8 @@ export class ReferencesComponent implements OnInit {
   ngOnInit() {
     this.references = this.httpService.get<IReference[]>('references');
   }
-  detailedView(id: number) {
-    this.router.navigate([`references/details/${id}`]);
+
+  getSlug(input: string[]): string {
+    return generateSlugFromTitle(input);
   }
 }

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "description": "I have known Alexander Tsema for about two years since 2014. I worked as the Head of Automation Department for MAYKOR Company, St. Petersburg branch and Alexander reported to me in the position of Middle C# Developer. MAYKOR is a leading Russian provider of IT and business process outsourcing services with extensive network of branches and delivery centers across Russia. The Automation Department served companies from key sectors such as: retail, oil and gas, finance, telecommunications, manufacturing and the public sector.",
+        "description": "I have known Alexander Tsema for about two years since 2014. I worked as the Head of Automation Department for MAYKOR Company, St. Petersburg branch, and Alexander reported to me in the position of Middle C# Developer. MAYKOR is a leading Russian provider of IT and business process outsourcing services with an extensive network of branches and delivery centers across Russia. The Automation Department served companies from key sectors such as retail, oil and gas, finance, telecommunications, manufacturing and the public sector.",
         "pdf": {
             "name": "Victor Pogodin",
             "data": "../assets/pdf/victor_pogodin_maykor_reference.pdf"
@@ -18,7 +18,7 @@
     },
     {
         "id": 2,
-        "description": "We hired Alexander to develop our front end user interface to integrate with our virtual classroom for students. Alexander has proven to be an excellent front end developer with a unique attention to detail and quality. Alexander has gone on to develop not only the user interface but has developed a high quality proprietary system for our online language school. We will continue to work with him",
+        "description": "We hired Alexander to develop our front-end user interface to integrate with our virtual classroom for students. Alexander has proven to be an excellent front-end developer with a unique attention to detail and quality. Alexander has gone on to develop not only the user interface but has developed a high-quality proprietary system for our online language school. We will continue to work with him",
         "referenceAuthor": {
             "name": "Daniel Jones",
             "image": {
@@ -31,7 +31,7 @@
     },
     {
         "id": 3,
-        "description": "We hired Alexander to develop from scratch a complete system administrator company wide portal to enable our back office to process and manage sensitive data for teachers, students and classes. Alexander was also hired to further enhance our virtual classroom front-end for students an application that he previously developed for us. Alexander has once again proven his unique ability to develop at ",
+        "description": "We hired Alexander to develop from scratch a complete system administrator company-wide portal to enable our back office to process and manage sensitive data for teachers, students, and classes. Alexander was also hired to further enhance our virtual classroom front-end for students an application that he previously developed for us. Alexander has once again proven his unique ability to develop at",
         "referenceAuthor": {
             "name": "Daniel Jones",
             "image": {

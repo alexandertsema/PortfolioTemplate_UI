@@ -88,105 +88,105 @@
     <loc>http://www.alexandertsema.com/contacts</loc>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/projects/details/2</loc>
+    <loc>http://www.alexandertsema.com/projects/details/portfolio-template-ui-angular-5-flexbox-hammerjs-1</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/portfolio_template_ui.png</image:loc>
         <image:caption>Portfolio Template UI - Angular 5, Flexbox</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/projects/details/2</loc>
+    <loc>http://www.alexandertsema.com/projects/details/portfolio-template-asp.net-core-ms-sql-server-2</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/portfolio_template.png</image:loc>
         <image:caption>Portfolio Template - ASP.NET Core, MS SQL Server</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/projects/details/3</loc>
+    <loc>http://www.alexandertsema.com/projects/details/indoor-localization-scene-classifier-python-tensorflow-numpy-3</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/indoor_localization_scene_classifier.png</image:loc>
         <image:caption>Indoor Localization Scene Classifier - Python, Tensorflow, NumPy</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/projects/details/4</loc>
+    <loc>http://www.alexandertsema.com/projects/details/home-surveillance-system-python-opencv-numpy-4</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/home_surveillance_system.jpg</image:loc>
         <image:caption>Home Surveillance System - Python, OpenCV, NumPy</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/projects/details/5</loc>
+    <loc>http://www.alexandertsema.com/projects/details/dashboard-.net-core-web-sockets-5</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/dashboard.png</image:loc>
         <image:caption>Dashboard - .NET Core, Web Sockets</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/projects/details/6</loc>
+    <loc>http://www.alexandertsema.com/projects/details/onetwoprint-wpf-6</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/onetwoprint.png</image:loc>
         <image:caption>OneTwoPrint - WPF</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/projects/details/7</loc>
+    <loc>http://www.alexandertsema.com/projects/details/instasync-wpf-7</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/insta_sync.png</image:loc>
         <image:caption>InstaSync - WPF</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/projects/details/8</loc>
+    <loc>http://www.alexandertsema.com/projects/details/indoor-localization-system-python-tensorflow-numpy-8</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/indoor_localization_system_thumb.png</image:loc>
         <image:caption>Indoor Localization System - Python, Tensorflow, NumPy</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/education/details/1</loc>
+    <loc>http://www.alexandertsema.com/education/details/cuny-master's-scene-classification-for-indoor-localization-system-1</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/cuny.jpg</image:loc>
         <image:caption>CUNY - Scene Classification for Indoor Localization System</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/education/details/2</loc>
+    <loc>http://www.alexandertsema.com/education/details/itmo-university-master's-face-recognition-of-race-and-ethnicity-2</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/itmo_university_2.jpg</image:loc>
         <image:caption>ITMO University - Face Recognition of Race and Ethnicity</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/education/details/3</loc>
+    <loc>http://www.alexandertsema.com/education/details/itmo-university-bachelor's-pattern-recognition-in-video-streams-3</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/itmo_university.jpg</image:loc>
         <image:caption>ITMO University - Pattern Recognition in Video Streams</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/references/details/1</loc>
+    <loc>http://www.alexandertsema.com/references/details/victor-pogodin-head-of-automation-maykor-1</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/victor_pogodin_maykor.jpg</image:loc>
         <image:caption>Victor Pogodin - MAYKOR</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/references/details/2</loc>
+    <loc>http://www.alexandertsema.com/references/details/daniel-jones-ceo-open-languages-2</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/daniel_jones_open_languages.jpg</image:loc>
         <image:caption>Daniel Jones - Open Languages</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/references/details/3</loc>
+    <loc>http://www.alexandertsema.com/references/details/daniel-jones-ceo-open-languages-3</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/daniel_jones_open_languages.jpg</image:loc>
         <image:caption>Daniel Jones - Open Languages</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>http://www.alexandertsema.com/references/details/4</loc>
+    <loc>http://www.alexandertsema.com/references/details/vasilisa-kosova-project-manager-tiger-party-4</loc>
     <image:image>
         <image:loc>http://www.alexandertsema.com/assets/images/vasilisa_kosova_tiger_party.jpg</image:loc>
         <image:caption>Vasilisa Kosova - Tiger Party</image:caption>

@@ -2,9 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { catchError, tap } from 'rxjs/operators';
-import { BASE_URL } from 'app/settings/endpoints';
 import { SpinnerService } from 'app/services/spinner/spinner.service';
 import { EmptyObservable } from 'rxjs/observable/EmptyObservable';
+import { BASE_URL } from 'app/utils/constants';
 
 @Injectable()
 export class HttpService {

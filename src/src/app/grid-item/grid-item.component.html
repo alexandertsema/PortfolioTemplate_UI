@@ -14,7 +14,7 @@
     <div class="flex-item flex-container buttons">
       <div class="flex-item"></div>
       <div class="flex-item">
-        <button mat-button *ngIf="!url" (click)="detailedView(id)">{{ buttonText }}</button>
+        <a mat-button *ngIf="!url" href="{{ detailedViewPath }}">{{ buttonText }}</a>
       </div>
       <div class="flex-item">
         <a mat-button href="{{url}}" *ngIf="url">{{ buttonText }}</a>

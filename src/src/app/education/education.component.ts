@@ -3,6 +3,7 @@ import { ISchool } from 'app/models/school';
 import { Router } from '@angular/router';
 import { HttpService } from 'app/services/http/http.service';
 import { Observable } from 'rxjs/Observable';
+import { generateSlugFromTitle } from 'app/utils/helpers';
 
 @Component({
   selector: 'app-education',
@@ -18,8 +19,7 @@ export class EducationComponent implements OnInit {
   ngOnInit() {
     this.schools = this.httpService.get<ISchool[]>('education');
   }
-
-  detailedView(id: number) {
-    this.router.navigate([`education/details/${id}`]);
+  getSlug(input: string[]): string {
+    return generateSlugFromTitle(input);
   }
 }

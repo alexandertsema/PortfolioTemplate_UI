@@ -19,7 +19,7 @@
                 Graduation Thesis Work: {{ school?.thesis?.name }}
             </mat-card-content>
             <mat-card-actions>
-              <button mat-button (click)="detailedView(school?.id)">DETAILS</button>
+              <a mat-button href="education/details/{{ getSlug([school?.name, school?.degree, school?.thesis?.name]) }}-{{ school?.id }}">DETAILS</a>
             </mat-card-actions>
           </mat-card>
         </div>

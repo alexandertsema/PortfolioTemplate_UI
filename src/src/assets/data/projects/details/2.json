@@ -16,5 +16,5 @@
     ],
     "title": "Portfolio Template",
     "subtitle": "ASP.NET Core, MS SQL Server",
-    "text": "<p>This projects is a back-end web service for Portfolio Template UI and the web site you are on is powered by this code. The first version was implemented with APS.NET Core 1.0 right after release. Now it's running Core v.2. Feel free to use this template for portfolio web site!</p>"
+    "text": "<p>This project is the CMS with the back-end web services for <a href='/portfolio-template-ui-angular-5-flexbox-hammerjs-1'>Portfolio Template UI</a> and the website you are on is powered by this code. The first version was implemented with APS.NET Core 1.0 right after it's release. Today it runs Core v.2. As a database, I'm using MS SQL Server with Entity Framework Core.</p><p>This solution can be hosted on any OS and proxied with any web server. As an option, it could be deployed into Docker container with your favorite base image.</p>"
 }

@@ -12,5 +12,5 @@
     ],
     "title": "OneTwoPrint",
     "subtitle": "WPF",
-    "text": "<p>This project was a part of OneTwoPrint startup which my friend and I started in Saint Petersburg back in 2014. OneTwoPrint is a autonomous vending machine which prints photos from Instragram. We produced those machines from ground to up. This piece of the system was the core component as it represented the UI of the vending machine. It talked to hardware (printer and bill acceptor), to Instragram API and Master monitoring service which was responsible for monitoring money transactions, consumables levels and interaction with administrators.</p>"
+    "text": "<p>This project was a part of OneTwoPrint startup which my friend and I started in Saint Petersburg back in 2014. OneTwoPrint is an autonomous vending machine which prints photos from Instagram. We have been producing those machines from the ground to up. This piece of the system is the core component as it represents the UI of the vending machine. It interacts with the hardware (printer and bill acceptor), to Instagram API and Master monitoring service which is responsible for monitoring money transactions, consumables levels, and interaction with administrators.</p><p>Unfortunately, this startup was not successful as the financial crisis made us stop the business.</p>"
 }

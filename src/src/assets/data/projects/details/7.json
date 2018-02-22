@@ -12,5 +12,5 @@
     ],
     "title": "InstaSync",
     "subtitle": "WPF",
-    "text": "<p></p>"
+    "text": "<p>This was my very first project related to Instagram API. It was made back in the times when the API was opened and applications did not require any Instagram's approval. This is a very useful piece of software for those who want to dump the whole profile's collection of images to their local repository.</p><p>There are a lot of use cases including generating datasets for machine learning tasks, social media marketing, any kind of marketing researches or simply you want to delete your Instagram account but you want to save the pictures. I was not able to write a good proposal to make it approved, so it's not supported anymore.</p>"
 }
