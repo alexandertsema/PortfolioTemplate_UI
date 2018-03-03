@@ -3,7 +3,7 @@
     [@navState]="navState"
     (mouseenter)="toggleNavState('show')"
     (mouseleave)="toggleNavState('hide')">
-    <app-navigation-link route='/home' name='home'
+    <app-navigation-link route='/' name='home'
         #home (click)="home.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')" class="flex-item flex-container"></app-navigation-link>
     <app-navigation-link route='/skills' name='skills'
         #skills (click)="skills.toggleHoverState('off');toggleNavState('hide')" (mouseenter)="toggleNavState('show')" class="flex-item flex-container"></app-navigation-link>

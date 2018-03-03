@@ -12,7 +12,7 @@ import { PageNotFoundComponent } from 'app/page-not-found/page-not-found.compone
 
 export const navMenuRoutes: Routes = [
   {
-    path: 'home',
+    path: '',
     data: {
       alias: 'alexander tsema'
     },
@@ -52,11 +52,6 @@ const otherRoutes: Routes = [
 ];
 
 const baseRoutes: Routes = [
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
   {
     path: '404',
     component: PageNotFoundComponent

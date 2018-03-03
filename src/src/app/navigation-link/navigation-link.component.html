@@ -1,4 +1,4 @@
-<a class='flex-container' routerLinkActive='active-link' routerLink='{{ route }}'
+<a class='flex-container' routerLinkActive='active-link' routerLink='{{ route }}' [routerLinkActiveOptions]="{ exact: true }"
 (mouseenter)="toggleHoverState('on')"
 (mouseleave)="toggleHoverState('off')"
 [@hoverState]="hoverState">
