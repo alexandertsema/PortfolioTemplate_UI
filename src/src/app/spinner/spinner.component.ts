@@ -9,12 +9,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('spinnerState', [
       state('true', style({
-        '-webkit-transform': 'none',
         transform: 'none',
         display: 'block'
       })),
       state('false', style({
-        '-webkit-transform': 'translateY(-3rem)',
         transform: 'translateY(-3rem)',
         display: 'none'
       })),

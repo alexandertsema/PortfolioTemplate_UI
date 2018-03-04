@@ -8,12 +8,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('navState', [
       state('show', style({
-        '-webkit-transform': 'translateX(30rem)',
         transform: 'translateX(30rem)',
         'box-shadow': '1px 0px 13px -3px rgba(0,0,0,0.87)'
       })),
       state('hide', style({
-        '-webkit-transform': 'none',
         transform: 'none',
         'box-shadow': 'none'
       })),
