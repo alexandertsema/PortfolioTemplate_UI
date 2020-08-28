@@ -2,12 +2,7 @@
     {
         "isLink": false,
         "contactType": "email",
-        "value": "at.webdes@gmail.com"
-    },
-    {
-        "isLink": false,
-        "contactType": "phone",
-        "value": "+1 917 634 02 02"
+        "value": "swe@alexandertsema.com"
     },
     {
         "isLink": false,
@@ -22,6 +17,6 @@
     {
         "isLink": true,
         "contactType": "linkedin",
-        "value": "https://www.linkedin.com/"
+        "value": "https://www.linkedin.com/in/alexandertsema/"
     }
 ]

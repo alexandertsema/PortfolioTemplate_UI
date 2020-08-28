@@ -18,11 +18,12 @@ section {
 }
 
 .skill {
+    cursor: default;
     flex-grow: 0;
     text-transform: uppercase;
-    border-radius: 24px;
-    padding: 2rem;
-    margin: .5rem;
+    border-radius: 25px;
+    padding: 0 15rem 0 15rem;
+    margin: 3rem;
     background-color: $color-gray;
     text-align: center;
     box-shadow: none;

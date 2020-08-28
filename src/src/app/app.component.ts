@@ -21,7 +21,6 @@ export class AppComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router, private titleService: Title, private metaService: MetaService) { }
 
   ngOnInit() {
-    this.metaService.setMetaTags();
     this.router.events
       .subscribe(event => {
         if  (event instanceof NavigationEnd) {

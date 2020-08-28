@@ -77,8 +77,8 @@ article {
 
 .image {
     @extend %image-base;
-    height: 25em;
-    max-width: 112rem;
+    height: 100rem;
+    max-width: 320rem;
 }
 
 .image-round {
@@ -112,7 +112,7 @@ article {
 
 @media screen and (min-width: $screen-s-min) {
     .image {
-        height: 45em;
+        height: 145rem;
     }
     .image-round {
         width: 30rem;
@@ -150,7 +150,7 @@ article {
         flex-grow: 5;
     }
     .image {
-        width: 90rem;
+        width: 150rem;
     }
 }
 
@@ -159,7 +159,6 @@ article {
         order: 1;
     }
     .image {
-        height: 70em;
         margin-left: 4rem;
     }
     .buttons {

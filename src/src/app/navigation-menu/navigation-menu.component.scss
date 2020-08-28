@@ -14,12 +14,10 @@
 
 nav {
     background-color: $color-white;
-
     position: fixed;
-    left: -30rem;
-    width: 30rem;
+    width: 100rem;
     height: 100%;
-
+    left: -95rem;
     flex-direction: column;
     justify-content: center;
 
@@ -28,13 +26,12 @@ nav {
 }
 
 app-navigation-link {
-    max-height: 10rem;
+    max-height: 25rem;
 }
 
 @media screen and (min-width: $screen-m-min) {
     nav {
-        width: 36rem;
-        box-shadow: 1px 0px 13px -3px rgba(0, 0, 0, .75) !important;
+        width: 130rem;
     }
 }
 

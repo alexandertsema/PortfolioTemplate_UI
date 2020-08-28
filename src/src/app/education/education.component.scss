@@ -35,7 +35,7 @@ article {
 
 .date {
   position: absolute;
-  top: 31%;
+  top: 24%;
   left: -8rem;
   z-index: 1;
 }
@@ -45,8 +45,8 @@ article {
   top: 40%;
   left: .2rem;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 6rem;
+  height: 6rem;
   background: $color-gray;
   transform: translateX(-50%);
 }
@@ -70,10 +70,10 @@ mat-card-content, .gpa, .header-image{
   }
   .content {
     margin-left: 7rem;
-    max-width: 55rem;
+    max-width: 300rem;
   }
   .date {
-    left: -14rem;
+    left: -44rem;
   }
 }
 

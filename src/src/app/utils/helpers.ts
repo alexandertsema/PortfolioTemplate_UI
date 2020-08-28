@@ -22,6 +22,9 @@ export const generateTitleFromSlug = (slug: string): string => {
 };
 
 export const shuffle = (input: any[]): any[] => {
+  if (!input) {
+    return null;
+  }
   const output = [...input];
   for (let i = output.length; i; --i) {
     const j = Math.floor(Math.random() * i);

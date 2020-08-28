@@ -10,7 +10,7 @@ import { ContactsComponent } from 'app/contacts/contacts.component';
 import { DetailsComponent } from 'app/details/details.component';
 import { PageNotFoundComponent } from 'app/page-not-found/page-not-found.component';
 
-export const navMenuRoutes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     data: {
@@ -30,28 +30,22 @@ export const navMenuRoutes: Routes = [
     path: 'education',
     component: EducationComponent
   },
-  {
-    path: 'references',
-    component: ReferencesComponent
-  },
-  {
-    path: 'certificates',
-    component: CertificatesComponent
-  },
+  // {
+  //   path: 'references',
+  //   component: ReferencesComponent
+  // },
+  // {
+  //   path: 'certificates',
+  //   component: CertificatesComponent
+  // },
   {
     path: 'contacts',
     component: ContactsComponent
-  }
-];
-
-const otherRoutes: Routes = [
+  },
   {
     path: ':type/details/:slug',
     component: DetailsComponent
-  }
-];
-
-const baseRoutes: Routes = [
+  },
   {
     path: '404',
     component: PageNotFoundComponent
@@ -62,5 +56,4 @@ const baseRoutes: Routes = [
   }
 ];
 
-const routes = navMenuRoutes.concat(otherRoutes, baseRoutes);
 export const Routing: ModuleWithProviders = RouterModule.forRoot(routes);

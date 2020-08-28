@@ -58,7 +58,7 @@
         <image:caption>ITMO University - Pattern Recognition in Video Streams</image:caption>
     </image:image>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://alexandertsema.com/references</loc>
     <image:image>
         <image:loc>https://alexandertsema.com/assets/images/victor_pogodin_maykor_thumb.jpg</image:loc>
@@ -72,8 +72,8 @@
         <image:loc>https://alexandertsema.com/assets/images/vasilisa_kosova_tiger_party_thumb.jpg</image:loc>
         <image:caption>Vasilisa Kosova - Tiger Party</image:caption>
     </image:image>
-  </url>
-  <url>
+  </url> -->
+  <!-- <url>
     <loc>https://alexandertsema.com/certificates</loc>
     <image:image>
         <image:loc>https://alexandertsema.com/assets/images/wcf_web_api_and_signalr_services_for_dot_net.png</image:loc>
@@ -83,7 +83,7 @@
         <image:loc>https://alexandertsema.com/assets/images/building_web_applications_with_angular_2.png</image:loc>
         <image:caption>Building Web Applications with Angular 2 - Learning Tree International</image:caption>
     </image:image>
-  </url>
+  </url> -->
   <url>
     <loc>https://alexandertsema.com/contacts</loc>
   </url>

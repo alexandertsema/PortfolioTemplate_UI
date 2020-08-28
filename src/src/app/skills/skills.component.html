@@ -1,5 +1,5 @@
 <section class="flex-container">
   <div class="flex-container skills-container">
-    <span *ngFor="let skill of skills | async | shuffle" class="flex-item skill"><h3>{{ skill?.node?.name }}</h3></span>
+    <span *ngFor="let skill of skills | async | sort: 'name' : false" class="flex-item skill"><h3>{{ skill?.name }}</h3></span>
   </div>
 </section>

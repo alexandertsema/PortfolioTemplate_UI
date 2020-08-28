@@ -1,7 +1,7 @@
 import { Directive, Input, ElementRef, HostListener } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { navMenuRoutes } from '../../app.routes'
+import { routes } from '../../app.routes'
 
 @Directive({
   selector: '[appScrollNav]'
@@ -15,9 +15,9 @@ export class ScrollNavDirective {
       .subscribe(event => {
         if  (event instanceof NavigationEnd) {
           const currentRoute = this.formatRoute(event.url);
-          const currentIndex = navMenuRoutes.map(x => x.path).indexOf(currentRoute);
-          const prevElement = navMenuRoutes[currentIndex - 1];
-          const nextElement = navMenuRoutes[currentIndex + 1];
+          const currentIndex = routes.map(x => x.path).indexOf(currentRoute);
+          const prevElement = routes[currentIndex - 1];
+          const nextElement = routes[currentIndex + 1];
 
           this.prevRoute = prevElement ? prevElement.path : null
           this.nextRoute = nextElement ? nextElement.path : null;

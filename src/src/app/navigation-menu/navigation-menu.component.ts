@@ -8,7 +8,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('navState', [
       state('show', style({
-        transform: 'translateX(30rem)',
+        transform: 'translateX(95rem)',
         'box-shadow': '1px 0px 13px -3px rgba(0,0,0,0.87)'
       })),
       state('hide', style({
@@ -38,11 +38,11 @@ export class NavigationMenuComponent {
 
   constructor() {
     this.navState = this.navBackdropState = 'hide';
+    // this.navState = this.navBackdropState = 'show';
   }
 
   toggleNavState(sharedState: 'show' | 'hide') {
     this.navState = sharedState;
     this.navBackdropState = sharedState;
   }
-
 }

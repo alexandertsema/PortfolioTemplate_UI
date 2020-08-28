@@ -1,222 +1,149 @@
 [
-    {
-        "node": {
-            "name": "C#"
-        }
-    },
-    {
-        "node": {
-            "name": "ASP.NET Core"
-        }
-    },
-    {
-        "node": {
-            "name": "Azure"
-        }
-    },
-    {
-        "node": {
-            "name": "Azure Service Bus"
-        }
-    },
-    {
-        "node": {
-            "name": "Azure CosmosDB"
-        }
-    },
-    {
-        "node": {
-            "name": "Azure Docker Registry"
-        }
-    },
-    {
-        "node": {
-            "name": "Azure Functions"
-        }
-    },
-    {
-        "node": {
-            "name": "Docker"
-        }
-    },
-    {
-        "node": {
-            "name": "Cloud Computing"
-        }
-    },
-    {
-        "node": {
-            "name": "Grafana"
-        }
-    },
-    {
-        "node": {
-            "name": "Logentries"
-        }
-    },
-    {
-        "node": {
-            "name": "Distributed Systems"
-        }
-    },
-    {
-        "node": {
-            "name": "Microservices"
-        }
-    },
-    {
-        "node": {
-            "name": "ASP.NET Web API"
-        }
-    },
-    {
-        "node": {
-            "name": "ASP.NET MVC"
-        }
-    },
-    {
-        "node": {
-            "name": "WPF"
-        }
-    },
-    {
-        "node": {
-            "name": "WCF Services"
-        }
-    },
-    {
-        "node": {
-            "name": "SignalR"
-        }
-    },
-    {
-        "node": {
-            "name": "Microsoft SQL Server"
-        }
-    },
-    {
-        "node": {
-            "name": "MongoDB"
-        }
-    },
-    {
-        "node": {
-            "name": "Socket Programming"
-        }
-    },
-    {
-        "node": {
-            "name": "Git"
-        }
-    },
-    {
-        "node": {
-            "name": "TFS"
-        }
-    },
-    {
-        "node": {
-            "name": "Typescript"
-        }
-    },
-    {
-        "node": {
-            "name": "Angular 5"
-        }
-    },
-    {
-        "node": {
-            "name": "React.js"
-        }
-    },
-    {
-        "node": {
-            "name": "Redux"
-        }
-    },
-    {
-        "node": {
-            "name": "Flexbox"
-        }
-    },
-    {
-        "node": {
-            "name": "CSS3"
-        }
-    },
-    {
-        "node": {
-            "name": "HTML5"
-        }
-    },
-    {
-        "node": {
-            "name": "Python"
-        }
-    },
-    {
-        "node": {
-            "name": "Sanic"
-        }
-    },
-    {
-        "node": {
-            "name": "Pillow"
-        }
-    },
-    {
-        "node": {
-            "name": "OpenCV"
-        }
-    },
-    {
-        "node": {
-            "name": "Tensorflow"
-        }
-    },
-    {
-        "node": {
-            "name": "Machine Learning"
-        }
-    },
-    {
-        "node": {
-            "name": "Deep Learning"
-        }
-    },
-    {
-        "node": {
-            "name": "Artificial Neural Networks"
-        }
-    },
-    {
-        "node": {
-            "name": "Data Analysis"
-        }
-    },
-    {
-        "node": {
-            "name": "Image Processing"
-        }
-    },
-    {
-        "node": {
-            "name": "Agile Methodologies"
-        }
-    },
-    {
-        "node": {
-            "name": "RUP Methodologies"
-        }
-    },
-    {
-        "node": {
-            "name": "Scrum"
-        }
-    },
-    {
-        "node": {
-            "name": "TDD"
-        }
-    }
+  {
+    "name": "C#"
+  },
+  {
+    "name": "ASP.NET Core"
+  },
+  {
+    "name": "AWS"
+  },
+  {
+    "name": "Azure"
+  },
+  {
+    "name": "Azure Service Bus"
+  },
+  {
+    "name": "Azure CosmosDB"
+  },
+  {
+    "name": "Azure Docker Registry"
+  },
+  {
+    "name": "Azure Functions"
+  },
+  {
+    "name": "Docker"
+  },
+  {
+    "name": "Cloud Computing"
+  },
+  {
+    "name": "Grafana"
+  },
+  {
+    "name": "Logentries"
+  },
+  {
+    "name": "Distributed Systems"
+  },
+  {
+    "name": "Microservices"
+  },
+  {
+    "name": "SignalR"
+  },
+  {
+    "name": "Microsoft SQL Server"
+  },
+  {
+    "name": "MongoDB"
+  },
+  {
+    "name": "Socket Programming"
+  },
+  {
+    "name": "Git"
+  },
+  {
+    "name": "Typescript"
+  },
+  {
+    "name": "Angular"
+  },
+  {
+    "name": "React"
+  },
+  {
+    "name": "Redux"
+  },
+  {
+    "name": "Flexbox"
+  },
+  {
+    "name": "CSS"
+  },
+  {
+    "name": "HTML"
+  },
+  {
+    "name": "Python"
+  },
+  {
+    "name": "Sanic"
+  },
+  {
+    "name": "Flask"
+  },
+  {
+    "name": "Pillow"
+  },
+  {
+    "name": "OpenCV"
+  },
+  {
+    "name": "Tensorflow"
+  },
+  {
+    "name": "Machine Learning"
+  },
+  {
+    "name": "Deep Learning"
+  },
+  {
+    "name": "Image Processing"
+  },
+  {
+    "name": "Agile Methodologies"
+  },
+  {
+    "name": "RUP Methodologies"
+  },
+  {
+    "name": "Scrum"
+  },
+  {
+    "name": "Kanban"
+  },
+  {
+    "name": "TDD"
+  },
+  {
+    "name": "Kubernetes"
+  },
+  {
+    "name": "Kubedge"
+  },
+  {
+    "name": "Domain Driven Design"
+  },
+  {
+    "name": "Event Driven Design"
+  },
+  {
+    "name": "Messaging"
+  },
+  {
+    "name": "Pubsub"
+  },
+  {
+    "name": "AWS SNS"
+  },
+  {
+    "name": "AWS SQS"
+  },
+  {
+    "name": "RabbitMQ"
+  }
 ]

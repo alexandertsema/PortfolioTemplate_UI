@@ -37,6 +37,7 @@ import { SquareDirective } from 'app/directives/square/square.directive';
 import { HttpModule } from '@angular/http';
 import { FilterContactsPipe } from 'app/pipes/filter-contacts/filter-contacts.pipe';
 import { ShufflePipe } from 'app/pipes/shuffle/shuffle.pipe';
+import { SortPipe } from 'app/pipes/sort/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { ShufflePipe } from 'app/pipes/shuffle/shuffle.pipe';
     NavigationMenuComponent,
     SpinnerComponent,
     FilterContactsPipe,
-    ShufflePipe
+    ShufflePipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,

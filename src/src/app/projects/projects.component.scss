@@ -8,14 +8,14 @@ section {
   padding-bottom: 5rem;
 
   @media screen and (min-width: $screen-m-min) {
-    margin-left: 6rem;
+    margin-left: 16rem;
   }
 }
 
 .projects {
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 12rem;
 }
 
 app-grid-item {
@@ -27,8 +27,9 @@ app-grid-item {
 
 @media screen and (min-width: $screen-s-min) {
   app-grid-item {
-    width: 65rem;
-    height: 65rem;
+    width: 200rem;
+    height: 200rem;
+    max-width: 200rem;
   }
 }
 
