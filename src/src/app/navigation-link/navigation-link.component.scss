@@ -23,18 +23,15 @@ a {
 
 @media screen and (min-width: $screen-m-min) {
     a  {
-        font-size: 12rem;
         .nav-link {
             flex-direction: row;
-            justify-content: flex-end;
             align-items: center;
             width: 100%;
             padding-right: 0;
             .text {
-                flex: 4 0 20rem;
+                flex: 9 0 20rem;
             }
             .dot {
-                flex: 1 0 auto;
                 span {
                     display: block;
                     border-radius: 50%;

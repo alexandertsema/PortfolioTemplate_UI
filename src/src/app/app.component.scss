@@ -17,11 +17,12 @@ header {
 
     mat-icon  {
         flex: 1 0 4rem;
-        padding: 2rem 2rem 2rem 3rem;
+        padding: 2rem 2rem 2rem 6rem;
         cursor: pointer;
     }
 
     h1 {
+        padding-left: 10rem;
         flex: 15 0 auto;
     }
 }

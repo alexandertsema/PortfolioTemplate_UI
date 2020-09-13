@@ -13,15 +13,15 @@ section {
 }
 
 .projects {
+  width: 90%;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 12rem;
 }
 
 app-grid-item {
-  height: 35rem;
-  width: 35rem;
-  max-width: 65rem;
+  width: 200rem;
+  height: 200rem;
   margin: 1.5rem;
 }
 

@@ -3,15 +3,23 @@
 
   <div *ngFor="let contact of contacts | filterContacts:false" class="flex-item flex-container contact">
     <mat-icon>{{contact?.contactType}}</mat-icon>
-    <div *ngIf="contact?.contactType === 'phone'">
-      <p class="blur">
-        <span *ngFor="let char of contact?.value?.split('')">{{char}}</span>
-      </p>
-    </div>
-    <div *ngIf="contact?.contactType !== 'phone'">
-      <p>
-        {{contact?.value}}
-      </p>
+
+    <div [ngSwitch]="contact?.contactType">
+      <div *ngSwitchCase="'phone'">
+        <p class="blur phone">
+          <span *ngFor="let char of contact?.value?.split('')">{{char}}</span>
+        </p>
+      </div>
+      <div *ngSwitchCase="'email'">
+        <a href="mailto:{{contact?.value}}">
+          {{contact?.value}}
+        </a>
+      </div>
+      <div *ngSwitchDefault>
+        <p>
+          {{contact?.value}}
+        </p>
+      </div>
     </div>
   </div>
 
